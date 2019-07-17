@@ -1,0 +1,32 @@
+.sidebar{
+    display: grid;
+    grid-template-rows: min-content ;
+
+    &__photo{
+        width: 100%;
+    }
+    &__info{
+        display: grid;
+    
+        grid-row-gap: 1rem;
+        
+        
+        font-size: 1.6rem;
+
+        &-link{
+            
+            &:link,&:visited{
+                color: $color-5;
+                text-decoration: none;
+                padding: 1.5rem;
+                width: 100%;
+                
+            }
+            &--tel{
+                background-color:$color-1;
+            }
+        }
+       
+
+    }
+}

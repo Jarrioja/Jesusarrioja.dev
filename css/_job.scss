@@ -1,0 +1,304 @@
+.job {
+	margin-top: 10rem;
+
+	grid-column: full-start / full-end;
+
+	display: grid;
+	grid-template-rows: repeat(auto-fit, minmax(min-content, 10rem));
+	grid-template-columns: repeat(auto-fit, minmax(min-content, 60rem));
+	justify-content: center;
+
+	grid-gap: 4rem;
+
+	&__container {
+		font-size: 1.6rem;
+		position: relative;
+		padding: 6rem;
+		box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+		background-color: rgba(0, 0, 0, 0.3);
+		border-radius: 3px;
+		@media only screen and (max-width: 1000px) {
+			padding-top: 10rem;
+			padding-bottom: 2rem;
+			margin: 0rem 2rem;
+		}
+	}
+
+	&__logo {
+		background-color: black;
+		height: 12.8rem;
+		width: 12.8rem;
+		font-size: 7.5rem;
+		text-align: center;
+		border: #fff solid 5px;
+		border-radius: 50%;
+		clip-path: circle(50% at 50% 50%);
+		shape-outside: circle(50% at 50% 50%);
+		z-index: 10;
+
+		@media only screen and (max-width: 1000px) {
+			position: absolute;
+			top: -25%;
+			left: 50%;
+
+			clip-path: unset;
+			shape-outside: unset;
+		}
+	}
+	&__img {
+		width: 100%;
+		transform: translateY(-5%) scale(1.4);
+		&-1 {
+			transform: translateY(-5%) scale(0.7);
+		}
+	}
+	&__text {
+		&-card {
+			font-size: 1.4rem;
+			padding: 2rem;
+		}
+	}
+
+	&__logo--freelance {
+		float: right;
+		background-color: black;
+		transform: translateX(3rem);
+		@media only screen and (max-width: 1000px) {
+			float: none;
+			transform: translateX(-50%);
+		}
+	}
+	&__logo--main {
+		float: left;
+		transform: translateX(-3rem);
+		@media only screen and (max-width: 1000px) {
+			float: none;
+			transform: translateX(-50%);
+		}
+	}
+	&__freelance {
+		text-align: right;
+		@media only screen and (max-width: 1000px) {
+			text-align: center;
+			margin-bottom: 5rem;
+		}
+	}
+	&__main {
+		text-align: left;
+		@media only screen and (max-width: 1000px) {
+			text-align: center;
+		}
+	}
+	&__webs {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+
+		grid-column: full-start / full-end;
+		color: $black;
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(min-content, 30rem));
+		grid-template-rows: repeat(auto-fit, minmax(min-content, 45rem));
+
+		grid-gap: 4rem;
+		justify-content: center;
+	}
+	&__cards {
+		perspective: 150rem;
+		-moz-perspective: 150rem;
+		position: relative;
+		height: 45rem;
+		@media only screen and (max-width: $bp-large) {
+			height: auto;
+		}
+
+		&-side {
+			height: 100%;
+			width: 100%;
+			transition: all 0.8s ease;
+			position: absolute;
+			top: 0;
+			left: 0;
+			backface-visibility: hidden;
+			border-radius: 3px;
+			overflow: hidden;
+			box-shadow: 0 1.5rem 4rem rgba($color: $black, $alpha: 0.5);
+			@media only screen and (max-width: $bp-large) {
+				overflow: visible;
+				position: relative;
+				height: auto;
+			}
+
+			//&--a {
+				//	background-color: rgba(0, 0, 0, 0.3);
+			//}
+			&--b {
+				height: 100%;
+				transform: rotateY(180deg);
+				@media only screen and (max-width: $bp-large) {
+					display: none;
+					opacity: 0;
+				}
+				background-blend-mode: multiply;
+				&-1 {
+					background-image: linear-gradient(
+						to right bottom,
+						rgba(#202020, 1),
+						rgba(#8bbac5, 1)
+					);
+				}
+				&-2 {
+					background-image: linear-gradient(
+						to right bottom,
+						rgba(#003edc, 1),
+						rgba(#b1b3ff, 1)
+					);
+				}
+				&-3 {
+					background-image: linear-gradient(to right bottom, #8f4078, #d3b790);
+				}
+				&-4 {
+					background-image: linear-gradient(to right bottom, #fff, #000);
+				}
+				&-5 {
+					background-image: linear-gradient(to right bottom, red, #000);
+				}
+				&-6 {
+					background-image: linear-gradient(to right bottom, #fff, #000);
+				}
+				&-7 {
+					background-image: linear-gradient(to right bottom, #fff, #000);
+				}
+				&-8 {
+					background-image: linear-gradient(to right bottom, #0c4d8c,#072543);
+				}
+				&-9 {
+					background-image: linear-gradient(to right bottom, #fff, #000);
+				}
+				&-10 {
+					background-image: linear-gradient(to right bottom, #1E1242, #FF5E3A);
+				}
+			}
+		}
+
+		&:hover &-side--a {
+			transform: rotateY(-180deg);
+			@media only screen and (max-width: $bp-large) {
+				transform: rotateY(0);
+			}
+		}
+		&:hover &-side--b {
+			transform: rotateY(0deg);
+		}
+
+		&-logo {
+			clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			height: 23rem;
+			background-blend-mode: screen;
+			border-top-left-radius: 3px;
+			border-top-right-radius: 3px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&--1 {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba(#e8e8e8, 1),
+					rgba(#8bbac5, 1)
+				);
+			}
+			&--2 {
+				background-image: linear-gradient(
+					to right bottom,
+					rgba(#003edc, 1),
+					rgba(#fff, 1)
+				);
+			}
+			&--3 {
+				background-image: linear-gradient(to right bottom, #8f4078, #d3b790);
+			}
+			&--4 {
+				//background-image: linear-gradient(to right bottom, #fff, #000);
+				img {
+					width: 65%;
+				}		
+			
+			}
+
+			&--5 {	
+				background-image: linear-gradient(to right bottom, #F62318, #000);
+				
+			}	
+
+			&--6 {	
+				background-color: #E8E8E8;
+			}
+			&--7 {	
+				background-color: #e8e8e8
+				
+			}
+			&--8 {	
+				background-image: linear-gradient(to right bottom, #0c4d8c,#072543);
+				img{
+					width: 80%;
+				}
+				
+			}
+			&--9 {	
+				background-color: #E8E8E8;
+				img{
+					width: 80%;
+				}
+				
+			}
+			&--10 {	
+				background-image: linear-gradient(to right bottom, #1E1242, #FF5E3A);
+				img{
+					width: 50%;
+				}
+				
+			}
+			
+		}
+	}
+
+	&__cta {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 90%;
+		text-align: center;
+	}
+	&__text-card {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 50%;
+		flex-direction: column;
+		ul {
+			list-style: none;
+			text-align: center;
+			font-size: 1.6rem;
+			color: #202020;
+		}
+		li {
+			padding: 1rem;
+		}
+		li:not(:last-child) {
+			border-bottom: 1px solid #eee;
+		}
+	}
+}
+.mobile-side {
+	display: none;
+	@media only screen and (max-width: $bp-large) {
+		display: block;
+		position: relative;
+		height: 150px;
+		width: 100%;
+		clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+	}
+}

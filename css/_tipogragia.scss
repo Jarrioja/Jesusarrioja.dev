@@ -1,0 +1,151 @@
+/* Fuentes Locales */
+@font-face {
+	font-family: 'Proza Libre';
+	src: url(../webfonts/ProzaLibre-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proza Libre';
+	src: url(../webfonts/ProzaLibre-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proza Libre';
+	src: url(../webfonts/ProzaLibre-Bold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-Bold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-ExtraBold.ttf) format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+/* Fuentes Locales */
+%heading {
+	font-family: $font-display;
+	font-weight: 400;
+
+	color: transparent;
+}
+
+.heading-1 {
+	@extend %heading;
+	font-size: 10rem;
+	letter-spacing: 5px;
+	margin-top: -2rem;
+	color: #fff;
+	span {
+		display: block;
+		text-align: right;
+		text-transform: uppercase;
+		font-size: 1.8rem;
+		font-weight: 600;
+		-webkit-text-stroke: 0px;
+	}
+}
+
+.heading-2 {
+	@extend %heading;
+	font-size: 3.5rem;
+	letter-spacing: 4px;
+	margin-top: -2rem;
+	color: #fff;
+	//text-transform: uppercase;
+	&:hover {
+		text-decoration: none;
+	}
+
+	a:hover {
+		color: $black;
+		text-shadow: #fff 2px 2px 5px;
+	}
+	span {
+		display: block;
+		//text-align: right;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		font-weight: 600;
+		-webkit-text-stroke: 0px;
+	}
+}
+.heading-3 {
+	@extend %heading;
+	font-size: 2.5rem;
+	letter-spacing: 5px;
+	margin-top: -2rem;
+	color: #fff;
+	//text-transform: uppercase;
+	span {
+		display: block;
+		//text-align: right;
+		text-transform: uppercase;
+		font-size: 1.5rem;
+		font-weight: 600;
+		-webkit-text-stroke: 0px;
+	}
+}
+.heading-card {
+	@extend %heading;
+	font-size: 2.8rem;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-align: right;
+	color: $white;
+	position: absolute;
+	top: 15rem;
+	right: 2rem;
+	width: 75%;
+}
+
+.heading-card-span {
+	padding: 1rem 1.5rem;
+	-webkit-box-decoration-break: clone;
+	box-decoration-break: clone;
+	&--1 {
+		background-image: linear-gradient(
+			to right bottom,
+			rgba(red, 0.85),
+			rgba(blue, 0.85)
+		);
+	}
+}
+
+.tooltip {
+	left: 0px !important;
+	font-size: 1.5rem;
+}

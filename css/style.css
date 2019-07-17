@@ -1,0 +1,628 @@
+/* Fuentes Locales */
+@font-face {
+	font-family: 'Proza Libre';
+	src: url(../webfonts/ProzaLibre-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proza Libre';
+	src: url(../webfonts/ProzaLibre-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Proza Libre';
+	src: url(../webfonts/ProzaLibre-Bold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-Light.ttf) format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-SemiBold.ttf) format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-Bold.ttf) format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Open Sans';
+	src: url(../webfonts/OpenSans-ExtraBold.ttf) format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+/* Fuentes Locales */
+
+/* Animaciones */
+.pulse {
+	display: block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #cca92c;
+	cursor: pointer;
+	box-shadow: 0 0 0 rgba(255, 0, 65, 1);
+	animation: pulse 2s infinite;
+}
+.pulse-text {
+	display: block;
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #cca92c;
+	cursor: pointer;
+	box-shadow: 0 0 0 rgba(255, 0, 65, 1);
+	animation: pulse 2s infinite;
+}
+
+.pulse:hover {
+	animation: none;
+}
+
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 1);
+		box-shadow: 0 0 0 0 #263238;
+	}
+
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
+@-webkit-keyframes pulse {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
+
+@keyframes pulse {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 1);
+		box-shadow: 0 0 0 0 #263238;
+	}
+
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
+@-webkit-keyframes pulse-text {
+	0% {
+		-webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0.4);
+	}
+
+	70% {
+		-webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+
+	100% {
+		-webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
+
+@keyframes pulse-text {
+	0% {
+		-moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 1);
+		box-shadow: 0 0 0 0 #263238;
+	}
+
+	70% {
+		-moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+	}
+
+	100% {
+		-moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+		box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+	}
+}
+/*BREAKPOINTS*/
+
+/*BREAKPOINTS*/
+/* Animaciones */
+body {
+	padding: 10px 0px;
+	font-family: 'Open Sans';
+	color: #263238;
+}
+
+a {
+	text-decoration: none;
+}
+u {
+	text-decoration-style: dotted;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+p {
+	font-family: 'Open Sans';
+}
+
+.fas-info {
+	font-size: 15px;
+	margin-right: 15px;
+}
+.fa-footer {
+	font-size: 30px;
+}
+.title {
+	font-size: 25px;
+	color: black;
+	font-family: 'Proza Libre';
+	font-weight: 700;
+}
+
+.text--uppercase {
+	text-transform: uppercase;
+}
+
+.container {
+	display: flex;
+}
+.menu-footer {
+	position: fixed;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	width: 100vw;
+	bottom: 0;
+	z-index: 999999;
+}
+.footer-icon {
+	color: white;
+	font-size: 15px;
+	display: block;
+	padding: 5px 20px 5px 20px;
+}
+.footer-icon-phone {
+	background-color: #263238;
+	border-radius: 25px 0px 0px 0px;
+}
+
+.footer-icon-web {
+	background-color: #37474f;
+}
+
+.footer-icon-mail {
+	background-color: #455a64;
+}
+
+.footer-icon-medium {
+	background-color: #546e7a;
+	border-radius: 0px 25px 0px 0px;
+}
+.left {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.left-fixed {
+	position: fixed;
+	width: 380px;
+	border-radius: 30px 30px;
+	background-color: #eceff1;
+	padding-bottom: 15px;
+}
+
+.left__info {
+	padding-left: 30px;
+}
+
+.left__picture {
+	width: 100%;
+	height: 300px;
+	/*  */
+
+	background-image: linear-gradient(
+			to bottom,
+			rgba(0, 0, 0, 0) 30%,
+			rgba(0, 0, 0, 0.8) 100%
+		),
+		url(../img/jarrioja.jpg);
+	background-size: cover;
+	border-radius: 25px 25px 0px 0px;
+}
+
+.left__info-contacts {
+	color: white;
+	font-size: 15px;
+	display: block;
+	padding: 10px 30px;
+}
+
+.left__info-contacts:hover {
+	color: #90a6ae;
+}
+
+.left__info-contacts--phone {
+	background-color: #263238;
+}
+
+.left__info-contacts--web {
+	background-color: #37474f;
+}
+
+.left__info-contacts--mail {
+	background-color: #455a64;
+}
+
+.left__info-contacts--medium {
+	background-color: #546e7a;
+}
+
+.left__info-text {
+	font-family: 'Open Sans';
+	font-size: 14px;
+}
+
+.left__info-personal {
+	margin-top: 20px;
+}
+
+.left-icos {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+	width: 80%;
+}
+
+.rigth {
+	width: 100%;
+
+	padding-left: 0px;
+	padding-left: 0px;
+}
+
+.rigth__info {
+	padding-left: 30px;
+}
+
+.rigth__overview {
+}
+.rigth__overview-text {
+	text-align: justify;
+}
+.rigth__title {
+	background-color: #e5e6e7;
+	margin-top: 25px;
+	border-radius: 10px 10px 10px 10px;
+	
+}
+.rounded-full {
+	border-radius: 10px 10px 10px 10px;
+}
+.name-fixed {
+}
+.rigth__name {
+	color: #263238;
+	font-size: 70px;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 0px;
+	display: inline-block;
+	background-image: linear-gradient(to right, #546e7a, #263238);
+	-webkit-background-clip: text;
+	color: transparent;
+}
+
+.rigth__subname {
+	display: block;
+	font-size: 20px;
+	color: black;
+	font-weight: 600;
+	text-align: end;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+}
+
+.rigth__info-experience {
+}
+
+.experience__job {
+	display: block;
+	text-align: left;
+	width: 100%;
+}
+
+.title--job {
+	display: inline;
+	font-size: 14px;
+	font-weight: 700;
+	font-family: 'Raleway';
+	text-align: center;
+}
+
+.company__name {
+	color: #fff;
+	display: block;
+	font-family: 'Proza Libre';
+	font-weight: 700;
+	text-transform: uppercase;
+	padding: 10px;
+	background-color: #263238;
+	border-radius: 10px;
+	top: -10px;
+	right: 0px;
+	position: absolute;
+}
+
+.company__name--logo {
+	width: 64px;
+	height: 64px;
+	border-radius: 100px;
+	color: #fff;
+	display: block;
+	background-color: #263238;
+	background-size: cover;
+	top: -5px;
+	right: 0px;
+	position: absolute;
+	padding: 20px 0px 0px 22px;
+	z-index: 0;
+}
+
+.experience-card-projects {
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 20px;
+	padding: 5px 10px 0px 10px;
+	margin-top: 25px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.company__name--logo-projects {
+	width: 64px;
+	height: 64px;
+	border-radius: 100px;
+	color: #fff;
+
+	background-color: #263238;
+	background-size: cover;
+	top: -5px;
+	right: 0px;
+
+	padding: 20px 0px 0px 22px;
+	z-index: 0;
+}
+.company__name--logo-mood {
+	width: 128px;
+	height: 128px;
+	background-color: #263238;
+	background-image: url(/img/mood-oscuro.png);
+	border: #263238 solid;
+	top: -35px;
+}
+.company__name--logo-picnow {
+	background-color: unset;
+	background-image: url(/img/PN_PPic_512x512_V001.png);
+	border: #263238 solid;
+	animation: pulse 2s infinite;
+}
+.company__name--logo-arhea {
+	background-color: #263238;
+	background-image: url(/img/Camada-5651x.png);
+	border: #263238 solid;
+	animation: pulse 2s infinite;
+}
+.company__name--logo-althaus {
+	background-color: unset;
+	background-image: url(/img/isotipo-20181010-circulo.png);
+	border: #263238 solid;
+	animation: pulse 2s infinite;
+}
+.company__name--logo-cocoa {
+	background-color: unset;
+	background-image: url(/img/cocoa.png);
+	border: #263238 solid;
+	animation: pulse 2s infinite;
+}
+
+.company__info {
+	font-weight: 600;
+	text-align: justify;
+	margin-bottom: 5px;
+}
+.company__info-sub {
+	font-weight: 400;
+	text-align: left;
+	margin-bottom: 5px;
+}
+
+.year {
+	display: block;
+	font-weight: 400;
+	font-size: 10px;
+	letter-spacing: 5px;
+}
+
+.experience-title {
+	font-family: 'Proza Libre';
+	font-weight: 400;
+	padding: 10px;
+	color: #fff;
+	background-color: #546e7a;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.experience-title--no-hover {
+	font-family: 'Proza Libre';
+	font-weight: 400;
+	padding: 10px;
+	color: #fff !important;
+	background-color: #263238;
+	border-radius: 5px;
+	display: inline-block;
+	margin-bottom: 5px;
+}
+
+.collapsed {
+	background-color: #263238;
+}
+
+.experience-title:hover {
+	color: white;
+	background-color: #90a6ae;
+}
+
+.experience-card {
+	border-radius: 10px 10px 10px 10px;
+	margin-left: 20px;
+	padding: 5px 10px 1px 10px;
+	margin-top: 20px;
+}
+
+.mood {
+	background-color: #eceff1;
+	position: relative;
+}
+.freelance {
+	position: relative;
+}
+
+.experience-ico {
+	display: inline-block;
+}
+.experience-ico--center {
+	display: flex;
+	justify-content: center;
+}
+.exp-ico {
+	font-size: 35px;
+}
+
+.exp-ico1 {
+	margin-left: 0px;
+}
+.fa--logo {
+	font-size: 20px;
+	color: #fff;
+}
+
+.tooltip {
+	left: 0px !important;
+}
+.card {
+	display: inline-flex;
+}
+.btn-exp {
+	margin: 0px;
+}
+.icos {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	margin-bottom: -15px;
+}
+@media (min-width: 320px) and (max-width: 575px) {
+	.col-12 {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.rigth__subname {
+		text-align: center;
+	}
+
+	.rigth__name {
+		text-align: center;
+		font-size: 53px;
+	}
+
+	.rigth__overview-text {
+		text-align: center;
+	}
+}
+@media (min-width: 576px) and (max-width: 768px) {
+	.rigth__name {
+		font-size: 62px;
+	}
+}
+@media (max-width: 768px) {
+	.exp-ico {
+		padding-bottom: 5px;
+		text-align: center;
+		width: 12.5%;
+	}
+}
+@media (max-width: 991px) {
+	.experience-card {
+		margin-left: 0px;
+	}
+	.experience-card-projects {
+		margin-left: 0px;
+	}
+	.rigth__info {
+		padding-left: 10px;
+	}
+	.title {
+		text-align: center;
+	}
+}
+@media (max-width: 1199px) {
+	.company__name--logo-mood {
+		width: 90px;
+		height: 90px;
+	}
+}

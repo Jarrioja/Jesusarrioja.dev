@@ -1,0 +1,134 @@
+$color-1: #eeeeee;
+$color-2: #dddddd;
+$color-3: #cccccc;
+$color-4: #bbbbbb;
+$color-5: #aaaaaa;
+$white: #ffffff;
+$black: #000;
+$font-primary: 'Open Sans', sans-serif;
+$font-display: 'Proza Libre', sans-serif;
+
+$bp-largest: 78.75em; // 1260px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 40.625em; //650px
+$bp-small: 36.25em; // 580px;
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+*:link,
+*:visited {
+	color: currentColor;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+	color: $color-5;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%; //10px/16px = 62.5% -> 1rem = 10px
+	@media only screen and (max-width: $bp-largest) {
+		font-size: 50%;
+	}
+}
+
+body {
+	font-family: $font-primary;
+	font-size: 1.6rem;
+	color: $color-1;
+	line-height: 1.6;
+}
+.container {
+	display: grid;
+
+	grid-template-columns:
+		[full-start]minmax(6rem, 1fr) [center-start] repeat(
+			8,
+			[col-start] minmax(min-content, 16rem) [col-end]
+		)
+		[center-end] minmax(6rem, 1fr) [full-end];
+	justify-content: center;
+}
+
+.btn {
+	&,
+	&:link,
+	&:visited {
+		font-size: 1.6rem;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 1.5rem 4rem;
+		display: inline-block;
+		border-radius: 10rem;
+		transition: all 0.2s;
+		position: relative;
+
+		//change for the button
+		border: none;
+		cursor: pointer;
+	}
+
+	&:hover {
+		transform: translateY(-3px);
+		box-shadow: 0 1rem 2rem, rgba($black, 0.2);
+		&::after {
+			transform: scaleX(1.4) scaleY(1.6);
+			opacity: 0;
+		}
+	}
+
+	&:active,
+	&:focus {
+		outline: none;
+		transform: translateY(-1px);
+		box-shadow: 0 0.5rem 1rem rgba($black, 0.2);
+	}
+
+	&--white {
+		background-color: $white;
+		color: #777;
+		&::after {
+			background-color: $white;
+		}
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		height: 100%;
+		width: 100%;
+		border-radius: 10rem;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		transition: all 0.4s;
+	}
+
+	&--animated {
+		animation: moveInBottom 0.5s ease-out 0.75s;
+		animation-fill-mode: backwards;
+	}
+
+	&--black {
+		background-image: linear-gradient(to top right, #000000, #434343);
+		color: $white;
+		font-size: 2rem;
+		&::after {
+			background-color: $black;
+		}
+	}
+	&--fixed {
+		position: fixed;
+		bottom: 1%;
+		right: 0.5rem;
+	}
+}
