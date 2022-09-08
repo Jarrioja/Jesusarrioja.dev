@@ -54,11 +54,13 @@
 	font-weight: 800;
 	font-style: normal;
 }
-
+@import url('https://fonts.googleapis.com/css?family=Martel+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Exo&display=swap');
 /* Fuentes Locales */
 %heading {
 	font-family: $font-display;
-	font-weight: 400;
+	font-weight: normal;
 
 	color: transparent;
 }
@@ -80,7 +82,8 @@
 }
 
 .heading-2 {
-	@extend %heading;
+	font-family: 'Exo', sans-serif;
+	font-weight: 700;
 	font-size: 3.5rem;
 	letter-spacing: 4px;
 	margin-top: -2rem;
@@ -104,7 +107,7 @@
 	}
 }
 .heading-3 {
-	@extend %heading;
+	font-family: 'Exo', sans-serif;
 	font-size: 2.5rem;
 	letter-spacing: 5px;
 	margin-top: -2rem;
@@ -120,7 +123,7 @@
 	}
 }
 .heading-card {
-	@extend %heading;
+	font-family: 'Exo', sans-serif;
 	font-size: 2.8rem;
 	font-weight: 300;
 	text-transform: uppercase;

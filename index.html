@@ -11,7 +11,56 @@
 		<!-- Estilos Locales -->
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
-		<title>Ing. Jesus Arrioja</title>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-143999697-3"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+
+			gtag('config', 'UA-143999697-3');
+		</script>
+		<!-- Primary Meta Tags -->
+		<title>Jesús Arrioja | Wordpress Developer</title>
+		<meta name="title" content="Jesús Arrioja | Wordpress Developer" />
+		<meta
+			name="description"
+			content="I introduce myself as a Web Developer specialized in Wordpress, web servers and cloud computing services (DigitalOcean, AWS, Google Cloud Platform). I	love predicting problems and saying I told you so."
+		/>
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://jesusarrioja.dev/" />
+		<meta property="og:title" content="Jesús Arrioja | Wordpress Developer" />
+		<meta
+			property="og:description"
+			content="I introduce myself as a Web Developer specialized in Wordpress, web servers and cloud computing services (DigitalOcean, AWS, Google Cloud Platform). I	love predicting problems and saying I told you so."
+		/>
+		<meta
+			property="og:image"
+			content="https://jesusarrioja.dev/img/jarrioja-2.jpg"
+		/>
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="summary_large_image" />
+		<meta property="twitter:url" content="https://jesusarrioja.dev/" />
+		<meta
+			property="twitter:title"
+			content="Jesús Arrioja | Wordpress Developer"
+		/>
+		<meta
+			property="twitter:description"
+			content="I introduce myself as a Web Developer specialized in Wordpress, web servers and cloud computing services (DigitalOcean, AWS, Google Cloud Platform). "
+		/>
+		<meta
+			property="twitter:image"
+			content="https://jesusarrioja.dev/img/jarrioja-2.jpg"
+		/>
 	</head>
 
 	<body class="container">
@@ -24,15 +73,14 @@
 					<h1 class="heading-1">
 						Jesús Arrioja<span>DevOps, SysAdmin, Web Developer</span>
 					</h1>
-
 					<p class="header__text">
 						I introduce myself as a Web Developer specialized in Wordpress, web
 						servers and cloud computing services (DigitalOcean, AWS, Google
-						Cloud Platform.).
+						Cloud Platform)
 						<br />
 						<br />
-						<strong
-							>I love predicting problems and saying "I told you so".</strong
+						<strong style="font-weight: 600;"
+							></strong
 						>
 					</p>
 					<ul class="header__icos">
@@ -102,7 +150,7 @@
 						</li>
 						<li>
 							<i
-								class="fab header__ico fa-aws "
+								class="fab header__ico fa-aws"
 								data-toggle="tooltip"
 								data-placement="top"
 								title="Amazon Web Services"
@@ -134,7 +182,7 @@
 						</li>
 						<li>
 							<i
-								class="fab header__ico fa-google "
+								class="fab header__ico fa-google"
 								data-toggle="tooltip"
 								data-placement="top"
 								title="G Suite"
@@ -167,7 +215,7 @@
 					</ul>
 				</div>
 				<ul class="header__rrss">
-					<li class="header__item ">
+					<li class="header__item">
 						<a
 							href="https://twitter.com/jarrioja"
 							target="_blank"
@@ -197,16 +245,26 @@
 							<i class="fab fa-linkedin-in"></i>
 						</a>
 					</li>
+					<li class="header__item">
+						<a
+							href="https://www.instagram.com/jesusarrioja.dev/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="header__link header__link-rrss"
+						>
+							<i class="fab fa-instagram"></i>
+						</a>
+					</li>
 				</ul>
 				<ul class="header__info">
 					<li class="header__item">
-						<a href="mailto:HireMe@jesusarrioja.me" class="header__link">
-							<i class="fas fa-at"></i> HireMe@jesusarrioja.me
+						<a href="mailto:hello@jesusarrioja.dev" class="header__link">
+						<i class="far fa-envelope"></i> hello@jesusarrioja.dev
 						</a>
 					</li>
 					<li class="header__item">
 						<a href="#" class="header__link">
-							<i class="fas fa-map-marker-alt"></i> Zulia, Venezuela.
+							<i class="fas fa-map-marker-alt"></i> Montevideo, Uruguay.
 						</a>
 					</li>
 				</ul>
@@ -214,8 +272,8 @@
 		</header>
 
 		<section class="job">
-			<div class="job__container job__freelance">
-				<figure class="job__logo job__logo--freelance ">
+			<div class="job__container job__main">
+				<figure class="job__logo job__logo--main">
 					<img
 						src="img/front-end-logo-bw.png"
 						alt=""
@@ -229,7 +287,7 @@
 				</p>
 			</div>
 			<div class="job__container job__main">
-				<figure class="job__logo job__logo--main ">
+				<figure class="job__logo job__logo--main">
 					<img src="img/mood-oscuro.png" alt="" class="job__img" />
 				</figure>
 				<h2 class="heading-2">
@@ -238,7 +296,7 @@
 						target="_blank"
 						rel="noopener noreferrer"
 						>Mood Agency</a
-					><span> DevOps & SysAdmin</span>
+					><span> Web Developer, DevOps & SysAdmin</span>
 				</h2>
 
 				<p class="job__text">
@@ -246,11 +304,632 @@
 					hostings, domains, pages and web servers.
 				</p>
 			</div>
+			<div class="job__container job__main job__main-CTO">
+				<figure class="job__logo job__logo--main">
+					<img src="/img/tgk.jpg" alt="" class="job__img" />
+				</figure>
+				<h2 class="heading-2">
+					<a
+						href="https://thegrowthkeys.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						>The Growth Keys</a
+					><span> Something like a CTO</span>
+				</h2>
+
+				<p class="job__text">
+				I find technological solutions for clients, and sometimes I implement them.
+				</p>
+			</div>
 		</section>
 		<section class="job__webs">
+		<!-- Mia astral -->
+		<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--miastral">
+						<img src="img/miastral.svg" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Astrology Website</li>
+							<li>Woocommerce Store</li>
+							<li>WC Subscription & Memberships</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-miastral mobile-side">
+						<div class="job__cta">
+							<a
+								href="http://miastral.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-miastral"
+				>
+					<div class="job__cta">
+						<a
+							href="http://miastral.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<!-- Mia astral -->
+			<!-- Bevione -->
 			<div class="job__cards">
 				<div class="job__cards-side job__cards-side--a">
-					<div class="job__cards-logo job__cards-logo--7">
+					<div class="job__cards-logo job__cards-logo--12">
+						<img src="img/bevione.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Community Website</li>
+							<li>Learning Management System</li>
+							<li>Woocommerce Subscripcion and Membership</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-12 mobile-side">
+						<div class="job__cta">
+							<a
+								href="https://juliobevione.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
+					</div>
+				</div>
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-12">
+					<div class="job__cta">
+						<a
+							href="https://juliobevione.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<!-- Bevione -->			
+			<!-- Recetas Lily -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--11">
+						<img src="img/recetaslily.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Healthy food blog</li>
+							<li>Migrate Wix to Wordpress</li>
+							<li>Recipe Filter</li>
+							<li>Woocommerce Store</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-11 mobile-side">
+						<div class="job__cta">
+							<a
+								href="https://www.recetaslily.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+					</div>
+				</div>
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-11">
+					<div class="job__cta">
+						<a
+							href="https://www.recetaslily.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+				</div>
+			</div>
+			<!-- Recetas Lily -->
+		<!-- TGK -->
+		<div class="job__cards">
+			<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-logo job__cards-logo--tgk">
+					<img src="img/tgk.svg" alt="" />
+				</div>
+				<div class="job__text-card">
+					<ul>
+						<li>Brand Consulting website</li>
+						<li>Learning management system</li>
+						<li>Booking system</li>
+					</ul>
+				</div>
+				<div class="job__cards-side--b-tgk mobile-side">
+					<div class="job__cta">
+						<a
+						href="https://thegrowthkeys.com/"
+						target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+							>
+						</div>
+					<a
+					href="https://thegrowthkeys.com/"
+					class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<div class="job__cards-side job__cards-side--b job__cards-side--b-tgk">
+				<div class="job__cta">
+					<a
+					href="https://thegrowthkeys.com/"
+					target="_blank"
+					rel="noopener noreferrer"
+					class="btn btn--white"
+					>Take a look!</a
+					>
+				</div>
+				<a
+				href="https://thegrowthkeys.com/"
+				class="agency-logo roadtrip"
+				></a>
+			</div>
+		</div>
+		<!-- TGK -->
+		<!-- Conboca -->
+		<div class="job__cards">
+			<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-logo job__cards-logo--conboca">
+					<img src="img/conboca-blanco.svg" alt="" />
+				</div>
+				<div class="job__text-card">
+					<ul>
+						<li>Gastronomic Studio website</li>
+						<li>Woocommerce Store</li>
+						<li>Built with Elementor</li>
+					</ul>
+				</div>
+				<div class="job__cards-side--b-conboca mobile-side">
+					<div class="job__cta">
+						<a
+							href="https://conbocacatering.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<div class="job__cards-side job__cards-side--b job__cards-side--b-conboca">
+				<div class="job__cta">
+					<a
+						href="https://conbocacatering.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn--white"
+						>Take a look!</a
+					>
+				</div>
+				<a
+					href="https://thegrowthkeys.com/"
+					class="agency-logo roadtrip"
+				></a>
+			</div>
+		</div>
+		<!-- Conboca -->
+		<!-- https://www.easytechnologyny.com/ -->
+		<div class="job__cards">
+			<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-logo job__cards-logo--easytechnology">
+					<img src="img/easytechnologyny.png" alt="" />
+				</div>
+				<div class="job__text-card">
+					<ul>
+						<li>Community One Page</li>
+						<li>Built with Divi</li>
+					</ul>
+				</div>
+				<div class="job__cards-side--b-easytechnology mobile-side">
+					<div class="job__cta">
+						<a
+							href="https://www.easytechnologyny.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<div class="job__cards-side job__cards-side--b job__cards-side--b-easytechnology">
+				<div class="job__cta">
+					<a
+						href="https://www.easytechnologyny.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn--white"
+						>Take a look!</a
+					>
+				</div>
+				<a
+					href="https://thegrowthkeys.com/"
+					class="agency-logo roadtrip"
+				></a>
+			</div>
+		</div>
+		<!-- https://www.easytechnologyny.com/ -->
+		<!-- https://parentingwithgrace.online/ -->
+		<div class="job__cards">
+			<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-logo job__cards-logo--pwg">
+					<img src="img/parentingwithgrace.svg" alt="" />
+				</div>
+				<div class="job__text-card">
+					<ul>
+						<li>Community One Page</li>
+						<li>Built with Divi</li>
+					</ul>
+				</div>
+				<div class="job__cards-side--b-pwg mobile-side">
+					<div class="job__cta">
+						<a
+							href="https://parentingwithgrace.online/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<div class="job__cards-side job__cards-side--b job__cards-side--b-pwg">
+				<div class="job__cta">
+					<a
+						href="https://parentingwithgrace.online/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn--white"
+						>Take a look!</a
+					>
+				</div>
+				<a
+					href="https://thegrowthkeys.com/"
+					class="agency-logo roadtrip"
+				></a>
+			</div>
+		</div>
+		<!-- https://parentingwithgrace.online/ -->
+		<!-- https://foodit.io/ -->
+		<div class="job__cards">
+			<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-logo job__cards-logo--foodit">
+					<img src="img/foodit.svg" alt="" />
+				</div>
+				<div class="job__text-card">
+					<ul>
+						<li>SaaS Landing Page</li>
+						<li>Built with Elementor</li>
+					</ul>
+				</div>
+				<div class="job__cards-side--b-foodit mobile-side">
+					<div class="job__cta">
+						<a
+							href="https://foodit.io/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<div class="job__cards-side job__cards-side--b job__cards-side--b-foodit">
+				<div class="job__cta">
+					<a
+						href="https://foodit.io/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn--white"
+						>Take a look!</a
+					>
+				</div>
+				<a href="https://mood-agency.com" class="agency-logo mood"></a>
+			</div>
+		</div>
+		<!-- Foodit.io -->
+		<!-- https://rewards.cykadas.com/ -->
+		<div class="job__cards">
+			<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-logo job__cards-logo--cykadas">
+					<img src="img/cykadas_rewards.svg" alt="" />
+				</div>
+				<div class="job__text-card">
+					<ul>
+						<li>Rewards website</li>
+						<li>Gamification on WordPress</li>
+						<li>Built with Elementor</li>
+					</ul>
+				</div>
+				<div class="job__cards-side--b-cykadas mobile-side">
+					<div class="job__cta">
+						<a
+							href="https://rewards.cykadas.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<div class="job__cards-side job__cards-side--b job__cards-side--b-cykadas">
+				<div class="job__cta">
+					<a
+						href="https://rewards.cykadas.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn--white"
+						>Take a look!</a
+					>
+				</div>
+				<a href="https://mood-agency.com" class="agency-logo mood"></a>
+			</div>
+		</div>
+		<!-- https://rewards.cykadas.com/ -->
+		<!-- Una Pieza Maestra -->
+		<div class="job__cards">
+			<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-logo job__cards-logo--upm">
+					<img src="img/una-pieza-maestra-red.svg" alt="" />
+				</div>
+				<div class="job__text-card">
+					<ul>
+						<li>Community website</li>
+						<li>Learning management system</li>
+						<li>WC Subscription & Memberships</li>
+					</ul>
+				</div>
+				<div class="job__cards-side--b-upm mobile-side">
+					<div class="job__cta">
+						<a
+							href="https://unapiezamaestra.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<div class="job__cards-side job__cards-side--b job__cards-side--b-upm">
+				<div class="job__cta">
+					<a
+						href="https://unapiezamaestra.com/"
+						target="_blank"
+						rel="noopener noreferrer"
+						class="btn btn--white"
+						>Take a look!</a
+					>
+				</div>
+				<a
+					href="https://thegrowthkeys.com/"
+					class="agency-logo roadtrip"
+				></a>
+			</div>
+		</div>
+		<!-- Una Pieza Maestra -->
+		<!-- Instapower21 Club -->
+		<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--ip21">
+						<img src="img/instapower21.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>GYM Membership website</li>
+							<li>Woocommerce Store</li>
+							<li>WC Subscription & Memberships</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-ip21 mobile-side">
+						<div class="job__cta">
+							<a
+								href="https://instapower21.club/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+						<a
+							href="https://thegrowthkeys.com/"
+							class="agency-logo roadtrip"
+						></a>
+					</div>
+				</div>
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-ip21">
+					<div class="job__cta">
+						<a
+							href="https://instapower21.club/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<!-- Instapower21 Club -->
+			
+			<!-- Mile Conde -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--mile">
+						<img src="img/mile.svg" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Personal Blog</li>
+							<li>Wordpress Theme Customization</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-mile mobile-side">
+						<div class="job__cta">
+							<a
+								href="https://mileconde.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+						<a
+							href="https://thegrowthkeys.com/"
+							class="agency-logo roadtrip"
+						></a>
+					</div>
+				</div>
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-mile">
+					<div class="job__cta">
+						<a
+							href="https://mileconde.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<!-- Mile Conde -->
+			<!-- XCAPE -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--xcape">
+						<img src="img/xcape.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Student Travel Agency Website</li>
+							<li>Wordpress Theme Customization</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-xcape mobile-side">
+						<div class="job__cta">
+							<a
+								href="https://xcapeturismo.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-xcape"
+				>
+					<div class="job__cta">
+						<a
+							href="https://xcapeturismo.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<!-- XCAPE -->
+			<!-- CLIC -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--clic">
+						<img src="img/clic-negro.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Student Travel Agency Website</li>
+							<li>Wordpress Theme Customization</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-clic mobile-side">
+						<div class="job__cta">
+							<a
+								href="https://clictravel.mx/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-clic"
+				>
+					<div class="job__cta">
+						<a
+							href="https://clictravel.mx/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<!-- CLIC -->
+			
+			<!-- Kabu Gel -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--kabu">
 						<img src="img/kabu.png" alt="" />
 					</div>
 					<div class="job__text-card">
@@ -260,7 +939,7 @@
 							<li>Shopify Configuration</li>
 						</ul>
 					</div>
-					<div class="job__cards-side--b-7 mobile-side">
+					<div class="job__cards-side--b-kabu mobile-side">
 						<div class="job__cta">
 							<a
 								href="https://www.kabugel.com/"
@@ -272,7 +951,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-7">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-kabu">
 					<div class="job__cta">
 						<a
 							href="https://www.kabugel.com/"
@@ -284,23 +963,25 @@
 					</div>
 				</div>
 			</div>
+			<!-- Kabu Gel -->
+			
+			<!-- Moneywise Business Group -->
 			<div class="job__cards">
 				<div class="job__cards-side job__cards-side--a">
-					<div class="job__cards-logo job__cards-logo--10">
-						<img src="img/Como-salir.png" alt="" />
+					<div class="job__cards-logo job__cards-logo--moneywise">
+						<img src="img/moneywise.png" alt="" />
 					</div>
 					<div class="job__text-card">
 						<ul>
-							<li>Community Website</li>
-							<li>Forum</li>
-							<li>Woocommerce Subscripcion and Membership</li>
-							<li>Advanced Custom Fields</li>
+							<li>Business Coaching Website</li>
+							<li>Wordpress Theme ReBuild</li>
+							<li>Recover Hacked Website</li>
 						</ul>
 					</div>
-					<div class="job__cards-side--b-5 mobile-side">
+					<div class="job__cards-side--b-moneywise mobile-side">
 						<div class="job__cta">
 							<a
-								href="https://como-salir.com/"
+								href="http://moneywisebusiness.com/"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="btn btn--white"
@@ -309,10 +990,12 @@
 						</div>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-10">
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-moneywise"
+				>
 					<div class="job__cta">
 						<a
-							href="https://como-salir.com/"
+							href="http://moneywisebusiness.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn--white"
@@ -321,6 +1004,47 @@
 					</div>
 				</div>
 			</div>
+			<!-- Moneywise Business Group -->
+			<!-- Sebasmon -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a">
+					<div class="job__cards-logo job__cards-logo--sebasmom">
+						<img src="img/sebasmom.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Healthy Food Blog</li>
+							<li>Wix Customization</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-sebasmom mobile-side">
+						<div class="job__cta">
+							<a
+								href="https://www.sebasmom.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							>
+						</div>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-sebasmom"
+				>
+					<div class="job__cta">
+						<a
+							href="https://www.sebasmom.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+				</div>
+			</div>
+			<!-- Sebasmom -->
+			<!-- El Valle de los Tercos -->
 			<div class="job__cards">
 				<div class="job__cards-side job__cards-side--a">
 					<div class="job__cards-logo job__cards-logo--5">
@@ -344,6 +1068,7 @@
 								>Take a look!</a
 							>
 						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
 					</div>
 				</div>
 				<div class="job__cards-side job__cards-side--b job__cards-side--b-5">
@@ -356,22 +1081,26 @@
 							>Take a look!</a
 						>
 					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
 				</div>
 			</div>
+			<!-- El Valle de los Tercos -->
+			
+			<!-- Tu Socio De Negocio -->
 			<div class="job__cards">
 				<div class="job__cards-side job__cards-side--a">
-					<div class="job__cards-logo job__cards-logo--6">
+					<div class="job__cards-logo job__cards-logo--tsdn">
 						<img src="img/TSDN.png" alt="" />
 					</div>
 					<div class="job__text-card">
 						<ul>
-							<li>Personal Bussines Site</li>
+							<li>Personal Bussines Website</li>
 							<li>Wordpress Theme Customization</li>
 							<li>Woocommerce</li>
 							<li>Lite 3rd party Booking system</li>
 						</ul>
 					</div>
-					<div class="job__cards-side--b-6 mobile-side">
+					<div class="job__cards-side--b-tsdn mobile-side">
 						<div class="job__cta">
 							<a
 								href="http://tusociodenegocio.com"
@@ -381,9 +1110,10 @@
 								>Take a look!</a
 							>
 						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-6">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-tsdn">
 					<div class="job__cta">
 						<a
 							href="http://tusociodenegocio.com"
@@ -393,11 +1123,14 @@
 							>Take a look!</a
 						>
 					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
 				</div>
 			</div>
+			<!-- Tu Socio De Negocio -->
+			<!-- Kabugel Colombia -->
 			<div class="job__cards">
 				<div class="job__cards-side job__cards-side--a">
-					<div class="job__cards-logo job__cards-logo--7">
+					<div class="job__cards-logo job__cards-logo--kabu">
 						<img src="img/kabu.png" alt="" />
 					</div>
 					<div class="job__text-card">
@@ -407,10 +1140,10 @@
 							<li>Woocommerce</li>
 						</ul>
 					</div>
-					<div class="job__cards-side--b-7 mobile-side">
+					<div class="job__cards-side--b-kabu mobile-side">
 						<div class="job__cta">
 							<a
-								href="https://www.kabugel.com/"
+								href="https://www.kabugelcolombia.com/"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="btn btn--white"
@@ -419,10 +1152,10 @@
 						</div>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-7">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-kabu">
 					<div class="job__cta">
 						<a
-							href="https://www.kabugel.com/"
+							href="https://www.kabugelcolombia.com/"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn--white"
@@ -431,14 +1164,316 @@
 					</div>
 				</div>
 			</div>
+			<!-- Kabugel Colombia -->
+		</section>
+		<section class="job">
+			<h2 class="heading-2" style="color: black;text-align:center;">Also work on these projects</h2>
+		</section>
+		
+		<section class="job__webs">
+			<!-- Boitas -->
 			<div class="job__cards">
-				<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-side job__cards-side--a no-hover">
+					<div class="job__cards-logo job__cards-logo--boitas no-hover">
+						<img src="img/boitas-horizontal.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Wholesale/Marketplace</li>
+							<li>Woocommerce Store</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-boitas mobile-side">
+						<div class="job__cta">
+							<!-- <a
+								href="http://boitas.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							> -->
+						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-boitas no-hover"
+				>
+					<div class="job__cta">
+						<!-- <a
+							href="http://boitas.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						> -->
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<!-- Boitas -->
+			<!-- Yo Soy Mi Meta -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a no-hover">
+					<div class="job__cards-logo job__cards-logo--ysmm no-hover">
+						<img src="img/yo-soy-mi-meta.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Landing Page</li>
+							<li>Eventbrite Integration</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-ysmm mobile-side">
+						<div class="job__cta">
+							<!-- <a
+								href="https://yosoymimeta.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							> -->
+						</div>
+						<a
+							href="https://thegrowthkeys.com/"
+							class="agency-logo roadtrip"
+						></a>
+					</div>
+				</div>
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-ysmm no-hover">
+					<div class="job__cta">
+						<!-- <a
+							href="https://yosoymimeta.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						> -->
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			<!-- Yo Soy Mi Meta -->
+			<!-- Sindyaelsouki -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a no-hover">
+					<div class="job__cards-logo job__cards-logo--sindy no-hover">
+						<img src="img/Sindy-negro.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Personal Website</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-sindy mobile-side no-hover">
+						<div class="job__cta">
+							<!-- <a
+								href="https://sindyaelsouki.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							> -->
+						</div>
+						<a
+							href="https://thegrowthkeys.com/"
+							class="agency-logo roadtrip"
+						></a>
+					</div>
+				</div>
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-sindy no-hover">
+					<div class="job__cta">
+						<a
+							href="https://sindyaelsouki.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a
+						href="https://thegrowthkeys.com/"
+						class="agency-logo roadtrip"
+					></a>
+				</div>
+			</div>
+			 <!-- Sindyaelsouki -->
+			<!-- Higadosano -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a no-hover">
+					<div class="job__cards-logo job__cards-logo--higadosano no-hover">
+						<img src="img/higadosano.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Health blog</li>
+							<li>Wordpress Theme Customization</li>
+							<li>Woocommerce Store</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-higadosano mobile-side">
+						<div class="job__cta">
+							<!-- <a
+								href="https://www.higadosano.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							> -->
+						</div>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-higadosano no-hover"
+				>
+					<div class="job__cta">
+						<!-- <a
+							href="https://www.higadosano.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						> -->
+					</div>
+				</div>
+			</div>
+			 <!-- Higadosano -->
+			<!-- Bonnie RZM -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a no-hover">
+					<div class="job__cards-logo job__cards-logo--bonnierzm" >
+						<img src="img/bonnierzm.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Photography Blog</li>
+							<li>Wordpress Theme Customization</li>
+							<li>Woocommerce Store</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-bonnierzm mobile-side ">
+						<div class="job__cta">
+							<!-- <a
+								href="https://bonnierzmstudio.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							> -->
+						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-bonnierzm no-hover"
+				>
+					<div class="job__cta">
+						<a
+							href="https://bonnierzmstudio.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						>
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<!-- Bonnie RZM -->
+			<!-- Flores dermatology -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a no-hover">
+					<div class="job__cards-logo job__cards-logo--flores">
+						<img src="img/flores.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Dermatology Clinic Website</li>
+							<li>Wordpress Theme Customization</li>
+							<li>Invoice Generator</li>
+							<li>Booking System</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-flores mobile-side">
+						<div class="job__cta">
+							<!-- <a
+								href="https://floresdermatology.net/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							> -->
+						</div>
+					</div>
+				</div>
+				<div
+					class="job__cards-side job__cards-side--b job__cards-side--b-flores no-hover"
+				>
+					<div class="job__cta">
+						<!-- <a
+							href="https://floresdermatology.net/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						> -->
+					</div>
+				</div>
+			</div>
+			<!-- Flores dermatology -->
+			<!-- Como Salir -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a no-hover">
+					<div class="job__cards-logo job__cards-logo--10">
+						<img src="img/Como-salir.png" alt="" />
+					</div>
+					<div class="job__text-card">
+						<ul>
+							<li>Community Website</li>
+							<li>Forum</li>
+							<li>WC Subscripcion and Membership</li>
+							<li>Advanced Custom Fields</li>
+						</ul>
+					</div>
+					<div class="job__cards-side--b-5 mobile-side">
+						<div class="job__cta">
+							<!-- <a
+								href="https://como-salir.com/"
+								target="_blank"
+								rel="noopener noreferrer"
+								class="btn btn--white"
+								>Take a look!</a
+							> -->
+						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
+					</div>
+				</div>
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-10 no-hover">
+					<div class="job__cta">
+						<!-- <a
+							href="https://como-salir.com/"
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn--white"
+							>Take a look!</a
+						> -->
+					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
+				</div>
+			</div>
+			<!-- Como Salir -->
+			<!-- Simposio Miami -->
+			<div class="job__cards">
+				<div class="job__cards-side job__cards-side--a no-hover">
 					<div class="job__cards-logo job__cards-logo--8">
 						<img src="img/simposiomiami.png" alt="" />
 					</div>
 					<div class="job__text-card">
 						<ul>
-							<li>Event website</li>
+							<li>Symposium Website</li>
 							<li>Wordpress Theme Customization</li>
 							<li>Contact Form</li>
 							<li>Eventbrite Integration</li>
@@ -446,30 +1481,32 @@
 					</div>
 					<div class="job__cards-side--b-8 mobile-side">
 						<div class="job__cta">
-							<a
+							<!-- <a
 								href="http://simposiomiami.com"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="btn btn--white"
 								>Take a look!</a
-							>
+							> -->
 						</div>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-8">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-8 no-hover">
 					<div class="job__cta">
-						<a
+						<!-- <a
 							href="http://simposiomiami.com"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn--white"
 							>Take a look!</a
-						>
+						> -->
 					</div>
 				</div>
 			</div>
+			<!-- Simposio Miami -->
+			<!-- Picnow -->
 			<div class="job__cards">
-				<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-side job__cards-side--a no-hover">
 					<div class="job__cards-logo job__cards-logo--1">
 						<img src="img/PN_logo_launch_ACO_002_174x44_V001.png" alt="" />
 					</div>
@@ -508,30 +1545,34 @@
 					</div>
 					<div class="job__cards-side--b-1 mobile-side">
 						<div class="job__cta">
-							<a
+							<!-- <a
 								href="https://www.picnow.org/"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="btn btn--white"
 								>Take a look!</a
-							>
+							> -->
 						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-1">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-1 no-hover">
 					<div class="job__cta">
-						<a
+						<!-- <a
 							href="https://www.picnow.org/"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn--white"
 							>Take a look!</a
-						>
+						> -->
 					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
 				</div>
 			</div>
+			<!-- Picnow -->
+			<!-- ARHEA -->
 			<div class="job__cards">
-				<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-side job__cards-side--a no-hover">
 					<div class="job__cards-logo job__cards-logo--2">
 						<img src="img/logo_alrhea_ok.png" alt="" />
 					</div>
@@ -543,30 +1584,34 @@
 					</div>
 					<div class="job__cards-side--b-2 mobile-side">
 						<div class="job__cta">
-							<a
+							<!-- <a
 								href="https://arhea.kinsta.com"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="btn btn--white"
 								>Take a look!</a
-							>
+							> -->
 						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-2">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-2 no-hover">
 					<div class="job__cta">
-						<a
+						<!-- <a
 							href="https://arhea.kinsta.com"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn--white"
 							>Take a look!</a
-						>
+						> -->
 					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
 				</div>
 			</div>
+			<!-- ARHEA -->
+			<!-- Althaus -->
 			<div class="job__cards">
-				<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-side job__cards-side--a no-hover">
 					<div class="job__cards-logo job__cards-logo--3">
 						<img src="img/Althouse_logo2.png" alt="" />
 					</div>
@@ -580,30 +1625,34 @@
 					</div>
 					<div class="job__cards-side--b-3 mobile-side">
 						<div class="job__cta">
-							<a
+							<!-- <a
 								href="https://althaus.kinsta.com"
 								target="_blank"
 								rel="noopener noreferrer"
 								class="btn btn--white"
 								>Take a look!</a
-							>
+							> -->
 						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-3">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-3 no-hover">
 					<div class="job__cta">
-						<a
+						<!-- <a
 							href="https://althaus.kinsta.com"
 							target="_blank"
 							rel="noopener noreferrer"
 							class="btn btn--white"
 							>Take a look!</a
-						>
+						> -->
 					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
 				</div>
 			</div>
+			<!-- Althaus -->
+			<!-- thecocoalifestyle.com -->
 			<div class="job__cards">
-				<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-side job__cards-side--a no-hover">
 					<div class="job__cards-logo job__cards-logo--4">
 						<img src="img/cocoa.png" alt="" />
 					</div>
@@ -615,31 +1664,22 @@
 					</div>
 					<div class="job__cards-side--b-4 mobile-side">
 						<div class="job__cta">
-							<a
-								href="http://thecocoalifestyle.com/"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="btn btn--white"
-								>Take a look!</a
-							>
+							
 						</div>
+						<a href="https://mood-agency.com" class="agency-logo mood"></a>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-4">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-4 no-hover">
 					<div class="job__cta">
-						<a
-							href="http://thecocoalifestyle.com/"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="btn btn--white"
-							>Take a look!</a
-						>
+						
 					</div>
+					<a href="https://mood-agency.com" class="agency-logo mood"></a>
 				</div>
 			</div>
-
+			<!-- The Cocoa Lifestyle -->
+			<!-- GSAForce -->
 			<div class="job__cards">
-				<div class="job__cards-side job__cards-side--a">
+				<div class="job__cards-side job__cards-side--a no-hover">
 					<div class="job__cards-logo job__cards-logo--9">
 						<img src="img/GSA.png" alt="" />
 					</div>
@@ -652,34 +1692,24 @@
 					</div>
 					<div class="job__cards-side--b-9 mobile-side">
 						<div class="job__cta">
-							<a
-								href="http://gsaforce.com/"
-								target="_blank"
-								rel="noopener noreferrer"
-								class="btn btn--white"
-								>Take a look!</a
-							>
+							
 						</div>
 					</div>
 				</div>
-				<div class="job__cards-side job__cards-side--b job__cards-side--b-9">
+				<div class="job__cards-side job__cards-side--b job__cards-side--b-9 no-hover">
 					<div class="job__cta">
-						<a
-							href="http://gsaforce.com/"
-							target="_blank"
-							rel="noopener noreferrer"
-							class="btn btn--white"
-							>Take a look!</a
-						>
+						
 					</div>
 				</div>
 			</div>
+			<!-- GSAForce -->
+
 		</section>
 		<div class="btn--fixed">
 			<a
 				href="JesusArrioja_CV.pdf"
 				download="JesusArrioja_CV.pdf"
-				class="btn  btn--black"
+				class="btn btn--black"
 				><i class="fas fa-file-download"></i> Resume</a
 			>
 		</div>
@@ -690,8 +1720,9 @@
 	<script src="js/bootstrap.min.js"></script>
 
 	<script>
-		$(function() {
+		$(function () {
 			$('[data-toggle="tooltip"]').tooltip();
 		});
 	</script>
 </html>
+
