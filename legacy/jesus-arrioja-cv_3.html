@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Arrioja - TypeScript Backend Engineer & Full Stack Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;0,9..144,700;1,9..144,300&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --color-ink: #1a1a1a;
+            --color-paper: #fafaf8;
+            --color-accent: #d4491a;
+            --color-muted: #6b6b6b;
+            --color-border: #e0e0d8;
+            --spacing-xs: 0.5rem;
+            --spacing-sm: 0.75rem;
+            --spacing-md: 1.25rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 3rem;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Work Sans', sans-serif;
+            background: var(--color-paper);
+            color: var(--color-ink);
+            line-height: 1.6;
+            font-weight: 300;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: var(--spacing-xl) var(--spacing-md);
+        }
+
+        header {
+            margin-bottom: var(--spacing-xl);
+            padding-bottom: var(--spacing-lg);
+            border-bottom: 3px solid var(--color-accent);
+        }
+
+        h1 {
+            font-family: 'Fraunces', serif;
+            font-size: 3.5rem;
+            font-weight: 700;
+            margin-bottom: var(--spacing-xs);
+            line-height: 1.1;
+            letter-spacing: -0.02em;
+        }
+
+        .subtitle {
+            font-size: 1.125rem;
+            color: var(--color-muted);
+            margin-bottom: var(--spacing-md);
+            font-weight: 400;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-md);
+            font-size: 0.95rem;
+        }
+
+        .contact-info a {
+            color: var(--color-ink);
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        .contact-info a:hover {
+            color: var(--color-accent);
+        }
+
+        h2 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.75rem;
+            font-weight: 600;
+            margin-top: var(--spacing-xl);
+            margin-bottom: var(--spacing-md);
+            padding-bottom: var(--spacing-xs);
+            border-bottom: 2px solid var(--color-border);
+        }
+
+        h3 {
+            font-family: 'Fraunces', serif;
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .summary {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            margin-bottom: var(--spacing-lg);
+        }
+
+        .job {
+            margin-bottom: var(--spacing-lg);
+            padding-left: var(--spacing-md);
+            border-left: 3px solid var(--color-border);
+            transition: border-color 0.3s;
+        }
+
+        .job:hover {
+            border-left-color: var(--color-accent);
+        }
+
+        .job-header {
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .company {
+            font-weight: 500;
+            color: var(--color-accent);
+        }
+
+        .period {
+            color: var(--color-muted);
+            font-size: 0.9rem;
+            font-style: italic;
+        }
+
+        .job ul {
+            margin-left: var(--spacing-md);
+            margin-top: var(--spacing-sm);
+        }
+
+        .job li {
+            margin-bottom: var(--spacing-xs);
+            font-size: 0.95rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .skill-category h4 {
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            color: var(--color-accent);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .skill-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--spacing-xs);
+        }
+
+        .tag {
+            background: var(--color-ink);
+            color: var(--color-paper);
+            padding: 0.25rem 0.75rem;
+            border-radius: 2px;
+            font-size: 0.85rem;
+            font-weight: 400;
+        }
+
+        .projects-grid {
+            display: grid;
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .project {
+            padding: var(--spacing-md);
+            border: 1px solid var(--color-border);
+            border-radius: 4px;
+            transition: all 0.3s;
+        }
+
+        .project:hover {
+            border-color: var(--color-accent);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transform: translateY(-2px);
+        }
+
+        .project h4 {
+            font-weight: 600;
+            margin-bottom: var(--spacing-xs);
+            font-size: 1.05rem;
+        }
+
+        .project-tech {
+            color: var(--color-muted);
+            font-size: 0.875rem;
+            margin-top: var(--spacing-xs);
+        }
+
+        .certifications {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
+        }
+
+        .cert {
+            padding: var(--spacing-sm);
+            border-left: 3px solid var(--color-accent);
+            background: rgba(212, 73, 26, 0.03);
+        }
+
+        .cert-name {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+        }
+
+        .cert-org {
+            font-size: 0.875rem;
+            color: var(--color-muted);
+        }
+
+        footer {
+            margin-top: var(--spacing-xl);
+            padding-top: var(--spacing-lg);
+            border-top: 2px solid var(--color-border);
+            text-align: center;
+            color: var(--color-muted);
+            font-size: 0.875rem;
+        }
+
+        @media print {
+            body {
+                background: white;
+                font-size: 8pt;
+                line-height: 1.2;
+            }
+            .container {
+                max-width: 100%;
+                padding: 0.3rem;
+                margin: 0;
+            }
+            h1 {
+                font-size: 1.5rem;
+                margin-bottom: 0.2rem;
+            }
+            h2 {
+                font-size: 0.9rem;
+                margin-top: 0.5rem;
+                margin-bottom: 0.25rem;
+                padding-bottom: 0.1rem;
+                page-break-after: avoid;
+            }
+            h3 {
+                font-size: 0.85rem;
+                margin-bottom: 0.1rem;
+            }
+            h4 {
+                font-size: 0.75rem;
+            }
+            .subtitle {
+                font-size: 0.8rem;
+                margin-bottom: 0.25rem;
+            }
+            .contact-info {
+                font-size: 0.7rem;
+                gap: 0.4rem;
+                margin-bottom: 0.25rem;
+            }
+            .summary {
+                font-size: 0.75rem;
+                margin-bottom: 0.4rem;
+                line-height: 1.25;
+            }
+            .summary p {
+                margin: 0;
+            }
+            header {
+                margin-bottom: 0.4rem;
+                padding-bottom: 0.25rem;
+            }
+            .job {
+                margin-bottom: 0.4rem;
+                padding-left: 0.3rem;
+                page-break-inside: avoid;
+            }
+            .job-header {
+                margin-bottom: 0.15rem;
+            }
+            .job p {
+                font-size: 0.7rem;
+                margin-bottom: 0.1rem;
+                line-height: 1.2;
+            }
+            .job ul {
+                margin-left: 0.6rem;
+                margin-top: 0.1rem;
+                margin-bottom: 0.1rem;
+            }
+            .job li {
+                margin-bottom: 0.05rem;
+                font-size: 0.65rem;
+                line-height: 1.2;
+            }
+            .period {
+                font-size: 0.65rem;
+            }
+            .projects-grid {
+                display: block;
+                gap: 0;
+                margin-top: 0.2rem;
+            }
+            .project {
+                padding: 0.2rem 0.25rem;
+                margin-bottom: 0.2rem;
+                border: 1px solid var(--color-border);
+                page-break-inside: avoid;
+            }
+            .project h4 {
+                font-size: 0.75rem;
+                margin-bottom: 0.05rem;
+            }
+            .project p {
+                font-size: 0.63rem;
+                line-height: 1.2;
+                margin-bottom: 0.05rem;
+            }
+            .project-tech {
+                font-size: 0.6rem !important;
+                margin-top: 0.05rem;
+            }
+            .skills-grid {
+                grid-template-columns: repeat(3, 1fr);
+                gap: 0.25rem;
+                margin-top: 0.25rem;
+            }
+            .skill-category h4 {
+                font-size: 0.65rem;
+                margin-bottom: 0.1rem;
+            }
+            .skill-tags {
+                gap: 0.1rem;
+            }
+            .tag {
+                padding: 0.08rem 0.3rem;
+                font-size: 0.6rem;
+            }
+            .certifications {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 0.2rem;
+                margin-top: 0.25rem;
+            }
+            .cert {
+                padding: 0.15rem;
+            }
+            .cert-name {
+                font-size: 0.7rem;
+                margin-bottom: 0.05rem;
+            }
+            .cert-org {
+                font-size: 0.63rem;
+            }
+            footer {
+                margin-top: 0.4rem;
+                padding-top: 0.25rem;
+                font-size: 0.6rem;
+            }
+            .job:hover,
+            .project:hover {
+                transform: none;
+                box-shadow: none;
+            }
+            section {
+                page-break-inside: avoid;
+            }
+            section:last-of-type {
+                margin-bottom: 0;
+            }
+            /* Additional compression */
+            section > p {
+                font-size: 0.7rem;
+                line-height: 1.2;
+            }
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5rem;
+            }
+            .skills-grid,
+            .certifications {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jesús Noel Arrioja Pérez</h1>
+            <p class="subtitle">TypeScript Backend Engineer | DevOps & Cloud Architecture</p>
+            <div class="contact-info">
+                <span>📍 Montevideo, Uruguay</span>
+                <a href="/cdn-cgi/l/email-protection#ddb7bcafafb4b2b7bcefefeced9dbab0bcb4b1f3beb2b0">✉️ <span class="__cf_email__" data-cfemail="32585340405b5d58530000030272555f535b5e1c515d5f">[email&#160;protected]</span></a>
+                <a href="https://linkedin.com/in/jarrioja" target="_blank">🔗 linkedin.com/in/jarrioja</a>
+                <a href="https://jesusarrioja.com" target="_blank">🌐 jesusarrioja.com</a>
+            </div>
+        </header>
+
+        <section class="summary">
+            <h2>Resumen Profesional</h2>
+            <p>Backend Engineer especializado en TypeScript con 8+ años de experiencia. Experto en arquitecturas modernas con Node.js, Hono, Drizzle ORM y Supabase. He desarrollado sistemas de tiempo real para procesamiento de video con AI, plataformas marketplace y aplicaciones de alta concurrencia, combinando desarrollo backend robusto con infraestructura cloud y DevOps.</p>
+        </section>
+
+        <section>
+            <h2>Experiencia Profesional</h2>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>TypeScript Backend Engineer & Líder de Proyectos</h3>
+                    <p class="company">mood • digital agency</p>
+                    <p class="period">Marzo 2017 - Presente (8 años) | Ciudad de México, México (Remoto)</p>
+                </div>
+                <p>Desarrollo de backends escalables con TypeScript, liderazgo de proyectos de alta complejidad técnica y diseño de arquitecturas serverless. Implementación de sistemas de tiempo real, monorepos con Turborepo, y gestión de infraestructura cloud (Railway, AWS, GCP).</p>
+                
+                <p style="margin-top: 0.75rem;"><strong>Proyectos destacados:</strong></p>
+                <div class="projects-grid">
+                    <div class="project">
+                        <h4>Braindog - Sistema de Transcripción y Análisis de Video en Tiempo Real</h4>
+                        <p>Plataforma para procesamiento de contenido en vivo para producciones televisivas. Recibe videos desde R2 bucket, realiza transcripción en tiempo real, detecta hablantes y genera logs indexados. Incluye análisis con AI para identificar momentos relevantes.</p>
+                        <p class="project-tech">Tech: TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Railway, Cloudflare R2, AI/ML APIs</p>
+                    </div>
+                    <div class="project">
+                        <h4>pfsrealty.com</h4>
+                        <p>Backend headless WordPress con WP GraphQL y ACF para sitio inmobiliario de alto tráfico</p>
+                        <p class="project-tech">Tech: WordPress, WP GraphQL, ACF, React, TypeScript</p>
+                    </div>
+                    <div class="project">
+                        <h4>miastral.com</h4>
+                        <p>Sistema de membresías y suscripciones con procesamiento de pagos recurrentes</p>
+                        <p class="project-tech">Tech: WordPress, WooCommerce, PHP, TypeScript</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>DevOps/SRE Engineer</h3>
+                    <p class="company">Boitas.com (YC W21)</p>
+                    <p class="period">Julio 2021 - Octubre 2022 (1 año 4 meses) | Monterrey, México (Remoto)</p>
+                </div>
+                <p>Migración de workflows a Kubernetes con GitOps, gestión de plataformas serverless (Netlify) y cloud resources (AWS, GCP). Implementación de CI/CD pipelines con GitHub Actions.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>DevOps Engineer</h3>
+                    <p class="company">Capp Technologies</p>
+                    <p class="period">Noviembre 2022 - Febrero 2023 (4 meses) | Colombia (Remoto)</p>
+                </div>
+                <p>CI/CD para despliegue automatizado a Play Store, Cloud Functions para transferencia de datos entre bases de datos, modelado de data con CubeJS y MongoDB.</p>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>TypeScript Backend Engineer - Proyectos Independientes</h3>
+                    <p class="company">Freelance</p>
+                    <p class="period">2019 - Presente</p>
+                </div>
+                
+                <p style="margin-top: 0.5rem;"><strong>Proyectos Principales (2025):</strong></p>
+                <div class="projects-grid">
+                    <div class="project">
+                        <h4>Plataforma de Ride-Sharing - Maracaibo, Venezuela</h4>
+                        <p>Sistema completo de backend para matching de conductores/pasajeros, procesamiento de pagos, sistema de comisiones y agendamiento automatizado de pagos a conductores.</p>
+                        <p class="project-tech">Tech: TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Motia</p>
+                    </div>
+                    <div class="project">
+                        <h4>Blog de Videojuegos con Sincronizador de Steam</h4>
+                        <p>Scraper automatizado que extrae juegos y reseñas de Steam, almacena en PostgreSQL y publica como CPT en WordPress. Integración con API de deals para ofertas y tracking de precios.</p>
+                        <p class="project-tech">Tech: WordPress, Elementor, TypeScript, Motia, PostgreSQL, Steam API</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Habilidades Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Backend & Runtime</h4>
+                    <div class="skill-tags">
+                        <span class="tag">TypeScript</span>
+                        <span class="tag">Node.js</span>
+                        <span class="tag">Hono</span>
+                        <span class="tag">Drizzle ORM</span>
+                        <span class="tag">PHP</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Bases de Datos & Backend Services</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Supabase</span>
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">MongoDB</span>
+                        <span class="tag">MySQL</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Frontend</h4>
+                    <div class="skill-tags">
+                        <span class="tag">React.js</span>
+                        <span class="tag">Astro</span>
+                        <span class="tag">JavaScript</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>DevOps & Cloud</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Docker</span>
+                        <span class="tag">Railway</span>
+                        <span class="tag">AWS</span>
+                        <span class="tag">GCP</span>
+                        <span class="tag">Cloudflare R2</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>Arquitectura & Tooling</h4>
+                    <div class="skill-tags">
+                        <span class="tag">Turborepo</span>
+                        <span class="tag">Monorepos</span>
+                        <span class="tag">CI/CD</span>
+                        <span class="tag">GitHub Actions</span>
+                        <span class="tag">REST APIs</span>
+                        <span class="tag">Web Scraping</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h4>WordPress Ecosystem</h4>
+                    <div class="skill-tags">
+                        <span class="tag">WordPress</span>
+                        <span class="tag">WP GraphQL</span>
+                        <span class="tag">WooCommerce</span>
+                        <span class="tag">ACF</span>
+                        <span class="tag">Elementor</span>
+                        <span class="tag">Custom Post Types</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Certificaciones</h2>
+            <div class="certifications">
+                <div class="cert">
+                    <div class="cert-name">AWS Certified Cloud Practitioner</div>
+                    <div class="cert-org">Amazon Web Services</div>
+                </div>
+                <div class="cert">
+                    <div class="cert-name">NodeJS Complete Guide</div>
+                    <div class="cert-org">Udemy</div>
+                </div>
+                <div class="cert">
+                    <div class="cert-name">Bootcamp DevOps</div>
+                    <div class="cert-org">Código Facilito</div>
+                </div>
+                <div class="cert">
+                    <div class="cert-name">Bootcamp de Liderazgo</div>
+                    <div class="cert-org">Código Facilito</div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Educación</h2>
+            <p style="margin-top: 0.5rem;"><strong>Ingeniería en Informática</strong> - Universidad Rafael Belloso Chacín, Venezuela (2008-2012)</p>
+        </section>
+
+        <section>
+            <h2>Idiomas</h2>
+            <div class="skill-tags">
+                <span class="tag">Español - Nativo</span>
+                <span class="tag">Inglés - Profesional</span>
+            </div>
+        </section>
+
+     

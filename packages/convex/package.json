@@ -1,0 +1,17 @@
+{
+  "name": "@jesusarrioja/convex",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "convex dev",
+    "deploy": "convex deploy",
+    "codegen": "convex dev --once --codegen-only"
+  },
+  "dependencies": {
+    "convex": "^1.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.4"
+  }
+}
