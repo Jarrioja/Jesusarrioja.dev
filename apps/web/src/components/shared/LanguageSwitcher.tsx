@@ -2,11 +2,21 @@ import { Globe } from "lucide-react";
 
 interface LanguageSwitcherProps {
   currentLocale: "en" | "es";
+  cvPage?: boolean;
 }
 
-export function LanguageSwitcher({ currentLocale }: LanguageSwitcherProps) {
+export function LanguageSwitcher({ currentLocale, cvPage = false }: LanguageSwitcherProps) {
   const otherLocale = currentLocale === "en" ? "es" : "en";
-  const otherLocalePath = currentLocale === "en" ? "/" : "/en";
+
+  let otherLocalePath: string;
+  if (cvPage) {
+    // CV page routing
+    otherLocalePath = currentLocale === "en" ? "/cv" : "/en/cv";
+  } else {
+    // Portfolio page routing
+    otherLocalePath = currentLocale === "en" ? "/" : "/en";
+  }
+
   const otherLocaleLabel = currentLocale === "en" ? "Español" : "English";
 
   return (

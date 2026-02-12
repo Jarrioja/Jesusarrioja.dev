@@ -1,6 +1,6 @@
 import { useQuery } from "convex/react";
 import { api } from "../../../../../packages/convex/convex/_generated/api";
-import { MapPin } from "lucide-react";
+import { MapPin, FileText } from "lucide-react";
 import { SkillsMarquee } from "./SkillsMarquee";
 import { SocialLinks } from "./SocialLinks";
 
@@ -60,6 +60,17 @@ export function Hero({ locale }: HeroProps) {
 
             {/* Social Links */}
             <SocialLinks />
+
+            {/* CV Link */}
+            <div>
+              <a
+                href={locale === "en" ? "/en/cv" : "/cv"}
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
+              >
+                <FileText className="w-5 h-5" />
+                <span>{locale === "en" ? "View Resume" : "Ver CV"}</span>
+              </a>
+            </div>
           </div>
         </div>
       </header>

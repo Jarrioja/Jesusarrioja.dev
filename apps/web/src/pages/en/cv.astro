@@ -1,0 +1,11 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+import { CVPage } from "../../components/cv/CVPage";
+
+const title = "CV - Jesús Arrioja";
+const description = "Resume of Jesús Arrioja - TypeScript Backend Engineer with over 8 years of experience.";
+---
+
+<BaseLayout title={title} description={description}>
+  <CVPage locale="en" client:load />
+</BaseLayout>
