@@ -1,0 +1,21 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { PortfolioPage } from '../components/portfolio/PortfolioPage';
+
+const locale = 'es';
+const title = 'Jesús Arrioja | DevOps, SysAdmin, Desarrollador Web';
+const description = 'Desarrollador Web especializado en WordPress, servidores web y servicios de computación en la nube (DigitalOcean, AWS, Google Cloud Platform).';
+
+const translations = {
+  featuredTitle: 'Proyectos Destacados',
+  featuredDescription: 'Selección de proyectos en los que he trabajado',
+  otherTitle: 'Otros Proyectos',
+  otherDescription: 'Proyectos adicionales y colaboraciones',
+  copyright: '© {year} Jesús Arrioja. Todos los derechos reservados.',
+  builtWith: 'Construido con <a href="https://astro.build" target="_blank" rel="noopener noreferrer" class="hover:text-primary">Astro</a>, <a href="https://react.dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">React</a>, y <a href="https://convex.dev" target="_blank" rel="noopener noreferrer" class="hover:text-primary">Convex</a>'
+};
+---
+
+<BaseLayout title={title} description={description} locale={locale}>
+  <PortfolioPage locale={locale} translations={translations} client:only="react" />
+</BaseLayout>
