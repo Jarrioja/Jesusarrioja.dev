@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { BentoPortfolio } from '../../components/portfolio-v2/BentoPortfolio';
+
+const locale = 'es';
+const title = 'Jesús Arrioja | DevOps, SysAdmin, Desarrollador Web';
+const description = 'Desarrollador Web especializado en WordPress, servidores web y servicios de computación en la nube.';
+---
+
+<BaseLayout title={title} description={description} locale={locale}>
+  <BentoPortfolio locale={locale} client:only="react" />
+</BaseLayout>

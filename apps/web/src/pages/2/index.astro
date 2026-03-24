@@ -1,0 +1,12 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { TerminalPortfolio } from '../../components/portfolio-v3/TerminalPortfolio';
+
+const locale = 'es';
+const title = 'jarrioja@dev:~$ — Jesús Arrioja';
+const description = 'DevOps, SysAdmin, Web Developer — Terminal Portfolio';
+---
+
+<BaseLayout title={title} description={description} locale={locale}>
+  <TerminalPortfolio locale={locale} client:only="react" />
+</BaseLayout>
