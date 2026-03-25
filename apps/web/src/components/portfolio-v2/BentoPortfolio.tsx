@@ -1,4 +1,4 @@
-import { ConvexProvider } from "../shared/ConvexProvider";
+import { ThemeProvider } from "../shared/ThemeProvider";
 import { BentoHero } from "./BentoHero";
 import { BentoProjects } from "./BentoProjects";
 import { BentoSkills } from "./BentoSkills";
@@ -13,7 +13,7 @@ interface BentoPortfolioProps {
 
 export function BentoPortfolio({ locale }: BentoPortfolioProps) {
   return (
-    <ConvexProvider>
+    <ThemeProvider>
       <div className="min-h-screen bg-background relative overflow-hidden">
         {/* Subtle grain texture overlay */}
         <div
@@ -62,6 +62,6 @@ export function BentoPortfolio({ locale }: BentoPortfolioProps) {
 
         <BentoFooter locale={locale} />
       </div>
-    </ConvexProvider>
+    </ThemeProvider>
   );
 }

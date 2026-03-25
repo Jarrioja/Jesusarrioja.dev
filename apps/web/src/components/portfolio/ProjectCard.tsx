@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Project {
-  _id: string;
+  slug: string;
   name: string;
   slug: string;
   logoUrl: string;

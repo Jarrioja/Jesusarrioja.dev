@@ -1,0 +1,202 @@
+{
+  "profile": {
+    "fullName": "Jesús Noel Arrioja Pérez",
+    "title": {
+      "en": "TypeScript Backend Engineer | Node.js, Hono, Drizzle, Supabase | DevOps & Cloud Architecture",
+      "es": "TypeScript Backend Engineer | Node.js, Hono, Drizzle, Supabase | DevOps & Cloud Architecture"
+    },
+    "summary": {
+      "en": "Backend Engineer specialized in TypeScript with over 8 years of experience building scalable and high-performance solutions. Expert in modern architectures with Node.js, Hono, Drizzle ORM, and Supabase. I have designed and developed real-time systems for AI video processing, marketplace platforms, and high-concurrency applications. My approach combines robust backend development with cloud infrastructure, CI/CD, and DevOps best practices to create products that scale.",
+      "es": "Backend Engineer especializado en TypeScript con más de 8 años de experiencia construyendo soluciones escalables y de alto rendimiento. Experto en arquitecturas modernas con Node.js, Hono, Drizzle ORM y Supabase. He diseñado y desarrollado sistemas de tiempo real para procesamiento de video con AI, plataformas tipo marketplace, y aplicaciones de alta concurrencia. Mi enfoque combina desarrollo backend robusto con infraestructura cloud, CI/CD y mejores prácticas de DevOps para crear productos que escalan."
+    },
+    "email": "hello@jesusarrioja.dev",
+    "location": "Montevideo, Uruguay",
+    "website": "https://jesusarrioja.com",
+    "linkedIn": "https://linkedin.com/in/jarrioja"
+  },
+  "experiences": [
+    {
+      "title": {
+        "en": "TypeScript Backend Engineer & Project Lead",
+        "es": "TypeScript Backend Engineer & Líder de Proyectos"
+      },
+      "company": "mood • digital agency",
+      "location": "Ciudad de México, México (Remoto)",
+      "startDate": "2017-03-01",
+      "isCurrent": true,
+      "description": {
+        "en": "Development of scalable backends with TypeScript and leadership of high technical complexity projects. Design of serverless architectures, implementation of real-time systems and cloud infrastructure management.",
+        "es": "Desarrollo de backends escalables con TypeScript y liderazgo de proyectos de alta complejidad técnica. Diseño de arquitecturas serverless, implementación de sistemas de tiempo real y gestión de infraestructura cloud."
+      },
+      "responsibilities": [
+        { "en": "Backend development with TypeScript, Hono, Drizzle ORM and Supabase in modern architectures", "es": "Desarrollo backend con TypeScript, Hono, Drizzle ORM y Supabase en arquitecturas modernas" },
+        { "en": "Design and implementation of real-time processing systems with AI", "es": "Diseño e implementación de sistemas de procesamiento en tiempo real con AI" },
+        { "en": "Serverless and microservices architecture with Railway and Cloud Functions", "es": "Arquitectura de soluciones serverless y microservicios con Railway y Cloud Functions" },
+        { "en": "Technical leadership of development team and delivery oversight", "es": "Liderazgo técnico de equipo de desarrollo y supervisión de entregas" },
+        { "en": "Monorepo configuration with Turborepo for large-scale projects", "es": "Configuración de monorepos con Turborepo para proyectos de gran escala" },
+        { "en": "Implementation of CI/CD pipelines with GitHub Actions and deployment automation", "es": "Implementación de CI/CD pipelines con GitHub Actions y automatización de deploys" }
+      ],
+      "projects": [
+        {
+          "name": { "en": "Braindog", "es": "Braindog" },
+          "description": {
+            "en": "Platform for live content processing for television productions. Real-time video transcription system with speaker detection and AI analysis.",
+            "es": "Plataforma para procesamiento de contenido en vivo para producciones televisivas. Sistema de transcripción en tiempo real con detección de hablantes y análisis con AI."
+          },
+          "techStack": "TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Railway, Cloudflare R2, AI/ML APIs"
+        }
+      ],
+      "order": 1
+    },
+    {
+      "title": {
+        "en": "Infrastructure Developer (DevOps/SRE)",
+        "es": "Desarrollador de Infraestructura (DevOps/SRE)"
+      },
+      "company": "Boitas.com (YC W21)",
+      "location": "Monterrey, México (Remoto)",
+      "startDate": "2021-07-01",
+      "endDate": "2022-10-01",
+      "isCurrent": false,
+      "description": { "en": "", "es": "" },
+      "responsibilities": [
+        { "en": "Migration of workflows to Kubernetes with GitOps approach", "es": "Migración de workflows hacia Kubernetes con enfoque GitOps" },
+        { "en": "Management of serverless platforms (Netlify) and cloud resources (AWS, GCP)", "es": "Gestión de plataformas serverless (Netlify) y cloud resources (AWS, GCP)" },
+        { "en": "Implementation of CI/CD pipelines with GitHub Actions and Buddy.works", "es": "Implementación de CI/CD pipelines con GitHub Actions y Buddy.works" },
+        { "en": "Maintenance and update of WordPress infrastructure", "es": "Mantenimiento y actualización de infraestructura WordPress" }
+      ],
+      "order": 2
+    },
+    {
+      "title": {
+        "en": "DevOps Engineer",
+        "es": "DevOps Engineer"
+      },
+      "company": "Capp Technologies",
+      "location": "Colombia (Remoto)",
+      "startDate": "2022-11-01",
+      "endDate": "2023-02-01",
+      "isCurrent": false,
+      "description": { "en": "", "es": "" },
+      "responsibilities": [
+        { "en": "Creation of CI/CD pipelines for automated deployment to Play Store", "es": "Creación de pipelines CI/CD para despliegue automatizado a Play Store" },
+        { "en": "Development of Cloud Functions for data transfer between databases", "es": "Desarrollo de Cloud Functions para transferencia de datos entre bases de datos" },
+        { "en": "Data modeling for visualization with CubeJS and MongoDB", "es": "Modelado de data para visualización con CubeJS y MongoDB" }
+      ],
+      "order": 3
+    },
+    {
+      "title": {
+        "en": "TypeScript Backend Engineer - Independent Projects",
+        "es": "TypeScript Backend Engineer - Proyectos Independientes"
+      },
+      "company": "Freelance",
+      "location": "Remoto",
+      "startDate": "2019-01-01",
+      "isCurrent": true,
+      "description": {
+        "en": "Development of full-stack applications and scalable backends with TypeScript for high-impact projects.",
+        "es": "Desarrollo de aplicaciones full-stack y backends escalables con TypeScript para proyectos de alto impacto."
+      },
+      "responsibilities": [],
+      "projects": [
+        {
+          "name": { "en": "Ride-Sharing Platform", "es": "Plataforma de Ride-Sharing" },
+          "description": {
+            "en": "Uber-like application for urban transportation with complete backend system for driver-passenger matching and payment processing.",
+            "es": "Aplicación tipo Uber para transporte urbano con sistema completo de backend para matching de conductores y pasajeros."
+          },
+          "techStack": "TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Payment Gateway Integration"
+        }
+      ],
+      "order": 4
+    }
+  ],
+  "skills": [
+    {
+      "category": { "en": "Backend & Runtime", "es": "Backend & Runtime" },
+      "skills": ["TypeScript", "Node.js", "Hono", "Drizzle ORM", "PHP"],
+      "order": 1
+    },
+    {
+      "category": { "en": "Databases & Backend Services", "es": "Bases de Datos & Backend Services" },
+      "skills": ["Supabase", "PostgreSQL", "MongoDB", "MySQL"],
+      "order": 2
+    },
+    {
+      "category": { "en": "Frontend", "es": "Frontend" },
+      "skills": ["React.js", "Astro", "JavaScript"],
+      "order": 3
+    },
+    {
+      "category": { "en": "DevOps & Cloud", "es": "DevOps & Cloud" },
+      "skills": ["Docker", "Railway", "AWS", "GCP", "Cloudflare R2"],
+      "order": 4
+    },
+    {
+      "category": { "en": "Architecture & Tooling", "es": "Arquitectura & Tooling" },
+      "skills": ["Turborepo", "Monorepos", "CI/CD", "GitHub Actions", "REST APIs", "Web Scraping"],
+      "order": 5
+    },
+    {
+      "category": { "en": "WordPress Ecosystem", "es": "WordPress Ecosystem" },
+      "skills": ["WordPress", "WP GraphQL", "WooCommerce", "ACF", "Elementor", "Custom Post Types"],
+      "order": 6
+    }
+  ],
+  "certifications": [
+    {
+      "name": { "en": "AWS Certified Cloud Practitioner", "es": "AWS Certified Cloud Practitioner" },
+      "organization": "Amazon Web Services",
+      "date": "2023",
+      "credentialUrl": "https://www.credly.com/badges/aws-certified-cloud-practitioner",
+      "order": 1
+    },
+    {
+      "name": { "en": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)", "es": "NodeJS - The Complete Guide (MVC, REST APIs, GraphQL, Deno)" },
+      "organization": "Udemy",
+      "date": "2022",
+      "order": 2
+    },
+    {
+      "name": { "en": "DevOps Bootcamp", "es": "Bootcamp DevOps" },
+      "organization": "Código Facilito",
+      "date": "2021",
+      "order": 3
+    },
+    {
+      "name": { "en": "Leadership Bootcamp", "es": "Bootcamp de Liderazgo" },
+      "organization": "Código Facilito",
+      "date": "2021",
+      "order": 4
+    },
+    {
+      "name": { "en": "Docker Course", "es": "Curso de Docker" },
+      "organization": "Platzi",
+      "date": "2020",
+      "order": 5
+    }
+  ],
+  "education": [
+    {
+      "degree": { "en": "Computer Science Engineering", "es": "Ingeniería en Informática" },
+      "institution": "Universidad Rafael Belloso Chacín",
+      "location": "Venezuela",
+      "startYear": "2008",
+      "endYear": "2012",
+      "order": 1
+    }
+  ],
+  "languages": [
+    {
+      "language": "Español",
+      "proficiency": { "en": "Native", "es": "Nativo" },
+      "order": 1
+    },
+    {
+      "language": "Inglés",
+      "proficiency": { "en": "Professional", "es": "Profesional" },
+      "order": 2
+    }
+  ]
+}

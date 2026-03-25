@@ -1,8 +1,6 @@
 "use client";
 
-import { useQuery } from "convex/react";
-import { api } from "../../../../../packages/convex/convex/_generated/api";
-import { ConvexProvider } from "../shared/ConvexProvider";
+import { ThemeProvider } from "../shared/ThemeProvider";
 import { CVHeader } from "./CVHeader";
 import { CVExperience } from "./CVExperience";
 import { CVSkills } from "./CVSkills";
@@ -12,23 +10,50 @@ import { CVLanguages } from "./CVLanguages";
 import { LanguageSwitcher } from "../shared/LanguageSwitcher";
 import { ThemeToggle } from "../shared/ThemeToggle";
 import { Printer, ArrowLeft } from "lucide-react";
+import cvJson from "@/data/cv.json";
 
 interface CVPageProps {
   locale: "en" | "es";
 }
 
 function CVContent({ locale }: CVPageProps) {
-  const cvData = useQuery(api.cv.getCompleteCV, { locale });
+  const profile = {
+    ...cvJson.profile,
+    title: cvJson.profile.title[locale],
+    summary: cvJson.profile.summary[locale],
+  };
 
-  if (!cvData || !cvData.profile) {
-    return (
-      <div className="container mx-auto px-4 py-12 max-w-4xl">
-        <p className="text-center text-muted-foreground">
-          {locale === "en" ? "Loading CV..." : "Cargando CV..."}
-        </p>
-      </div>
-    );
-  }
+  const experiences = cvJson.experiences.map((exp) => ({
+    ...exp,
+    title: exp.title[locale],
+    description: exp.description[locale],
+    responsibilities: exp.responsibilities.map((r) => r[locale]),
+    projects: exp.projects?.map((p) => ({
+      ...p,
+      name: p.name[locale],
+      description: p.description[locale],
+    })),
+  }));
+
+  const skills = cvJson.skills.map((s) => ({
+    ...s,
+    category: s.category[locale],
+  }));
+
+  const certifications = cvJson.certifications.map((c) => ({
+    ...c,
+    name: c.name[locale],
+  }));
+
+  const education = cvJson.education.map((e) => ({
+    ...e,
+    degree: e.degree[locale],
+  }));
+
+  const languages = cvJson.languages.map((l) => ({
+    ...l,
+    proficiency: l.proficiency[locale],
+  }));
 
   const handlePrint = () => {
     window.print();
@@ -61,16 +86,16 @@ function CVContent({ locale }: CVPageProps) {
 
       {/* CV Content */}
       <main className="container mx-auto px-4 py-8 max-w-4xl print:py-0">
-        <CVHeader profile={cvData.profile} />
-        <CVExperience experiences={cvData.experiences} locale={locale} />
-        <CVSkills skills={cvData.skills} locale={locale} />
+        <CVHeader profile={profile} />
+        <CVExperience experiences={experiences} locale={locale} />
+        <CVSkills skills={skills} locale={locale} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 print:grid-cols-2 print:gap-6">
-          <CVCertifications certifications={cvData.certifications} locale={locale} />
-          <CVEducation education={cvData.education} locale={locale} />
+          <CVCertifications certifications={certifications} locale={locale} />
+          <CVEducation education={education} locale={locale} />
         </div>
 
-        <CVLanguages languages={cvData.languages} locale={locale} />
+        <CVLanguages languages={languages} locale={locale} />
       </main>
     </>
   );
@@ -78,8 +103,8 @@ function CVContent({ locale }: CVPageProps) {
 
 export function CVPage({ locale }: CVPageProps) {
   return (
-    <ConvexProvider>
+    <ThemeProvider>
       <CVContent locale={locale} />
-    </ConvexProvider>
+    </ThemeProvider>
   );
 }

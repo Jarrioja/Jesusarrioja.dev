@@ -1,32 +1,22 @@
-import { useQuery } from "convex/react";
-import { api } from "../../../../../packages/convex/convex/_generated/api";
 import { motion } from "framer-motion";
+import skillsData from "@/data/skills.json";
 
 interface TerminalSkillsProps {
   locale: "en" | "es";
 }
 
-const barChars = "█▓▒░";
-
 export function TerminalSkills({ locale }: TerminalSkillsProps) {
-  const skills = useQuery(api.profile.getSkills, { locale });
+  if (skillsData.length === 0) return null;
 
-  if (!skills || skills.length === 0) return null;
-
-  // Group skills by category
-  const grouped: Record<string, typeof skills> = {};
-  for (const skill of skills) {
-    const cat = skill.category || "other";
-    if (!grouped[cat]) grouped[cat] = [];
-    grouped[cat].push(skill);
-  }
+  // All portfolio skills have no category, group under "other"
+  const grouped: Record<string, typeof skillsData> = { other: skillsData };
 
   const categoryLabels: Record<string, { en: string; es: string }> = {
     frontend: { en: "Frontend", es: "Frontend" },
     backend: { en: "Backend / CMS", es: "Backend / CMS" },
     cloud: { en: "Cloud / DevOps", es: "Cloud / DevOps" },
     tools: { en: "Tools", es: "Herramientas" },
-    other: { en: "Other", es: "Otros" },
+    other: { en: "Technologies", es: "Tecnologías" },
   };
 
   return (
@@ -73,7 +63,7 @@ export function TerminalSkills({ locale }: TerminalSkillsProps) {
                 <div className="flex flex-wrap gap-x-1 gap-y-1 pl-4">
                   {items.map((skill, i) => (
                     <motion.span
-                      key={skill._id}
+                      key={skill.name}
                       initial={{ opacity: 0 }}
                       whileInView={{ opacity: 1 }}
                       viewport={{ once: true }}
@@ -106,7 +96,7 @@ export function TerminalSkills({ locale }: TerminalSkillsProps) {
           {/* Summary line */}
           <div className="mt-5 text-xs" style={{ color: "#3a3a3a" }}>
             <span style={{ color: "#4a4a4a" }}>// </span>
-            {skills.length} {locale === "en" ? "technologies loaded" : "tecnologías cargadas"}
+            {skillsData.length} {locale === "en" ? "technologies loaded" : "tecnologías cargadas"}
             <span style={{ color: "#28c840" }}> ✓</span>
           </div>
         </div>

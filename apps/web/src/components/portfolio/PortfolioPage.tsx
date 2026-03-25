@@ -1,4 +1,4 @@
-import { ConvexProvider } from "../shared/ConvexProvider";
+import { ThemeProvider } from "../shared/ThemeProvider";
 import { Hero } from "./Hero";
 import { ProjectGrid } from "./ProjectGrid";
 import { LanguageSwitcher } from "../shared/LanguageSwitcher";
@@ -19,7 +19,7 @@ interface PortfolioPageProps {
 
 export function PortfolioPage({ locale, translations }: PortfolioPageProps) {
   return (
-    <ConvexProvider>
+    <ThemeProvider>
       {/* Header with Language Switcher and Theme Toggle */}
       <div className="container mx-auto px-4 py-4 flex justify-end gap-2">
         <ThemeToggle />
@@ -98,6 +98,6 @@ export function PortfolioPage({ locale, translations }: PortfolioPageProps) {
           </div>
         </div>
       </footer>
-    </ConvexProvider>
+    </ThemeProvider>
   );
 }

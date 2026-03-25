@@ -1,8 +1,7 @@
-import { useQuery } from "convex/react";
-import { api } from "../../../../../packages/convex/convex/_generated/api";
 import { motion } from "framer-motion";
 import { MapPin, Mail, ArrowDownRight } from "lucide-react";
 import { SocialLinks } from "../portfolio/SocialLinks";
+import profileData from "@/data/profile.json";
 
 interface BentoHeroProps {
   locale: "en" | "es";
@@ -30,26 +29,6 @@ const itemVariants = {
 };
 
 export function BentoHero({ locale }: BentoHeroProps) {
-  const profile = useQuery(api.profile.getProfile, { locale });
-
-  if (!profile) {
-    return (
-      <div className="grid grid-cols-1 md:grid-cols-6 gap-4 mb-8">
-        {[...Array(4)].map((_, i) => (
-          <div
-            key={i}
-            className={`rounded-3xl bg-secondary/30 animate-pulse ${
-              i === 0 ? "md:col-span-4 h-72" :
-              i === 1 ? "md:col-span-2 h-72" :
-              i === 2 ? "md:col-span-3 h-48" :
-              "md:col-span-3 h-48"
-            }`}
-          />
-        ))}
-      </div>
-    );
-  }
-
   return (
     <motion.div
       variants={containerVariants}
@@ -83,13 +62,13 @@ export function BentoHero({ locale }: BentoHeroProps) {
             className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.05] mb-4"
             style={{ fontFamily: "'Georgia', 'Times New Roman', serif" }}
           >
-            {profile.name}
+            {profileData.name}
           </motion.h1>
           <motion.p
             variants={itemVariants}
             className="text-lg md:text-xl opacity-70 font-light max-w-lg"
           >
-            {profile.title}
+            {profileData.title[locale]}
           </motion.p>
         </div>
 
@@ -97,12 +76,12 @@ export function BentoHero({ locale }: BentoHeroProps) {
           <div className="flex flex-wrap gap-4 text-sm opacity-50">
             <span className="flex items-center gap-1.5">
               <MapPin className="w-3.5 h-3.5" />
-              {profile.location}
+              {profileData.location}
             </span>
-            {profile.email && (
+            {profileData.email && (
               <span className="flex items-center gap-1.5">
                 <Mail className="w-3.5 h-3.5" />
-                {profile.email}
+                {profileData.email}
               </span>
             )}
           </div>
@@ -116,8 +95,8 @@ export function BentoHero({ locale }: BentoHeroProps) {
         className="md:col-span-2 rounded-3xl overflow-hidden relative group min-h-[320px]"
       >
         <img
-          src={profile.profileImageUrl}
-          alt={profile.name}
+          src={profileData.profileImageUrl}
+          alt={profileData.name}
           className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent" />
@@ -138,7 +117,7 @@ export function BentoHero({ locale }: BentoHeroProps) {
           {locale === "en" ? "About" : "Acerca de"}
         </p>
         <p className="text-base md:text-lg leading-relaxed text-foreground/80">
-          {profile.bio}
+          {profileData.bio[locale]}
         </p>
       </motion.div>
 

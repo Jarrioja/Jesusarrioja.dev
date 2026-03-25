@@ -1,6 +1,5 @@
-import { useQuery } from "convex/react";
-import { api } from "../../../../../packages/convex/convex/_generated/api";
 import { Twitter, Linkedin, Instagram, BookOpen } from "lucide-react";
+import socialLinksData from "@/data/socialLinks.json";
 
 const iconMap: Record<string, any> = {
   twitter: Twitter,
@@ -10,17 +9,15 @@ const iconMap: Record<string, any> = {
 };
 
 export function SocialLinks() {
-  const socialLinks = useQuery(api.profile.getSocialLinks);
-
-  if (!socialLinks || socialLinks.length === 0) return null;
+  if (socialLinksData.length === 0) return null;
 
   return (
     <div className="flex gap-3">
-      {socialLinks.map((link) => {
+      {socialLinksData.map((link) => {
         const IconComponent = iconMap[link.platform] || BookOpen;
         return (
           <a
-            key={link._id}
+            key={link.platform}
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"

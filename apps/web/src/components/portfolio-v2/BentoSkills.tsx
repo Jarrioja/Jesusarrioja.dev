@@ -1,7 +1,6 @@
-import { useQuery } from "convex/react";
-import { api } from "../../../../../packages/convex/convex/_generated/api";
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import skillsData from "@/data/skills.json";
 
 interface BentoSkillsProps {
   locale: "en" | "es";
@@ -25,9 +24,7 @@ const pillVariants = {
 };
 
 export function BentoSkills({ locale }: BentoSkillsProps) {
-  const skills = useQuery(api.profile.getSkills, { locale });
-
-  if (!skills || skills.length === 0) return null;
+  if (skillsData.length === 0) return null;
 
   return (
     <motion.div
@@ -41,7 +38,7 @@ export function BentoSkills({ locale }: BentoSkillsProps) {
           {locale === "en" ? "Tech Stack" : "Tecnologías"}
         </p>
         <p className="text-xs text-muted-foreground/60">
-          {skills.length} {locale === "en" ? "technologies" : "tecnologías"}
+          {skillsData.length} {locale === "en" ? "technologies" : "tecnologías"}
         </p>
       </div>
 
@@ -51,9 +48,9 @@ export function BentoSkills({ locale }: BentoSkillsProps) {
         animate="visible"
         className="flex flex-wrap gap-2.5"
       >
-        {skills.map((skill, i) => (
+        {skillsData.map((skill, i) => (
           <motion.span
-            key={skill._id}
+            key={skill.name}
             variants={pillVariants}
             whileHover={{ scale: 1.05, y: -2 }}
             className={cn(
@@ -64,7 +61,6 @@ export function BentoSkills({ locale }: BentoSkillsProps) {
               i % 4 === 2 && "bg-amber-500/5 border-amber-500/15 hover:bg-amber-500/10 text-amber-700 dark:text-amber-400",
               i % 4 === 3 && "bg-sky-500/5 border-sky-500/15 hover:bg-sky-500/10 text-sky-700 dark:text-sky-400",
             )}
-            title={skill.tooltip || skill.name}
           >
             {skill.name}
           </motion.span>

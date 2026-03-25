@@ -1,0 +1,18 @@
+[
+  { "name": "HTML 5", "icon": "html5", "order": 1 },
+  { "name": "CSS", "icon": "css3", "order": 2 },
+  { "name": "SASS", "icon": "sass", "order": 3 },
+  { "name": "Javascript", "icon": "javascript", "order": 4 },
+  { "name": "WordPress", "icon": "wordpress", "order": 5 },
+  { "name": "Solidity", "icon": "ethereum", "order": 6 },
+  { "name": "Mailchimp", "icon": "mailchimp", "order": 7 },
+  { "name": "Windows Servers", "icon": "windows", "order": 8 },
+  { "name": "Amazon Web Services", "icon": "aws", "order": 9 },
+  { "name": "CPanel", "icon": "cpanel", "order": 10 },
+  { "name": "Digital Ocean", "icon": "digital-ocean", "order": 11 },
+  { "name": "Docker", "icon": "docker", "order": 12 },
+  { "name": "G Suite", "icon": "google", "order": 13 },
+  { "name": "Azure Active Directory", "icon": "microsoft", "order": 14 },
+  { "name": "Slack", "icon": "slack", "order": 15 },
+  { "name": "Linux Servers", "icon": "linux", "order": 16 }
+]
