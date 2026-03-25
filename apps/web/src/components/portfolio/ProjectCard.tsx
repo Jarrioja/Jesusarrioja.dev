@@ -3,7 +3,7 @@ import { ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Project {
-  _id: string;
+  slug: string;
   name: string;
   slug: string;
   logoUrl: string;
@@ -59,6 +59,7 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
               src={project.logoUrl}
               alt={project.name}
               className="max-h-16 max-w-[200px] object-contain filter brightness-0 invert"
+              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
             />
           </div>
 

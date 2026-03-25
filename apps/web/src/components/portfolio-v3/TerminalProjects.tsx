@@ -1,16 +1,23 @@
-import { useQuery } from "convex/react";
-import { api } from "../../../../../packages/convex/convex/_generated/api";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import projectsData from "@/data/projects.json";
 
 interface TerminalProjectsProps {
   locale: "en" | "es";
 }
 
 export function TerminalProjects({ locale }: TerminalProjectsProps) {
-  const featured = useQuery(api.projects.getProjects, { locale, featured: true });
-  const other = useQuery(api.projects.getProjects, { locale, featured: false });
-  const [expandedId, setExpandedId] = useState<string | null>(null);
+  const featured = projectsData
+    .filter((p) => p.isFeatured)
+    .sort((a, b) => a.order - b.order)
+    .map((p) => ({ ...p, name: p.name[locale], features: p.features.map((f) => f[locale]) }));
+
+  const other = projectsData
+    .filter((p) => !p.isFeatured)
+    .sort((a, b) => a.order - b.order)
+    .map((p) => ({ ...p, name: p.name[locale], features: p.features.map((f) => f[locale]) }));
+
+  const [expandedSlug, setExpandedSlug] = useState<string | null>(null);
 
   return (
     <section className="mb-16">
@@ -28,37 +35,31 @@ export function TerminalProjects({ locale }: TerminalProjectsProps) {
           </span>
         </div>
 
-        {!featured ? (
-          <div className="pl-4">
-            <LoadingDots />
+        <div className="mt-3">
+          <div className="text-xs mb-3" style={{ color: "#4a4a4a" }}>
+            {locale === "en" ? "Found" : "Encontrados"} {featured.length}{" "}
+            {locale === "en" ? "results" : "resultados"}:
           </div>
-        ) : (
-          <div className="mt-3">
-            <div className="text-xs mb-3" style={{ color: "#4a4a4a" }}>
-              {locale === "en" ? "Found" : "Encontrados"} {featured.length}{" "}
-              {locale === "en" ? "results" : "resultados"}:
-            </div>
 
-            <div className="space-y-1">
-              {featured.map((project, i) => (
-                <ProjectLine
-                  key={project._id}
-                  project={project}
-                  index={i}
-                  locale={locale}
-                  isExpanded={expandedId === project._id}
-                  onToggle={() =>
-                    setExpandedId(expandedId === project._id ? null : project._id)
-                  }
-                />
-              ))}
-            </div>
+          <div className="space-y-1">
+            {featured.map((project, i) => (
+              <ProjectLine
+                key={project.slug}
+                project={project}
+                index={i}
+                locale={locale}
+                isExpanded={expandedSlug === project.slug}
+                onToggle={() =>
+                  setExpandedSlug(expandedSlug === project.slug ? null : project.slug)
+                }
+              />
+            ))}
           </div>
-        )}
+        </div>
       </motion.div>
 
       {/* Other projects */}
-      {other && other.length > 0 && (
+      {other.length > 0 && (
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
@@ -72,11 +73,10 @@ export function TerminalProjects({ locale }: TerminalProjectsProps) {
           </div>
 
           <div className="mt-3">
-            {/* Compact grid for non-featured */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-0.5">
               {other.map((project, i) => (
                 <motion.div
-                  key={project._id}
+                  key={project.slug}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
@@ -126,7 +126,7 @@ export function TerminalProjects({ locale }: TerminalProjectsProps) {
 
 interface ProjectLineProps {
   project: {
-    _id: string;
+    slug: string;
     name: string;
     features: string[];
     url?: string;
@@ -256,14 +256,6 @@ function ProjectLine({ project, index, locale, isExpanded, onToggle }: ProjectLi
         </motion.div>
       )}
     </motion.div>
-  );
-}
-
-function LoadingDots() {
-  return (
-    <span className="text-xs" style={{ color: "#4a4a4a" }}>
-      <span className="terminal-loading">Loading</span>
-    </span>
   );
 }
 

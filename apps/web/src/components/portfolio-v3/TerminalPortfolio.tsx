@@ -1,4 +1,4 @@
-import { ConvexProvider } from "../shared/ConvexProvider";
+import { ThemeProvider } from "../shared/ThemeProvider";
 import { TerminalBoot } from "./TerminalBoot";
 import { TerminalHero } from "./TerminalHero";
 import { TerminalSkills } from "./TerminalSkills";
@@ -27,7 +27,7 @@ export function TerminalPortfolio({ locale }: TerminalPortfolioProps) {
   }, []);
 
   return (
-    <ConvexProvider>
+    <ThemeProvider>
       {/* Force dark background regardless of theme */}
       <div
         className="min-h-screen relative overflow-hidden"
@@ -130,6 +130,6 @@ export function TerminalPortfolio({ locale }: TerminalPortfolioProps) {
           )}
         </AnimatePresence>
       </div>
-    </ConvexProvider>
+    </ThemeProvider>
   );
 }

@@ -1,7 +1,7 @@
-import { useQuery } from "convex/react";
-import { api } from "../../../../../packages/convex/convex/_generated/api";
 import { motion } from "framer-motion";
 import { useTypewriter } from "./useTypewriter";
+import profileData from "@/data/profile.json";
+import socialLinksData from "@/data/socialLinks.json";
 
 interface TerminalHeroProps {
   locale: "en" | "es";
@@ -17,26 +17,15 @@ const lineVariants = {
 };
 
 export function TerminalHero({ locale }: TerminalHeroProps) {
-  const profile = useQuery(api.profile.getProfile, { locale });
-  const socialLinks = useQuery(api.profile.getSocialLinks);
+  const title = profileData.title[locale];
+  const bio = profileData.bio[locale];
 
   const { displayed: catOutput, isDone: catDone } = useTypewriter({
     text: "cat ./about.md",
     speed: 40,
     delay: 200,
-    enabled: !!profile,
+    enabled: true,
   });
-
-  if (!profile) {
-    return (
-      <div className="mb-12">
-        <div className="flex items-center gap-2 mb-4">
-          <Prompt />
-          <span className="terminal-cursor inline-block w-2 h-4" style={{ background: "#28c840" }} />
-        </div>
-      </div>
-    );
-  }
 
   const platformMap: Record<string, string> = {
     twitter: "twitter.com",
@@ -66,11 +55,11 @@ export function TerminalHero({ locale }: TerminalHeroProps) {
           <div style={{ color: "#28c840" }} className="text-xs mb-4 whitespace-pre">
 {`  ┌─────────────────────────────────────────────────┐
   │                                                 │
-  │   ${profile.name.padEnd(45)}│
-  │   ${profile.title.padEnd(45)}│
+  │   ${profileData.name.padEnd(45)}│
+  │   ${title.padEnd(45)}│
   │                                                 │
-  │   📍 ${(profile.location || "").padEnd(43)}│
-  │   📧 ${(profile.email || "").padEnd(43)}│
+  │   📍 ${(profileData.location || "").padEnd(43)}│
+  │   📧 ${(profileData.email || "").padEnd(43)}│
   │                                                 │
   └─────────────────────────────────────────────────┘`}
           </div>
@@ -105,14 +94,14 @@ export function TerminalHero({ locale }: TerminalHeroProps) {
               className="text-sm leading-relaxed max-w-2xl"
               style={{ color: "#8a8a8a" }}
             >
-              {profile.bio}
+              {bio}
             </p>
           </motion.div>
         )}
       </motion.div>
 
       {/* Command: ls -la ./links/ */}
-      {socialLinks && socialLinks.length > 0 && (
+      {socialLinksData.length > 0 && (
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -129,11 +118,11 @@ export function TerminalHero({ locale }: TerminalHeroProps) {
           >
             {/* Table header */}
             <div className="text-xs mb-1" style={{ color: "#4a4a4a" }}>
-              total {socialLinks.length}
+              total {socialLinksData.length}
             </div>
-            {socialLinks.map((link, i) => (
+            {socialLinksData.map((link, i) => (
               <motion.a
-                key={link._id}
+                key={link.platform}
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"

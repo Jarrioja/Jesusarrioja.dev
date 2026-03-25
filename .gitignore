@@ -1,4 +1,5 @@
 node_modules/
+.playwright-mcp/*
 .node_modules/
 built/*
 tests/cases/rwc/*

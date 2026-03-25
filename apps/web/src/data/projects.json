@@ -1,0 +1,579 @@
+[
+  {
+    "name": { "en": "Mia Astral", "es": "Mia Astral" },
+    "slug": "miastral",
+    "logoUrl": "/images/miastral.svg",
+    "url": "http://miastral.com/",
+    "features": [
+      { "en": "Astrology Website", "es": "Sitio Web de Astrología" },
+      { "en": "Woocommerce Store", "es": "Tienda Woocommerce" },
+      { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#ffd7d5", "to": "#ba797d" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 1,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Bevione", "es": "Bevione" },
+    "slug": "bevione",
+    "logoUrl": "/images/bevione.png",
+    "features": [
+      { "en": "Community Website", "es": "Sitio Web de Comunidad" },
+      { "en": "Learning Management System", "es": "Sistema de Gestión de Aprendizaje" },
+      { "en": "Woocommerce Subscription and Membership", "es": "Suscripciones y Membresías Woocommerce" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#4facfe", "to": "#00f2fe" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 2,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Recetas Lily", "es": "Recetas Lily" },
+    "slug": "recetaslily",
+    "logoUrl": "/images/recetaslily.png",
+    "url": "https://www.recetaslily.com/",
+    "features": [
+      { "en": "Healthy food blog", "es": "Blog de comida saludable" },
+      { "en": "Migrate Wix to Wordpress", "es": "Migración de Wix a Wordpress" },
+      { "en": "Recipe Filter", "es": "Filtro de Recetas" },
+      { "en": "Woocommerce Store", "es": "Tienda Woocommerce" }
+    ],
+    "gradient": { "from": "#43e97b", "to": "#38f9d7" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 3,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "The Growth Keys", "es": "The Growth Keys" },
+    "slug": "tgk",
+    "logoUrl": "/images/tgk.svg",
+    "url": "https://thegrowthkeys.com/",
+    "features": [
+      { "en": "Brand Consulting website", "es": "Sitio de Consultoría de Marca" },
+      { "en": "Learning management system", "es": "Sistema de Gestión de Aprendizaje" },
+      { "en": "Booking system", "es": "Sistema de Reservas" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#3f4e51", "to": "#000000" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 4,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "ConBoca Blanco", "es": "ConBoca Blanco" },
+    "slug": "conboca-blanco",
+    "logoUrl": "/images/conboca-blanco.svg",
+    "url": "https://conbocacatering.com/",
+    "features": [
+      { "en": "Gastronomic Studio website", "es": "Sitio Web de Estudio Gastronómico" },
+      { "en": "Woocommerce Store", "es": "Tienda Woocommerce" },
+      { "en": "Built with Elementor", "es": "Construido con Elementor" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#00644f", "to": "#002138" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 5,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Easy Technology NY", "es": "Easy Technology NY" },
+    "slug": "easytechnologyny",
+    "logoUrl": "/images/easytechnologyny.png",
+    "features": [
+      { "en": "Community One Page", "es": "Página de Comunidad" },
+      { "en": "Built with Divi", "es": "Construido con Divi" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#667eea", "to": "#764ba2" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 6,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Parenting With Grace", "es": "Parenting With Grace" },
+    "slug": "parentingwithgrace",
+    "logoUrl": "/images/parentingwithgrace.svg",
+    "features": [
+      { "en": "Community One Page", "es": "Página de Comunidad" },
+      { "en": "Built with Divi", "es": "Construido con Divi" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#f093fb", "to": "#f5576c" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 7,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Foodit", "es": "Foodit" },
+    "slug": "foodit",
+    "logoUrl": "/images/foodit.svg",
+    "features": [
+      { "en": "SaaS Landing Page", "es": "Página de SaaS" },
+      { "en": "Built with Elementor", "es": "Construido con Elementor" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#43d6f1", "to": "#7c7eff" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 8,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Cykadas Rewards", "es": "Cykadas Rewards" },
+    "slug": "cykadas-rewards",
+    "logoUrl": "/images/cykadas_rewards.svg",
+    "features": [
+      { "en": "Rewards website", "es": "Sitio Web de Recompensas" },
+      { "en": "Gamification on WordPress", "es": "Gamificación en WordPress" },
+      { "en": "Built with Elementor", "es": "Construido con Elementor" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#a8edea", "to": "#fed6e3" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 9,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Una Pieza Maestra Red", "es": "Una Pieza Maestra Red" },
+    "slug": "una-pieza-maestra-red",
+    "logoUrl": "/images/una-pieza-maestra-red.svg",
+    "url": "https://unapiezamaestra.com/",
+    "features": [
+      { "en": "Community website", "es": "Sitio Web de Comunidad" },
+      { "en": "Learning management system", "es": "Sistema de Gestión de Aprendizaje" },
+      { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#d6e3f3", "to": "#b8abe1" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 10,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Instapower21", "es": "Instapower21" },
+    "slug": "instapower21",
+    "logoUrl": "/images/instapower21.png",
+    "url": "https://instapower21.club/",
+    "features": [
+      { "en": "GYM Membership website", "es": "Sitio Web de Membresía de GYM" },
+      { "en": "Woocommerce Store", "es": "Tienda Woocommerce" },
+      { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#fa8bff", "to": "#2bd2ff" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 11,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Mile", "es": "Mile" },
+    "slug": "mile",
+    "logoUrl": "/images/mile.svg",
+    "url": "https://mileconde.com/",
+    "features": [
+      { "en": "Personal Blog", "es": "Blog Personal" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#3e3bab", "to": "#5a52d5" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 12,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Xcape", "es": "Xcape" },
+    "slug": "xcape",
+    "logoUrl": "/images/xcape.png",
+    "features": [
+      { "en": "Student Travel Agency Website", "es": "Sitio Web de Agencia de Viajes Estudiantil" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#ff4400", "to": "#ff6633" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 13,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Clic Negro", "es": "Clic Negro" },
+    "slug": "clic-negro",
+    "logoUrl": "/images/clic-negro.png",
+    "features": [
+      { "en": "Student Travel Agency Website", "es": "Sitio Web de Agencia de Viajes Estudiantil" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#ffff39", "to": "#ffff66" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 14,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Kabu", "es": "Kabu" },
+    "slug": "kabu",
+    "logoUrl": "/images/kabu.png",
+    "features": [
+      { "en": "Fitness Web Store", "es": "Tienda Web de Fitness" },
+      { "en": "Migrate Wordpress to Shopify", "es": "Migración de Wordpress a Shopify" },
+      { "en": "Shopify Configuration", "es": "Configuración de Shopify" }
+    ],
+    "gradient": { "from": "#ffffff", "to": "#54d0e8" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 15,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "MoneyWise", "es": "MoneyWise" },
+    "slug": "moneywise",
+    "logoUrl": "/images/moneywise.png",
+    "features": [
+      { "en": "Business Coaching Website", "es": "Sitio Web de Coaching Empresarial" },
+      { "en": "Wordpress Theme ReBuild", "es": "Reconstrucción de Tema WordPress" },
+      { "en": "Recover Hacked Website", "es": "Recuperación de Sitio Hackeado" }
+    ],
+    "gradient": { "from": "#ffffff", "to": "#009688" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 16,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "SebasMom", "es": "SebasMom" },
+    "slug": "sebasmom",
+    "logoUrl": "/images/sebasmom.png",
+    "url": "https://www.sebasmom.com/",
+    "features": [
+      { "en": "Healthy Food Blog", "es": "Blog de Comida Saludable" },
+      { "en": "Wix Customization", "es": "Personalización de Wix" }
+    ],
+    "gradient": { "from": "#6fc4bf", "to": "#0d6d74" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 17,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "EVDLT", "es": "EVDLT" },
+    "slug": "evdlt",
+    "logoUrl": "/images/EVDLT.png",
+    "features": [
+      { "en": "Podcast Website", "es": "Sitio Web de Podcast" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Libsyn configuration", "es": "Configuración de Libsyn" },
+      { "en": "Advanced Custom Fields", "es": "Campos Personalizados Avanzados" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#a29bfe", "to": "#6c5ce7" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 18,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "TSDN", "es": "TSDN" },
+    "slug": "tsdn",
+    "logoUrl": "/images/TSDN.png",
+    "features": [
+      { "en": "Personal Bussines Website", "es": "Sitio Web de Negocio Personal" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Woocommerce", "es": "Woocommerce" },
+      { "en": "Lite 3rd party Booking system", "es": "Sistema de Reservas Lite de Terceros" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#00aa4e", "to": "#0067c9" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 19,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Kabu Colombia", "es": "Kabu Colombia" },
+    "slug": "kabu-colombia",
+    "logoUrl": "/images/kabu.png",
+    "features": [
+      { "en": "Fitness Web Store", "es": "Tienda Web de Fitness" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Woocommerce", "es": "Woocommerce" }
+    ],
+    "gradient": { "from": "#ff7f50", "to": "#ff6348" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 20,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Boitas Horizontal", "es": "Boitas Horizontal" },
+    "slug": "boitas-horizontal",
+    "logoUrl": "/images/boitas-horizontal.png",
+    "features": [
+      { "en": "Wholesale/Marketplace", "es": "Mayorista/Marketplace" },
+      { "en": "Woocommerce Store", "es": "Tienda Woocommerce" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#55efc4", "to": "#00b894" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 21,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Yo Soy Mi Meta", "es": "Yo Soy Mi Meta" },
+    "slug": "yo-soy-mi-meta",
+    "logoUrl": "/images/yo-soy-mi-meta.png",
+    "features": [
+      { "en": "Landing Page", "es": "Página de Aterrizaje" },
+      { "en": "Eventbrite Integration", "es": "Integración con Eventbrite" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#ffffff", "to": "#a5c7d2" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 22,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Sindy Negro", "es": "Sindy Negro" },
+    "slug": "sindy-negro",
+    "logoUrl": "/images/Sindy-negro.png",
+    "features": [
+      { "en": "Personal Website", "es": "Sitio Web Personal" }
+    ],
+    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
+    "gradient": { "from": "#ffffff", "to": "#e8dbdc" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 23,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Higado Sano", "es": "Higado Sano" },
+    "slug": "higadosano",
+    "logoUrl": "/images/higadosano.png",
+    "features": [
+      { "en": "Health blog", "es": "Blog de Salud" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Woocommerce Store", "es": "Tienda Woocommerce" }
+    ],
+    "gradient": { "from": "#662a7e", "to": "#a74499" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 24,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Bonnier ZM", "es": "Bonnier ZM" },
+    "slug": "bonnierzm",
+    "logoUrl": "/images/bonnierzm.png",
+    "features": [
+      { "en": "Photography Blog", "es": "Blog de Fotografía" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Woocommerce Store", "es": "Tienda Woocommerce" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#e9d8c0", "to": "#9a314d" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 25,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Flores", "es": "Flores" },
+    "slug": "flores",
+    "logoUrl": "/images/flores.png",
+    "features": [
+      { "en": "Dermatology Clinic Website", "es": "Sitio Web de Clínica Dermatológica" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Invoice Generator", "es": "Generador de Facturas" },
+      { "en": "Booking System", "es": "Sistema de Reservas" }
+    ],
+    "gradient": { "from": "#81c1be", "to": "#182636" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 26,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Como Salir", "es": "Como Salir" },
+    "slug": "como-salir",
+    "logoUrl": "/images/Como-salir.png",
+    "features": [
+      { "en": "Community Website", "es": "Sitio Web de Comunidad" },
+      { "en": "Forum", "es": "Foro" },
+      { "en": "WC Subscripcion and Membership", "es": "Suscripción y Membresía WC" },
+      { "en": "Advanced Custom Fields", "es": "Campos Personalizados Avanzados" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#fd79a8", "to": "#e84393" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 27,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Simposio Miami", "es": "Simposio Miami" },
+    "slug": "simposiomiami",
+    "logoUrl": "/images/simposiomiami.png",
+    "features": [
+      { "en": "Symposium Website", "es": "Sitio Web de Simposio" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Contact Form", "es": "Formulario de Contacto" },
+      { "en": "Eventbrite Integration", "es": "Integración con Eventbrite" }
+    ],
+    "gradient": { "from": "#a29bfe", "to": "#6c5ce7" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 28,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "PN Logo Launch", "es": "PN Logo Launch" },
+    "slug": "pn-logo-launch",
+    "logoUrl": "/images/PN_logo_launch_ACO_002_174x44_V001.png",
+    "features": [
+      { "en": "Server & DNS configuration", "es": "Configuración de Servidor y DNS" },
+      { "en": "IPFS", "es": "IPFS" },
+      { "en": "BigChainDB", "es": "BigChainDB" },
+      { "en": "Match Reverse Search image", "es": "Búsqueda Inversa de Imagen" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#fab1a0", "to": "#ff7675" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 29,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Alrhea", "es": "Alrhea" },
+    "slug": "logo-alrhea-ok",
+    "logoUrl": "/images/logo_alrhea_ok.png",
+    "features": [
+      { "en": "Hosting & DNS Configuration", "es": "Configuración de Hosting y DNS" },
+      { "en": "Wordpress Website", "es": "Sitio Web WordPress" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#81ecec", "to": "#00cec9" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 30,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Althouse", "es": "Althouse" },
+    "slug": "althouse-logo2",
+    "logoUrl": "/images/Althouse_logo2.png",
+    "features": [
+      { "en": "Hosting & DNS Configuration", "es": "Configuración de Hosting y DNS" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Google Maps Customization", "es": "Personalización de Google Maps" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#55efc4", "to": "#00b894" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 31,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Cocoa", "es": "Cocoa" },
+    "slug": "cocoa",
+    "logoUrl": "/images/cocoa.png",
+    "features": [
+      { "en": "Recover Hacked Website", "es": "Recuperación de Sitio Hackeado" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#ffecd2", "to": "#fcb69f" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 32,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "GSA", "es": "GSA" },
+    "slug": "gsa",
+    "logoUrl": "/images/GSA.png",
+    "features": [
+      { "en": "Air Cargo Website", "es": "Sitio Web de Carga Aérea" },
+      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
+      { "en": "Google Maps Customization", "es": "Personalización de Google Maps" }
+    ],
+    "gradient": { "from": "#f093fb", "to": "#f5576c" },
+    "isActive": true,
+    "isFeatured": false,
+    "order": 33,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "RunaHR", "es": "RunaHR" },
+    "slug": "runahr",
+    "logoUrl": "/images/runahr.svg",
+    "url": "https://runahr.com/",
+    "features": [
+      { "en": "WordPress Development", "es": "Desarrollo WordPress" },
+      { "en": "Custom Theme Development", "es": "Desarrollo de Tema Personalizado" },
+      { "en": "WPO (Performance Optimization)", "es": "WPO (Optimización de Rendimiento)" },
+      { "en": "Custom Plugins Development", "es": "Desarrollo de Plugins Personalizados" },
+      { "en": "WPML Multilingual", "es": "Multidioma con WPML" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#b794f6", "to": "#6b46c1" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 34,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Cautos", "es": "Cautos" },
+    "slug": "cautos",
+    "logoUrl": "/images/cautos.svg",
+    "url": "https://cautos.app/",
+    "features": [
+      { "en": "Uber-like Taxi App", "es": "App de Taxi tipo Uber" },
+      { "en": "Landing Page Development", "es": "Desarrollo de Landing Page" },
+      { "en": "TypeScript Backend", "es": "Backend en TypeScript" },
+      { "en": "Supabase Integration", "es": "Integración con Supabase" },
+      { "en": "Real-time Matching System", "es": "Sistema de Matching en Tiempo Real" }
+    ],
+    "gradient": { "from": "#4299e1", "to": "#48bb78" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 35,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "TwinRanks", "es": "TwinRanks" },
+    "slug": "twinranks",
+    "logoUrl": "/images/twinranks.svg",
+    "url": "https://twinranks.com/",
+    "features": [
+      { "en": "WordPress Blog", "es": "Blog WordPress" },
+      { "en": "Elementor Page Builder", "es": "Maquetador Elementor" },
+      { "en": "Steam API Integration", "es": "Integración API de Steam" },
+      { "en": "Deals API Integration", "es": "Integración API de Ofertas" },
+      { "en": "Custom Post Types", "es": "Tipos de Publicación Personalizados" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#1b2838", "to": "#66c0f4" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 36,
+    "createdAt": 1700000000000
+  }
+]

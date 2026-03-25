@@ -1,0 +1,6 @@
+[
+  { "platform": "twitter", "url": "https://twitter.com/jarrioja", "icon": "twitter", "order": 1 },
+  { "platform": "medium", "url": "https://medium.com/@jarrioja", "icon": "medium", "order": 2 },
+  { "platform": "linkedin", "url": "https://www.linkedin.com/in/jarrioja/", "icon": "linkedin", "order": 3 },
+  { "platform": "instagram", "url": "https://www.instagram.com/jesusarrioja.dev/", "icon": "instagram", "order": 4 }
+]

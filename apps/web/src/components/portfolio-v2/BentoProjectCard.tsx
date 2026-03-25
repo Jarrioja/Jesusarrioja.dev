@@ -3,7 +3,7 @@ import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Project {
-  _id: string;
+  slug: string;
   name: string;
   slug: string;
   logoUrl: string;
@@ -96,6 +96,7 @@ export function BentoProjectCard({ project, locale, size, index }: BentoProjectC
                 "object-contain filter brightness-0 invert",
                 isCompact ? "max-h-8 max-w-[120px]" : "max-h-12 max-w-[180px]",
               )}
+              onError={(e) => { (e.target as HTMLImageElement).style.display = "none"; }}
             />
             {project.url && (
               <span
