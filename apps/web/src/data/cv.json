@@ -44,6 +44,30 @@
             "es": "Plataforma para procesamiento de contenido en vivo para producciones televisivas. Sistema de transcripción en tiempo real con detección de hablantes y análisis con AI."
           },
           "techStack": "TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Railway, Cloudflare, AI/ML APIs"
+        },
+        {
+          "name": { "en": "PFS Realty", "es": "PFS Realty" },
+          "description": {
+            "en": "Real estate platform with 1.5M+ property listings, WordPress blog, sitemap generation, and reverse proxy architecture.",
+            "es": "Plataforma inmobiliaria con más de 1.5M de propiedades, blog en WordPress, generación de sitemaps y arquitectura con reverse proxy."
+          },
+          "techStack": "Express, Nginx, WP GraphQL, Typesense, WordPress"
+        },
+        {
+          "name": { "en": "RunaHR Blog", "es": "RunaHR Blog" },
+          "description": {
+            "en": "Content blog for RunaHR HR platform. Custom theme rebuild, WPO optimization, and Redis object cache implementation.",
+            "es": "Blog de contenido para la plataforma de RRHH RunaHR. Reconstrucción de tema personalizado, optimización WPO e implementación de caché de objetos con Redis."
+          },
+          "techStack": "WordPress, Redis, Custom Theme, WPO"
+        },
+        {
+          "name": { "en": "Mia Astral", "es": "Mia Astral" },
+          "description": {
+            "en": "Astrology membership website with subscription management, payment processing, and custom Elementor theme.",
+            "es": "Sitio web astrológico de membresías con gestión de suscripciones, pagos y tema personalizado con Elementor."
+          },
+          "techStack": "WordPress, WooCommerce, Stripe, PayPal, Elementor"
         }
       ],
       "order": 1
@@ -65,7 +89,7 @@
         { "en": "Implementation of CI/CD pipelines with GitHub Actions and Buddy.works", "es": "Implementación de CI/CD pipelines con GitHub Actions y Buddy.works" },
         { "en": "Maintenance and update of WordPress infrastructure", "es": "Mantenimiento y actualización de infraestructura WordPress" }
       ],
-      "order": 2
+      "order": 3
     },
     {
       "title": {
@@ -83,7 +107,7 @@
         { "en": "Development of Cloud Functions for data transfer between databases", "es": "Desarrollo de Cloud Functions para transferencia de datos entre bases de datos" },
         { "en": "Data modeling for visualization with CubeJS and MongoDB", "es": "Modelado de data para visualización con CubeJS y MongoDB" }
       ],
-      "order": 3
+      "order": 4
     },
     {
       "title": {
@@ -109,7 +133,7 @@
           "techStack": "TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Payment Gateway Integration"
         }
       ],
-      "order": 4
+      "order": 2
     }
   ],
   "skills": [

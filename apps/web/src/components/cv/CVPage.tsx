@@ -85,17 +85,18 @@ function CVContent({ locale }: CVPageProps) {
       </div>
 
       {/* CV Content */}
-      <main className="container mx-auto px-4 py-8 max-w-4xl print:py-0">
+      <main className="container mx-auto px-4 py-8 max-w-4xl print:py-0 print:px-0 print:text-sm">
         <CVHeader profile={profile} />
         <CVExperience experiences={experiences} locale={locale} />
         <CVSkills skills={skills} locale={locale} />
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 print:grid-cols-2 print:gap-6">
           <CVCertifications certifications={certifications} locale={locale} />
-          <CVEducation education={education} locale={locale} />
+          <div>
+            <CVEducation education={education} locale={locale} />
+            <CVLanguages languages={languages} locale={locale} />
+          </div>
         </div>
-
-        <CVLanguages languages={languages} locale={locale} />
       </main>
     </>
   );

@@ -126,7 +126,7 @@
 @media print {
   /* Global print settings */
   @page {
-    margin: 1.5cm 2cm;
+    margin: 0.8cm 1cm;
     size: A4;
   }
 
@@ -138,18 +138,27 @@
     display: none !important;
   }
 
-  /* Reset colors and backgrounds for print */
-  * {
-    print-color-adjust: exact;
-    -webkit-print-color-adjust: exact;
-  }
-
+  /* Force light theme for print regardless of dark mode */
   body,
   html {
     background: white !important;
     color: black !important;
-    font-size: 10pt;
+    font-size: 11pt;
     line-height: 1.4;
+    color-scheme: light !important;
+  }
+
+  /* Strip all dark backgrounds */
+  *, *::before, *::after {
+    background-color: transparent !important;
+    background-image: none !important;
+    color: black !important;
+    border-color: #ccc !important;
+  }
+
+  /* Keep white on the root */
+  html, body, main {
+    background-color: white !important;
   }
 
   /* Remove shadows, transitions, and animations */
