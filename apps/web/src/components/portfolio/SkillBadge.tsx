@@ -1,8 +1,18 @@
-import { Code2, Database, Cloud, Server, Package, Wrench } from "lucide-react";
+import type { IconType } from "react-icons";
+import {
+  SiHtml5, SiCss, SiSass, SiJavascript,
+  SiWordpress, SiEthereum, SiMailchimp,
+  SiCpanel, SiDigitalocean, SiDocker,
+  SiGoogle, SiSlack, SiLinux,
+  SiExpress, SiKubernetes, SiArgo,
+  SiRedis, SiNginx, SiTerraform, SiHelm, SiVercel,
+  SiBun, SiTrpc, SiStripe, SiOpenai,
+  SiVitest, SiJest, SiGit, SiGithub, SiClaude,
+} from "react-icons/si";
+import { Cloud, Server } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Skill {
-  _id: string;
   name: string;
   icon: string;
   category?: string;
@@ -10,32 +20,48 @@ interface Skill {
   tooltip?: string;
 }
 
-interface SkillBadgeProps {
-  skill: Skill;
-}
-
-// Map icon names to Lucide icons
-const iconMap: Record<string, any> = {
-  html5: Code2,
-  css3: Code2,
-  sass: Code2,
-  javascript: Code2,
-  wordpress: Package,
-  ethereum: Database,
-  mailchimp: Server,
-  windows: Server,
-  aws: Cloud,
-  cpanel: Server,
-  "digital-ocean": Cloud,
-  docker: Package,
-  google: Cloud,
-  microsoft: Cloud,
-  slack: Wrench,
-  linux: Server,
+const brandIcons: Record<string, IconType> = {
+  html5: SiHtml5,
+  css3: SiCss,
+  sass: SiSass,
+  javascript: SiJavascript,
+  wordpress: SiWordpress,
+  ethereum: SiEthereum,
+  mailchimp: SiMailchimp,
+  cpanel: SiCpanel,
+  "digital-ocean": SiDigitalocean,
+  docker: SiDocker,
+  google: SiGoogle,
+  slack: SiSlack,
+  linux: SiLinux,
+  express: SiExpress,
+  kubernetes: SiKubernetes,
+  argocd: SiArgo,
+  redis: SiRedis,
+  nginx: SiNginx,
+  terraform: SiTerraform,
+  helm: SiHelm,
+  vercel: SiVercel,
+  bun: SiBun,
+  trpc: SiTrpc,
+  stripe: SiStripe,
+  openai: SiOpenai,
+  vitest: SiVitest,
+  jest: SiJest,
+  git: SiGit,
+  github: SiGithub,
+  claude: SiClaude,
 };
 
-export function SkillBadge({ skill }: SkillBadgeProps) {
-  const IconComponent = iconMap[skill.icon] || Code2;
+const lucideFallbacks: Record<string, any> = {
+  aws: Cloud,
+  windows: Server,
+  microsoft: Server,
+};
+
+export function SkillBadge({ skill }: { skill: Skill }) {
+  const BrandIcon = brandIcons[skill.icon];
+  const FallbackIcon = lucideFallbacks[skill.icon] || Server;
 
   return (
     <div
@@ -47,7 +73,10 @@ export function SkillBadge({ skill }: SkillBadgeProps) {
       )}
       title={skill.tooltip || skill.name}
     >
-      <IconComponent className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+      {BrandIcon
+        ? <BrandIcon className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+        : <FallbackIcon className="w-4 h-4 text-muted-foreground group-hover:text-primary transition-colors" />
+      }
       <span className="text-sm font-medium">{skill.name}</span>
     </div>
   );

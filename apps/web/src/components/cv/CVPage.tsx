@@ -74,10 +74,10 @@ function CVContent({ locale }: CVPageProps) {
         <div className="flex items-center gap-2">
           <button
             onClick={handlePrint}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center gap-2 px-3 py-2 bg-primary text-primary-foreground rounded-md hover:bg-primary/90 transition-colors"
           >
             <Printer className="w-4 h-4" />
-            <span>{locale === "en" ? "Print CV" : "Imprimir CV"}</span>
+            <span className="hidden sm:inline text-sm">{locale === "en" ? "Print CV" : "Imprimir CV"}</span>
           </button>
           <ThemeToggle />
           <LanguageSwitcher currentLocale={locale} cvPage />

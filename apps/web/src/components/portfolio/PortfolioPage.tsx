@@ -1,9 +1,10 @@
 import { ThemeProvider } from "../shared/ThemeProvider";
 import { Hero } from "./Hero";
 import { ProjectGrid } from "./ProjectGrid";
+import { ProjectCarousel } from "./ProjectCarousel";
 import { LanguageSwitcher } from "../shared/LanguageSwitcher";
 import { ThemeToggle } from "../shared/ThemeToggle";
-import { Github, Sparkles } from "lucide-react";
+import { Github, Sparkles, FileText } from "lucide-react";
 
 interface PortfolioPageProps {
   locale: "en" | "es";
@@ -20,10 +21,19 @@ interface PortfolioPageProps {
 export function PortfolioPage({ locale, translations }: PortfolioPageProps) {
   return (
     <ThemeProvider>
-      {/* Header with Language Switcher and Theme Toggle */}
-      <div className="container mx-auto px-4 py-4 flex justify-end gap-2">
-        <ThemeToggle />
-        <LanguageSwitcher currentLocale={locale} />
+      {/* Header */}
+      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+        <a
+          href={locale === "en" ? "/en/cv" : "/cv"}
+          className="inline-flex items-center gap-2 px-4 py-2 border-2 border-primary text-primary rounded-lg hover:bg-primary hover:text-primary-foreground transition-colors font-medium text-sm"
+        >
+          <FileText className="w-4 h-4" />
+          <span>{locale === "en" ? "View Resume" : "Ver CV"}</span>
+        </a>
+        <div className="flex gap-2">
+          <ThemeToggle />
+          <LanguageSwitcher currentLocale={locale} />
+        </div>
       </div>
 
       {/* Hero Section */}
@@ -41,16 +51,16 @@ export function PortfolioPage({ locale, translations }: PortfolioPageProps) {
           <ProjectGrid locale={locale} featured={true} />
         </section>
 
-        <section>
-          <div className="mb-8">
-            <h2 className="text-3xl font-bold mb-2">{translations.otherTitle}</h2>
-            <p className="text-muted-foreground">
-              {translations.otherDescription}
-            </p>
-          </div>
-          <ProjectGrid locale={locale} featured={false} />
-        </section>
       </main>
+
+      {/* Other Projects — full width */}
+      <section className="py-8">
+        <div className="container mx-auto px-4 max-w-6xl mb-8">
+          <h2 className="text-3xl font-bold mb-2">{translations.otherTitle}</h2>
+          <p className="text-muted-foreground">{translations.otherDescription}</p>
+        </div>
+        <ProjectCarousel locale={locale} />
+      </section>
 
       {/* Footer */}
       <footer className="container mx-auto px-4 py-8 max-w-6xl border-t">

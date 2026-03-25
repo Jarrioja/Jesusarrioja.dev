@@ -12,7 +12,7 @@ export function SocialLinks() {
   if (socialLinksData.length === 0) return null;
 
   return (
-    <div className="flex gap-3">
+    <div className="flex gap-2">
       {socialLinksData.map((link) => {
         const IconComponent = iconMap[link.platform] || BookOpen;
         return (
@@ -21,10 +21,10 @@ export function SocialLinks() {
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center justify-center w-10 h-10 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
+            className="flex items-center justify-center w-8 h-8 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-colors"
             aria-label={link.platform}
           >
-            <IconComponent className="w-5 h-5" />
+            <IconComponent className="w-4 h-4" />
           </a>
         );
       })}

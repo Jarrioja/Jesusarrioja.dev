@@ -1,4 +1,4 @@
-import { MapPin, FileText } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { SkillsMarquee } from "./SkillsMarquee";
 import { SocialLinks } from "./SocialLinks";
 import profileData from "@/data/profile.json";
@@ -11,7 +11,7 @@ interface HeroProps {
 export function Hero({ locale }: HeroProps) {
   return (
     <>
-      <header className="container mx-auto px-4 py-12 max-w-6xl">
+      <header className="container mx-auto px-4 pt-4 pb-12 md:py-12 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Profile Image */}
           <div className="md:col-span-1 flex justify-center md:justify-start">
@@ -25,7 +25,8 @@ export function Hero({ locale }: HeroProps) {
           </div>
 
           {/* Profile Info */}
-          <div className="md:col-span-2 space-y-6">
+          <div className="md:col-span-2 space-y-4">
+            {/* Name + Title */}
             <div>
               <h1 className="text-4xl md:text-5xl font-bold mb-2">
                 {profileData.name}
@@ -39,26 +40,13 @@ export function Hero({ locale }: HeroProps) {
               {profileData.bio[locale]}
             </p>
 
-            {/* Contact Info */}
-            <div className="flex flex-wrap gap-4 text-sm">
-              <div className="flex items-center gap-2 text-muted-foreground">
+            {/* Location + Social Links in same row */}
+            <div className="flex items-center justify-between">
+              <div className="flex items-center gap-2 text-sm text-muted-foreground">
                 <MapPin className="w-4 h-4" />
                 {profileData.location}
               </div>
-            </div>
-
-            {/* Social Links */}
-            <SocialLinks />
-
-            {/* CV Link */}
-            <div>
-              <a
-                href={locale === "en" ? "/en/cv" : "/cv"}
-                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors font-medium"
-              >
-                <FileText className="w-5 h-5" />
-                <span>{locale === "en" ? "View Resume" : "Ver CV"}</span>
-              </a>
+              <SocialLinks />
             </div>
           </div>
         </div>

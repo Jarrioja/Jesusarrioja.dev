@@ -523,7 +523,7 @@
   {
     "name": { "en": "RunaHR", "es": "RunaHR" },
     "slug": "runahr",
-    "logoUrl": "/images/runahr.png",
+    "logoUrl": "/images/runahr.svg",
     "url": "https://runahr.com/",
     "features": [
       { "en": "WordPress Development", "es": "Desarrollo WordPress" },
@@ -542,7 +542,7 @@
   {
     "name": { "en": "Cautos", "es": "Cautos" },
     "slug": "cautos",
-    "logoUrl": "/images/cautos.png",
+    "logoUrl": "/images/cautos.svg",
     "url": "https://cautos.app/",
     "features": [
       { "en": "Uber-like Taxi App", "es": "App de Taxi tipo Uber" },
@@ -560,7 +560,7 @@
   {
     "name": { "en": "TwinRanks", "es": "TwinRanks" },
     "slug": "twinranks",
-    "logoUrl": "/images/twinranks.png",
+    "logoUrl": "/images/twinranks.svg",
     "url": "https://twinranks.com/",
     "features": [
       { "en": "WordPress Blog", "es": "Blog WordPress" },

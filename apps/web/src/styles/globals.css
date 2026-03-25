@@ -81,6 +81,15 @@
   animation: marquee linear infinite;
 }
 
+@keyframes marquee-reverse {
+  0% { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
+
+.animate-marquee-reverse {
+  animation: marquee-reverse linear infinite;
+}
+
 /* Terminal V3 animations */
 @keyframes terminal-blink {
   0%, 50% { opacity: 1; }

@@ -2,12 +2,12 @@
   "profile": {
     "fullName": "Jesús Noel Arrioja Pérez",
     "title": {
-      "en": "TypeScript Backend Engineer | Node.js, Hono, Drizzle, Supabase | DevOps & Cloud Architecture",
-      "es": "TypeScript Backend Engineer | Node.js, Hono, Drizzle, Supabase | DevOps & Cloud Architecture"
+      "en": "TypeScript Backend Engineer | DevOps & Cloud Architecture",
+      "es": "TypeScript Backend Engineer | DevOps & Cloud Architecture"
     },
     "summary": {
-      "en": "Backend Engineer specialized in TypeScript with over 8 years of experience building scalable and high-performance solutions. Expert in modern architectures with Node.js, Hono, Drizzle ORM, and Supabase. I have designed and developed real-time systems for AI video processing, marketplace platforms, and high-concurrency applications. My approach combines robust backend development with cloud infrastructure, CI/CD, and DevOps best practices to create products that scale.",
-      "es": "Backend Engineer especializado en TypeScript con más de 8 años de experiencia construyendo soluciones escalables y de alto rendimiento. Experto en arquitecturas modernas con Node.js, Hono, Drizzle ORM y Supabase. He diseñado y desarrollado sistemas de tiempo real para procesamiento de video con AI, plataformas tipo marketplace, y aplicaciones de alta concurrencia. Mi enfoque combina desarrollo backend robusto con infraestructura cloud, CI/CD y mejores prácticas de DevOps para crear productos que escalan."
+      "en": "Backend Engineer specialized in TypeScript with over 8 years of experience building scalable and high-performance solutions. I have designed and developed real-time systems for AI video processing, marketplace platforms, and high-concurrency applications. My approach combines robust backend development with cloud infrastructure, CI/CD, and DevOps best practices to create products that scale.",
+      "es": "Backend Engineer especializado en TypeScript con más de 8 años de experiencia construyendo soluciones escalables y de alto rendimiento. He diseñado y desarrollado sistemas de tiempo real para procesamiento de video con AI, plataformas tipo marketplace, y aplicaciones de alta concurrencia. Mi enfoque combina desarrollo backend robusto con infraestructura cloud, CI/CD y mejores prácticas de DevOps para crear productos que escalan."
     },
     "email": "hello@jesusarrioja.dev",
     "location": "Montevideo, Uruguay",
@@ -43,7 +43,7 @@
             "en": "Platform for live content processing for television productions. Real-time video transcription system with speaker detection and AI analysis.",
             "es": "Plataforma para procesamiento de contenido en vivo para producciones televisivas. Sistema de transcripción en tiempo real con detección de hablantes y análisis con AI."
           },
-          "techStack": "TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Railway, Cloudflare R2, AI/ML APIs"
+          "techStack": "TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Railway, Cloudflare, AI/ML APIs"
         }
       ],
       "order": 1
@@ -115,12 +115,12 @@
   "skills": [
     {
       "category": { "en": "Backend & Runtime", "es": "Backend & Runtime" },
-      "skills": ["TypeScript", "Node.js", "Hono", "Drizzle ORM", "PHP"],
+      "skills": ["TypeScript", "Node.js", "Hono", "Express", "Bun", "tRPC", "Drizzle ORM", "PHP"],
       "order": 1
     },
     {
       "category": { "en": "Databases & Backend Services", "es": "Bases de Datos & Backend Services" },
-      "skills": ["Supabase", "PostgreSQL", "MongoDB", "MySQL"],
+      "skills": ["Supabase", "PostgreSQL", "MongoDB", "MySQL", "Redis"],
       "order": 2
     },
     {
@@ -130,13 +130,18 @@
     },
     {
       "category": { "en": "DevOps & Cloud", "es": "DevOps & Cloud" },
-      "skills": ["Docker", "Railway", "AWS", "GCP", "Cloudflare R2"],
+      "skills": ["Docker", "Kubernetes", "ArgoCD", "Nginx", "Terraform", "Helm", "Railway", "AWS", "GCP", "Cloudflare", "Vercel"],
       "order": 4
     },
     {
       "category": { "en": "Architecture & Tooling", "es": "Arquitectura & Tooling" },
-      "skills": ["Turborepo", "Monorepos", "CI/CD", "GitHub Actions", "REST APIs", "Web Scraping"],
+      "skills": ["Turborepo", "Monorepos", "CI/CD", "GitHub Actions", "Git", "GitHub", "REST APIs", "WebSockets", "Stripe", "Vitest", "Jest", "Web Scraping"],
       "order": 5
+    },
+    {
+      "category": { "en": "AI Tools", "es": "Herramientas AI" },
+      "skills": ["Claude", "Cursor", "OpenAI"],
+      "order": 7
     },
     {
       "category": { "en": "WordPress Ecosystem", "es": "WordPress Ecosystem" },
