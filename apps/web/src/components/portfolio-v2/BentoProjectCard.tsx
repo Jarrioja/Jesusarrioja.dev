@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 interface Project {
   slug: string;
   name: string;
-  slug: string;
   logoUrl: string;
   features: string[];
   url?: string;
@@ -37,7 +36,7 @@ const itemVariants = {
     opacity: 1,
     y: 0,
     scale: 1,
-    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] },
+    transition: { duration: 0.5, ease: [0.22, 1, 0.36, 1] as const },
   },
 };
 

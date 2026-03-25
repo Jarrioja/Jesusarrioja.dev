@@ -5,7 +5,6 @@ import { cn } from "@/lib/utils";
 interface Project {
   slug: string;
   name: string;
-  slug: string;
   logoUrl: string;
   features: string[];
   url?: string;

@@ -47,7 +47,6 @@ const brandIcons: Record<string, IconType> = {
   "Vitest": SiVitest,
   "Jest": SiJest,
   "Claude": SiClaude,
-  "OpenAI": SiOpenai,
   "WordPress": SiWordpress,
   "WP GraphQL": SiGraphql,
   "WooCommerce": SiWoocommerce,
