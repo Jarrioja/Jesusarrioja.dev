@@ -9,9 +9,9 @@
     "codegen": "convex dev --once --codegen-only"
   },
   "dependencies": {
-    "convex": "^1.18.0"
+    "convex": "^1.46.0"
   },
   "devDependencies": {
-    "@types/node": "^22.13.4"
+    "@types/node": "^22.20.5"
   }
 }

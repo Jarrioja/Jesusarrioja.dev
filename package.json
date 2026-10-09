@@ -12,13 +12,13 @@
     "clear-db": "tsx scripts/clear-database.ts"
   },
   "devDependencies": {
-    "@types/node": "^22.19.11",
+    "@types/node": "^22.20.5",
     "cheerio": "^1.2.0",
-    "prettier": "^3.2.5",
-    "tsx": "^4.21.0",
-    "turbo": "^2.8.6",
-    "typescript": "^5.6.3",
-    "wrangler": "^4.64.0"
+    "prettier": "^3.9.9",
+    "tsx": "^4.23.15",
+    "turbo": "^2.11.7",
+    "typescript": "^5.9.3",
+    "wrangler": "^4.149.0"
   },
   "packageManager": "pnpm@10.27.0",
   "engines": {
