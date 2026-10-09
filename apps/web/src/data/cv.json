@@ -2,12 +2,13 @@
   "profile": {
     "fullName": "Jesús Noel Arrioja Pérez",
     "title": {
-      "en": "TypeScript Backend Engineer | DevOps & Cloud Architecture",
-      "es": "TypeScript Backend Engineer | DevOps & Cloud Architecture"
+      "en": "Product Engineer · Agentic Engineering",
+      "es": "Product Engineer · Agentic Engineering"
     },
+    "focus": "Backend, Mobile & Cloud",
     "summary": {
-      "en": "Backend Engineer specialized in TypeScript with over 8 years of experience building scalable and high-performance solutions. I have designed and developed real-time systems for AI video processing, marketplace platforms, and high-concurrency applications. My approach combines robust backend development with cloud infrastructure, CI/CD, and DevOps best practices to create products that scale.",
-      "es": "Backend Engineer especializado en TypeScript con más de 8 años de experiencia construyendo soluciones escalables y de alto rendimiento. He diseñado y desarrollado sistemas de tiempo real para procesamiento de video con AI, plataformas tipo marketplace, y aplicaciones de alta concurrencia. Mi enfoque combina desarrollo backend robusto con infraestructura cloud, CI/CD y mejores prácticas de DevOps para crear productos que escalan."
+      "en": "Product Engineer with over 8 years of experience, rooted in TypeScript backend and DevOps. Today I build end-to-end products as a contractor: mobile apps, backends, operations panels and the infrastructure that runs them. Earlier I built real-time AI video processing systems, marketplace platforms and high-concurrency applications. I practice agentic engineering: I design the system, direct the agents that implement it, and review and own every change.",
+      "es": "Product Engineer con más de 8 años de experiencia, con base en backend TypeScript y DevOps. Hoy construyo productos de punta a punta como contractor: apps móviles, backends, paneles de operación y la infraestructura que los sostiene. Antes construí sistemas de tiempo real para procesamiento de video con AI, plataformas tipo marketplace y aplicaciones de alta concurrencia. Practico agentic engineering: diseño el sistema, dirijo a los agentes que lo implementan, y reviso y respondo por cada cambio."
     },
     "email": "hello@jesusarrioja.dev",
     "location": "Montevideo, Uruguay",
@@ -17,13 +18,111 @@
   "experiences": [
     {
       "title": {
+        "en": "Product Engineer (Contractor)",
+        "es": "Product Engineer (Contractor)"
+      },
+      "company": "Goliiive",
+      "companyUrl": "https://www.goliiive.com/",
+      "location": "Ciudad de México, México (Remoto)",
+      "startDate": "2026-06-01",
+      "isCurrent": true,
+      "description": {
+        "en": "Ticketing and live events platform operating in Mexico and Venezuela. Technical details under NDA.",
+        "es": "Plataforma de boletería y eventos en vivo con operación en México y Venezuela. Detalles técnicos bajo NDA."
+      },
+      "responsibilities": [
+        { "en": "Mobile apps for event producers and attendees", "es": "Apps móviles para productores de eventos y asistentes" },
+        { "en": "Tooling for on-site venue operations", "es": "Herramientas para la operación en el recinto" },
+        { "en": "Backend services and cloud infrastructure", "es": "Servicios backend e infraestructura cloud" },
+        { "en": "Public TypeScript SDK for fiscal billing, published on npm", "es": "SDK público en TypeScript para facturación fiscal, publicado en npm" }
+      ],
+      "order": 1
+    },
+    {
+      "title": {
+        "en": "Product Engineer (Contractor)",
+        "es": "Product Engineer (Contractor)"
+      },
+      "company": "Cautos",
+      "companyUrl": "https://cautos.app/",
+      "location": "Venezuela (Remoto)",
+      "startDate": "2024-10-01",
+      "isCurrent": true,
+      "description": {
+        "en": "Ride-hailing platform with rider and driver apps, an operations panel and in-app payments.",
+        "es": "Plataforma de transporte con apps de pasajero y conductor, panel de operación y pagos integrados."
+      },
+      "responsibilities": [
+        { "en": "Rider and driver mobile apps", "es": "Apps móviles de pasajero y de conductor" },
+        { "en": "Payments integrated with Venezuelan banks", "es": "Cobros integrados con la banca venezolana" },
+        { "en": "Refund and payout flows managed from the admin panel", "es": "Flujos de reembolso y desembolso gestionados desde el panel" },
+        { "en": "Operations dashboard with a live map and push broadcasts", "es": "Panel de operación con mapa en vivo y difusiones push" }
+      ],
+      "order": 2
+    },
+    {
+      "title": {
+        "en": "WordPress Engineer (Contractor)",
+        "es": "WordPress Engineer (Contractor)"
+      },
+      "company": "Freelance",
+      "location": "Remoto",
+      "startDate": "2021-10-01",
+      "isCurrent": true,
+      "description": {
+        "en": "Ongoing maintenance and evolution of WordPress and WooCommerce sites, directly or through agencies.",
+        "es": "Mantenimiento y evolución continua de sitios WordPress y WooCommerce, directamente o a través de agencias."
+      },
+      "responsibilities": [
+        { "en": "Development and maintenance of client WordPress sites", "es": "Desarrollo y mantenimiento de sitios WordPress de clientes" },
+        { "en": "Performance optimization (WPO) and Redis object cache", "es": "Optimización de rendimiento (WPO) y caché de objetos con Redis" },
+        { "en": "WooCommerce stores with subscriptions and memberships", "es": "Tiendas WooCommerce con suscripciones y membresías" }
+      ],
+      "projects": [
+        {
+          "name": { "en": "Instapower21", "es": "Instapower21" },
+          "url": "https://instapower21.club/",
+          "isClient": true,
+          "description": {
+            "en": "Gym membership website with a WooCommerce store, subscriptions and memberships.",
+            "es": "Sitio de membresías de gimnasio con tienda WooCommerce, suscripciones y membresías."
+          },
+          "techStack": "WordPress, WooCommerce, WC Subscriptions, WC Memberships"
+        },
+        {
+          "name": { "en": "RunaHR Blog", "es": "RunaHR Blog" },
+          "url": "https://runahr.com/",
+          "isClient": true,
+          "description": {
+            "en": "Through mood • digital agency. Content blog for RunaHR HR platform. Custom theme rebuild, WPO optimization, and Redis object cache implementation.",
+            "es": "Vía mood • digital agency. Blog de contenido para la plataforma de RRHH RunaHR. Reconstrucción de tema personalizado, optimización WPO e implementación de caché de objetos con Redis."
+          },
+          "techStack": "WordPress, Redis, Custom Theme, WPO"
+        },
+        {
+          "name": { "en": "Mia Astral", "es": "Mia Astral" },
+          "url": "https://miastral.com/",
+          "isClient": true,
+          "description": {
+            "en": "Through mood • digital agency since 2018; we rebuilt the current site in 2019. Astrology membership website with subscription management, payment processing, and custom Elementor theme.",
+            "es": "Vía mood • digital agency desde 2018; en 2019 rehicimos el sitio actual. Sitio web astrológico de membresías con gestión de suscripciones, pagos y tema personalizado con Elementor."
+          },
+          "techStack": "WordPress, WooCommerce, Stripe, PayPal, Elementor"
+        }
+      ],
+      "order": 3
+    },
+    {
+      "title": {
         "en": "TypeScript Backend Engineer & Project Lead",
         "es": "TypeScript Backend Engineer & Líder de Proyectos"
       },
       "company": "mood • digital agency",
+      "companyUrl": "https://mood-agency.com/",
       "location": "Ciudad de México, México (Remoto)",
       "startDate": "2017-03-01",
-      "isCurrent": true,
+      "endDate": "2026-06-01",
+      "isCurrent": false,
       "description": {
         "en": "Development of scalable backends with TypeScript and leadership of high technical complexity projects. Design of serverless architectures, implementation of real-time systems and cloud infrastructure management.",
         "es": "Desarrollo de backends escalables con TypeScript y liderazgo de proyectos de alta complejidad técnica. Diseño de arquitecturas serverless, implementación de sistemas de tiempo real y gestión de infraestructura cloud."
@@ -52,25 +151,9 @@
             "es": "Plataforma inmobiliaria con más de 1.5M de propiedades, blog en WordPress, generación de sitemaps y arquitectura con reverse proxy."
           },
           "techStack": "Express, Nginx, WP GraphQL, Typesense, WordPress"
-        },
-        {
-          "name": { "en": "RunaHR Blog", "es": "RunaHR Blog" },
-          "description": {
-            "en": "Content blog for RunaHR HR platform. Custom theme rebuild, WPO optimization, and Redis object cache implementation.",
-            "es": "Blog de contenido para la plataforma de RRHH RunaHR. Reconstrucción de tema personalizado, optimización WPO e implementación de caché de objetos con Redis."
-          },
-          "techStack": "WordPress, Redis, Custom Theme, WPO"
-        },
-        {
-          "name": { "en": "Mia Astral", "es": "Mia Astral" },
-          "description": {
-            "en": "Astrology membership website with subscription management, payment processing, and custom Elementor theme.",
-            "es": "Sitio web astrológico de membresías con gestión de suscripciones, pagos y tema personalizado con Elementor."
-          },
-          "techStack": "WordPress, WooCommerce, Stripe, PayPal, Elementor"
         }
       ],
-      "order": 1
+      "order": 4
     },
     {
       "title": {
@@ -78,6 +161,7 @@
         "es": "Desarrollador de Infraestructura (DevOps/SRE)"
       },
       "company": "Boitas.com (YC W21)",
+      "companyUrl": "https://boitas.com/",
       "location": "Monterrey, México (Remoto)",
       "startDate": "2021-07-01",
       "endDate": "2022-10-01",
@@ -89,7 +173,7 @@
         { "en": "Implementation of CI/CD pipelines with GitHub Actions and Buddy.works", "es": "Implementación de CI/CD pipelines con GitHub Actions y Buddy.works" },
         { "en": "Maintenance and update of WordPress infrastructure", "es": "Mantenimiento y actualización de infraestructura WordPress" }
       ],
-      "order": 3
+      "order": 5
     },
     {
       "title": {
@@ -107,33 +191,7 @@
         { "en": "Development of Cloud Functions for data transfer between databases", "es": "Desarrollo de Cloud Functions para transferencia de datos entre bases de datos" },
         { "en": "Data modeling for visualization with CubeJS and MongoDB", "es": "Modelado de data para visualización con CubeJS y MongoDB" }
       ],
-      "order": 4
-    },
-    {
-      "title": {
-        "en": "TypeScript Backend Engineer - Independent Projects",
-        "es": "TypeScript Backend Engineer - Proyectos Independientes"
-      },
-      "company": "Freelance",
-      "location": "Remoto",
-      "startDate": "2019-01-01",
-      "isCurrent": true,
-      "description": {
-        "en": "Development of full-stack applications and scalable backends with TypeScript for high-impact projects.",
-        "es": "Desarrollo de aplicaciones full-stack y backends escalables con TypeScript para proyectos de alto impacto."
-      },
-      "responsibilities": [],
-      "projects": [
-        {
-          "name": { "en": "Ride-Sharing Platform", "es": "Plataforma de Ride-Sharing" },
-          "description": {
-            "en": "Uber-like application for urban transportation with complete backend system for driver-passenger matching and payment processing.",
-            "es": "Aplicación tipo Uber para transporte urbano con sistema completo de backend para matching de conductores y pasajeros."
-          },
-          "techStack": "TypeScript, Hono, Drizzle ORM, Supabase, Turborepo, Payment Gateway Integration"
-        }
-      ],
-      "order": 2
+      "order": 6
     }
   ],
   "skills": [
@@ -149,7 +207,7 @@
     },
     {
       "category": { "en": "Frontend", "es": "Frontend" },
-      "skills": ["React.js", "Astro", "JavaScript"],
+      "skills": ["React.js", "React Native", "Expo", "Astro", "JavaScript"],
       "order": 3
     },
     {
@@ -159,7 +217,7 @@
     },
     {
       "category": { "en": "Architecture & Tooling", "es": "Arquitectura & Tooling" },
-      "skills": ["Turborepo", "Monorepos", "CI/CD", "GitHub Actions", "Git", "GitHub", "REST APIs", "WebSockets", "Stripe", "Vitest", "Jest", "Web Scraping"],
+      "skills": ["Turborepo", "Monorepos", "CI/CD", "GitHub Actions", "Git", "GitHub", "REST APIs", "WebSockets", "Inngest", "Webhooks", "Stripe", "Vitest", "Jest", "Web Scraping"],
       "order": 5
     },
     {

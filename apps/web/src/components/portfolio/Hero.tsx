@@ -34,6 +34,9 @@ export function Hero({ locale }: HeroProps) {
               <p className="text-xl md:text-2xl text-muted-foreground font-medium">
                 {profileData.title[locale]}
               </p>
+              <p className="text-base md:text-lg text-muted-foreground/80 mt-1">
+                {profileData.focus}
+              </p>
             </div>
 
             <p className="text-lg text-muted-foreground leading-relaxed">

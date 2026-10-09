@@ -1,4 +1,5 @@
 import { Calendar } from "lucide-react";
+import type { ReactNode } from "react";
 
 interface Experience {
   title: string;
@@ -12,6 +13,9 @@ interface Experience {
   responsibilities: string[];
   projects?: Array<{
     name: string;
+    url?: string;
+    /** Ongoing client relationship, labeled "Client" instead of "Project". */
+    isClient?: boolean;
     description: string;
     techStack: string;
     responsibilities?: string;
@@ -23,17 +27,27 @@ interface CVExperienceProps {
   locale: "en" | "es";
 }
 
+// Underlined so the link stays visible in the printed PDF.
+const linkClass = "underline decoration-muted-foreground/40 underline-offset-2 hover:decoration-foreground";
+
+function ExternalLink({ href, children }: { href?: string; children: ReactNode }) {
+  if (!href) return <>{children}</>;
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={linkClass}>
+      {children}
+    </a>
+  );
+}
+
 function formatDate(dateStr: string, locale: "en" | "es"): string {
-  const date = new Date(dateStr);
+  // Read "YYYY-MM-DD" as a calendar date: new Date() parses it as UTC and shifts the month back in negative offsets.
+  const [year, month] = dateStr.split("-").map(Number);
   const monthNames = {
     en: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
     es: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
   };
 
-  const month = monthNames[locale][date.getMonth()];
-  const year = date.getFullYear();
-
-  return `${month} ${year}`;
+  return `${monthNames[locale][month - 1]} ${year}`;
 }
 
 export function CVExperience({ experiences, locale }: CVExperienceProps) {
@@ -52,7 +66,9 @@ export function CVExperience({ experiences, locale }: CVExperienceProps) {
             <div className="mb-2 print:mb-0.5">
               <h3 className="text-lg font-semibold print:text-sm print:font-semibold">{exp.title}</h3>
               <div className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground print:text-xs print:text-foreground print:gap-1">
-                <span className="font-medium text-foreground">{exp.company}</span>
+                <span className="font-medium text-foreground">
+                  <ExternalLink href={exp.companyUrl}>{exp.company}</ExternalLink>
+                </span>
                 <span>•</span>
                 <span>{exp.location}</span>
                 <span>•</span>
@@ -86,7 +102,10 @@ export function CVExperience({ experiences, locale }: CVExperienceProps) {
                 {exp.projects.map((project, pIdx) => (
                   <div key={pIdx}>
                     <h4 className="text-sm font-semibold print:text-xs">
-                      {locale === "en" ? "Project:" : "Proyecto:"} {project.name}
+                      {project.isClient
+                        ? locale === "en" ? "Client:" : "Cliente:"
+                        : locale === "en" ? "Project:" : "Proyecto:"}{" "}
+                      <ExternalLink href={project.url}>{project.name}</ExternalLink>
                     </h4>
                     <p className="text-sm text-muted-foreground mb-1 print:text-xs print:text-foreground print:mb-0">
                       {project.description}

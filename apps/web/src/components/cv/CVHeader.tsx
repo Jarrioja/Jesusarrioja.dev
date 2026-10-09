@@ -4,6 +4,7 @@ interface CVHeaderProps {
   profile: {
     fullName: string;
     title: string;
+    focus: string;
     summary: string;
     email: string;
     location: string;
@@ -16,7 +17,8 @@ export function CVHeader({ profile }: CVHeaderProps) {
   return (
     <header className="mb-8 pb-6 border-b print:mb-3 print:pb-3">
       <h1 className="text-4xl font-bold mb-1 print:text-2xl print:mb-1">{profile.fullName}</h1>
-      <p className="text-xl text-muted-foreground mb-3 print:text-sm print:mb-2">{profile.title}</p>
+      <p className="text-xl text-muted-foreground print:text-sm">{profile.title}</p>
+      <p className="text-base text-muted-foreground/80 mb-3 print:text-xs print:mb-2">{profile.focus}</p>
 
       {/* Contact Info */}
       <div className="flex flex-wrap gap-4 text-sm mb-4 print:gap-3 print:text-xs print:mb-2">

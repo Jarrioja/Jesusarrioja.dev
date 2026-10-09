@@ -218,6 +218,13 @@
     text-decoration: none !important;
   }
 
+  /* CV company and project links keep their underline so they read as links in the PDF */
+  a.underline {
+    text-decoration: underline !important;
+    text-decoration-thickness: 0.5pt !important;
+    text-underline-offset: 1.5pt;
+  }
+
   a[href^="http"]::after {
     content: "";
   }

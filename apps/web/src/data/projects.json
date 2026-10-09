@@ -1,5 +1,93 @@
 [
   {
+    "name": { "en": "Cautos", "es": "Cautos" },
+    "slug": "cautos",
+    "logoUrl": "/images/cautos.svg",
+    "url": "https://cautos.app/",
+    "features": [
+      { "en": "Rider and driver apps", "es": "App de pasajero y app de conductor" },
+      { "en": "Payments integrated with Venezuelan banks", "es": "Cobros integrados con la banca venezolana" },
+      { "en": "Refunds and payouts from the admin panel", "es": "Reembolsos y desembolsos desde el panel" },
+      { "en": "Operations dashboard with a live map", "es": "Panel de operación con mapa en vivo" },
+      { "en": "Push notification broadcasts", "es": "Difusiones por notificaciones push" }
+    ],
+    "gradient": { "from": "#4299e1", "to": "#48bb78" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 1,
+    "createdAt": 1700000000000
+  },
+  {
+    "name": { "en": "Goliiive", "es": "Goliiive" },
+    "slug": "goliiive",
+    "logoUrl": "/images/goliiive.svg",
+    "url": "https://www.goliiive.com/",
+    "features": [
+      { "en": "Ticketing and live events platform (MX/VE)", "es": "Plataforma de boletería y eventos en vivo (MX/VE)" },
+      { "en": "Mobile apps for producers and attendees", "es": "Apps móviles para productores y asistentes" },
+      { "en": "On-site venue operations tooling", "es": "Herramientas para la operación en el recinto" },
+      { "en": "Backend and infrastructure", "es": "Backend e infraestructura" },
+      { "en": "Technical details under NDA", "es": "Detalles técnicos bajo NDA" }
+    ],
+    "gradient": { "from": "#1a1a2e", "to": "#e94560" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 2,
+    "createdAt": 1791547883976
+  },
+  {
+    "name": { "en": "Unidigital SDK", "es": "Unidigital SDK" },
+    "slug": "unidigital-sdk",
+    "logoUrl": "/images/unidigital-sdk.svg",
+    "url": "https://www.npmjs.com/package/@devgoliiive/unidigital-sdk",
+    "features": [
+      { "en": "TypeScript SDK published on npm", "es": "SDK TypeScript publicado en npm" },
+      { "en": "Fiscal document issuing and voiding", "es": "Emisión y anulación de documentos fiscales" },
+      { "en": "Credit and debit notes", "es": "Notas de crédito y débito" },
+      { "en": "Webhook signature verification", "es": "Verificación de firmas de webhook" },
+      { "en": "Errors typed by code", "es": "Errores tipados por código" }
+    ],
+    "gradient": { "from": "#0f172a", "to": "#3b82f6" },
+    "isActive": true,
+    "isFeatured": true,
+    "order": 3,
+    "createdAt": 1791547883976
+  },
+  {
+    "name": { "en": "Braindog", "es": "Braindog" },
+    "slug": "braindog",
+    "logoUrl": "/images/braindog.svg",
+    "features": [
+      { "en": "Live video transcription for TV", "es": "Transcripción de video en vivo para TV" },
+      { "en": "Speaker detection", "es": "Detección de hablantes" },
+      { "en": "AI content analysis", "es": "Análisis de contenido con AI" },
+      { "en": "Real-time processing", "es": "Procesamiento en tiempo real" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#111827", "to": "#7c3aed" },
+    "isActive": false,
+    "isFeatured": false,
+    "createdAt": 1791549404155,
+    "order": 4
+  },
+  {
+    "name": { "en": "PFS Realty", "es": "PFS Realty" },
+    "slug": "pfs-realty",
+    "logoUrl": "/images/pfs-realty.svg",
+    "features": [
+      { "en": "Portal with 1.5M+ property listings", "es": "Portal con más de 1.5M de propiedades" },
+      { "en": "Typesense-powered search", "es": "Búsqueda con Typesense" },
+      { "en": "Headless blog with WP GraphQL", "es": "Blog headless con WP GraphQL" },
+      { "en": "Sitemaps and Nginx reverse proxy", "es": "Sitemaps y reverse proxy con Nginx" }
+    ],
+    "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
+    "gradient": { "from": "#0b2545", "to": "#13315c" },
+    "isActive": false,
+    "isFeatured": false,
+    "createdAt": 1791549404155,
+    "order": 5
+  },
+  {
     "name": { "en": "Mia Astral", "es": "Mia Astral" },
     "slug": "miastral",
     "logoUrl": "/images/miastral.svg",
@@ -13,7 +101,7 @@
     "gradient": { "from": "#ffd7d5", "to": "#ba797d" },
     "isActive": true,
     "isFeatured": true,
-    "order": 1,
+    "order": 6,
     "createdAt": 1700000000000
   },
   {
@@ -29,7 +117,7 @@
     "gradient": { "from": "#4facfe", "to": "#00f2fe" },
     "isActive": true,
     "isFeatured": false,
-    "order": 2,
+    "order": 7,
     "createdAt": 1700000000000
   },
   {
@@ -45,8 +133,8 @@
     ],
     "gradient": { "from": "#43e97b", "to": "#38f9d7" },
     "isActive": true,
-    "isFeatured": true,
-    "order": 3,
+    "isFeatured": false,
+    "order": 8,
     "createdAt": 1700000000000
   },
   {
@@ -63,7 +151,7 @@
     "gradient": { "from": "#3f4e51", "to": "#000000" },
     "isActive": true,
     "isFeatured": true,
-    "order": 4,
+    "order": 9,
     "createdAt": 1700000000000
   },
   {
@@ -79,8 +167,8 @@
     "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#00644f", "to": "#002138" },
     "isActive": true,
-    "isFeatured": true,
-    "order": 5,
+    "isFeatured": false,
+    "order": 10,
     "createdAt": 1700000000000
   },
   {
@@ -95,7 +183,7 @@
     "gradient": { "from": "#667eea", "to": "#764ba2" },
     "isActive": true,
     "isFeatured": false,
-    "order": 6,
+    "order": 11,
     "createdAt": 1700000000000
   },
   {
@@ -110,7 +198,7 @@
     "gradient": { "from": "#f093fb", "to": "#f5576c" },
     "isActive": true,
     "isFeatured": false,
-    "order": 7,
+    "order": 12,
     "createdAt": 1700000000000
   },
   {
@@ -125,7 +213,7 @@
     "gradient": { "from": "#43d6f1", "to": "#7c7eff" },
     "isActive": true,
     "isFeatured": false,
-    "order": 8,
+    "order": 13,
     "createdAt": 1700000000000
   },
   {
@@ -141,7 +229,7 @@
     "gradient": { "from": "#a8edea", "to": "#fed6e3" },
     "isActive": true,
     "isFeatured": false,
-    "order": 9,
+    "order": 14,
     "createdAt": 1700000000000
   },
   {
@@ -157,8 +245,8 @@
     "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#d6e3f3", "to": "#b8abe1" },
     "isActive": true,
-    "isFeatured": true,
-    "order": 10,
+    "isFeatured": false,
+    "order": 15,
     "createdAt": 1700000000000
   },
   {
@@ -171,11 +259,10 @@
       { "en": "Woocommerce Store", "es": "Tienda Woocommerce" },
       { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#fa8bff", "to": "#2bd2ff" },
     "isActive": true,
     "isFeatured": true,
-    "order": 11,
+    "order": 16,
     "createdAt": 1700000000000
   },
   {
@@ -191,7 +278,7 @@
     "gradient": { "from": "#3e3bab", "to": "#5a52d5" },
     "isActive": true,
     "isFeatured": true,
-    "order": 12,
+    "order": 17,
     "createdAt": 1700000000000
   },
   {
@@ -206,7 +293,7 @@
     "gradient": { "from": "#ff4400", "to": "#ff6633" },
     "isActive": true,
     "isFeatured": false,
-    "order": 13,
+    "order": 18,
     "createdAt": 1700000000000
   },
   {
@@ -221,7 +308,7 @@
     "gradient": { "from": "#ffff39", "to": "#ffff66" },
     "isActive": true,
     "isFeatured": false,
-    "order": 14,
+    "order": 19,
     "createdAt": 1700000000000
   },
   {
@@ -236,7 +323,7 @@
     "gradient": { "from": "#ffffff", "to": "#54d0e8" },
     "isActive": true,
     "isFeatured": false,
-    "order": 15,
+    "order": 20,
     "createdAt": 1700000000000
   },
   {
@@ -251,7 +338,7 @@
     "gradient": { "from": "#ffffff", "to": "#009688" },
     "isActive": true,
     "isFeatured": false,
-    "order": 16,
+    "order": 21,
     "createdAt": 1700000000000
   },
   {
@@ -266,7 +353,7 @@
     "gradient": { "from": "#6fc4bf", "to": "#0d6d74" },
     "isActive": true,
     "isFeatured": false,
-    "order": 17,
+    "order": 22,
     "createdAt": 1700000000000
   },
   {
@@ -283,7 +370,7 @@
     "gradient": { "from": "#a29bfe", "to": "#6c5ce7" },
     "isActive": true,
     "isFeatured": false,
-    "order": 18,
+    "order": 23,
     "createdAt": 1700000000000
   },
   {
@@ -300,7 +387,7 @@
     "gradient": { "from": "#00aa4e", "to": "#0067c9" },
     "isActive": true,
     "isFeatured": false,
-    "order": 19,
+    "order": 24,
     "createdAt": 1700000000000
   },
   {
@@ -315,7 +402,7 @@
     "gradient": { "from": "#ff7f50", "to": "#ff6348" },
     "isActive": true,
     "isFeatured": false,
-    "order": 20,
+    "order": 25,
     "createdAt": 1700000000000
   },
   {
@@ -330,7 +417,7 @@
     "gradient": { "from": "#55efc4", "to": "#00b894" },
     "isActive": true,
     "isFeatured": false,
-    "order": 21,
+    "order": 26,
     "createdAt": 1700000000000
   },
   {
@@ -345,7 +432,7 @@
     "gradient": { "from": "#ffffff", "to": "#a5c7d2" },
     "isActive": true,
     "isFeatured": false,
-    "order": 22,
+    "order": 27,
     "createdAt": 1700000000000
   },
   {
@@ -359,7 +446,7 @@
     "gradient": { "from": "#ffffff", "to": "#e8dbdc" },
     "isActive": true,
     "isFeatured": false,
-    "order": 23,
+    "order": 28,
     "createdAt": 1700000000000
   },
   {
@@ -374,7 +461,7 @@
     "gradient": { "from": "#662a7e", "to": "#a74499" },
     "isActive": true,
     "isFeatured": false,
-    "order": 24,
+    "order": 29,
     "createdAt": 1700000000000
   },
   {
@@ -390,7 +477,7 @@
     "gradient": { "from": "#e9d8c0", "to": "#9a314d" },
     "isActive": true,
     "isFeatured": false,
-    "order": 25,
+    "order": 30,
     "createdAt": 1700000000000
   },
   {
@@ -406,7 +493,7 @@
     "gradient": { "from": "#81c1be", "to": "#182636" },
     "isActive": true,
     "isFeatured": false,
-    "order": 26,
+    "order": 31,
     "createdAt": 1700000000000
   },
   {
@@ -423,7 +510,7 @@
     "gradient": { "from": "#fd79a8", "to": "#e84393" },
     "isActive": true,
     "isFeatured": false,
-    "order": 27,
+    "order": 32,
     "createdAt": 1700000000000
   },
   {
@@ -439,7 +526,7 @@
     "gradient": { "from": "#a29bfe", "to": "#6c5ce7" },
     "isActive": true,
     "isFeatured": false,
-    "order": 28,
+    "order": 33,
     "createdAt": 1700000000000
   },
   {
@@ -456,7 +543,7 @@
     "gradient": { "from": "#fab1a0", "to": "#ff7675" },
     "isActive": true,
     "isFeatured": false,
-    "order": 29,
+    "order": 34,
     "createdAt": 1700000000000
   },
   {
@@ -471,7 +558,7 @@
     "gradient": { "from": "#81ecec", "to": "#00cec9" },
     "isActive": true,
     "isFeatured": false,
-    "order": 30,
+    "order": 35,
     "createdAt": 1700000000000
   },
   {
@@ -487,7 +574,7 @@
     "gradient": { "from": "#55efc4", "to": "#00b894" },
     "isActive": true,
     "isFeatured": false,
-    "order": 31,
+    "order": 36,
     "createdAt": 1700000000000
   },
   {
@@ -502,7 +589,7 @@
     "gradient": { "from": "#ffecd2", "to": "#fcb69f" },
     "isActive": true,
     "isFeatured": false,
-    "order": 32,
+    "order": 37,
     "createdAt": 1700000000000
   },
   {
@@ -517,7 +604,7 @@
     "gradient": { "from": "#f093fb", "to": "#f5576c" },
     "isActive": true,
     "isFeatured": false,
-    "order": 33,
+    "order": 38,
     "createdAt": 1700000000000
   },
   {
@@ -536,25 +623,7 @@
     "gradient": { "from": "#b794f6", "to": "#6b46c1" },
     "isActive": true,
     "isFeatured": true,
-    "order": 34,
-    "createdAt": 1700000000000
-  },
-  {
-    "name": { "en": "Cautos", "es": "Cautos" },
-    "slug": "cautos",
-    "logoUrl": "/images/cautos.svg",
-    "url": "https://cautos.app/",
-    "features": [
-      { "en": "Uber-like Taxi App", "es": "App de Taxi tipo Uber" },
-      { "en": "Landing Page Development", "es": "Desarrollo de Landing Page" },
-      { "en": "TypeScript Backend", "es": "Backend en TypeScript" },
-      { "en": "Supabase Integration", "es": "Integración con Supabase" },
-      { "en": "Real-time Matching System", "es": "Sistema de Matching en Tiempo Real" }
-    ],
-    "gradient": { "from": "#4299e1", "to": "#48bb78" },
-    "isActive": true,
-    "isFeatured": true,
-    "order": 35,
+    "order": 39,
     "createdAt": 1700000000000
   },
   {
@@ -573,7 +642,7 @@
     "gradient": { "from": "#1b2838", "to": "#66c0f4" },
     "isActive": true,
     "isFeatured": true,
-    "order": 36,
+    "order": 40,
     "createdAt": 1700000000000
   }
 ]
