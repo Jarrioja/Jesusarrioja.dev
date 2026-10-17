@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef } from "react";
+import { useMemo, type CSSProperties } from "react";
 import agentic from "@/data/agentic.json";
 import activityData from "@/data/activity.json";
 import { activityStats, levelScale, type Activity } from "@/lib/activity";
@@ -37,55 +37,65 @@ const t = {
   },
 };
 
-// Static snapshot; refresh it with `pnpm activity` until the live API is wired.
+// Static snapshot, refreshed daily by the activity workflow.
 const activity: Activity = activityData;
 
 function formatDay(date: string, locale: Locale) {
   return new Date(`${date}T12:00:00`).toLocaleDateString(locale, { day: "numeric", month: "short" });
 }
 
+// Weeks shown below `sm`; the full year needs a wider screen to stay legible.
+const MOBILE_WEEKS = 13;
+
 function Heatmap({ activity, locale }: { activity: Activity; locale: Locale }) {
   const level = useMemo(() => levelScale(activity), [activity]);
-  const scroller = useRef<HTMLDivElement>(null);
+  const { weeks } = activity;
+  const firstMobileWeek = weeks.length - MOBILE_WEEKS;
 
-  // On narrow screens the grid scrolls; start at the most recent weeks.
-  useEffect(() => {
-    const el = scroller.current;
-    if (el) el.scrollLeft = el.scrollWidth;
-  }, [activity]);
-
-  const columns = { gridTemplateColumns: `repeat(${activity.weeks.length}, minmax(0, 1fr))` };
+  const columns = {
+    "--weeks": weeks.length,
+    "--mobile-weeks": MOBILE_WEEKS,
+  } as CSSProperties;
+  const gridClass =
+    "grid gap-[3px] grid-cols-[repeat(var(--mobile-weeks),minmax(0,1fr))] sm:grid-cols-[repeat(var(--weeks),minmax(0,1fr))]";
+  // Weeks before the mobile window only render from `sm` up.
+  const hiddenOnMobile = (i: number) => i < firstMobileWeek && "hidden sm:flex";
   const monthOf = (date: string) => new Date(`${date}T12:00:00`).getMonth();
 
   return (
-    <div ref={scroller} className="overflow-x-auto pb-1">
-      <div className="min-w-[640px]">
-        <div className="grid gap-[3px] text-[10px] text-muted-foreground mb-1" style={columns}>
-          {activity.weeks.map((week, i) => {
-            // Label the first week of each month, skipping a partial month at the right edge.
-            const isNewMonth = i === 0 || monthOf(week[0].date) !== monthOf(activity.weeks[i - 1][0].date);
-            return (
-              <span key={week[0].date} className="whitespace-nowrap overflow-visible">
-                {isNewMonth && i < activity.weeks.length - 2
-                  ? new Date(`${week[0].date}T12:00:00`).toLocaleDateString(locale, { month: "short" })
-                  : ""}
-              </span>
-            );
-          })}
-        </div>
-        <div className="grid gap-[3px]" style={columns}>
-          {activity.weeks.map((week, i) => (
-            <div key={week[0].date} className={cn("flex flex-col gap-[3px]", i === 0 && "justify-end")}>
-              {week.map((day) => (
-                <div
-                  key={day.date}
-                  title={`${day.count} · ${formatDay(day.date, locale)}`}
-                  className={cn("aspect-square w-full rounded-[2px]", LEVEL_CLASSES[level(day.count)])}
-                />
-              ))}
-            </div>
-          ))}
-        </div>
+    <div style={columns}>
+      <div className={cn(gridClass, "text-[10px] text-muted-foreground mb-1")}>
+        {weeks.map((week, i) => {
+          // Label the first week of each month (and of the mobile window), skipping a partial month at the right edge.
+          const isNewMonth = i === 0 || monthOf(week[0].date) !== monthOf(weeks[i - 1][0].date);
+          const isMobileStart = i === firstMobileWeek && !isNewMonth;
+          return (
+            <span
+              key={week[0].date}
+              className={cn("whitespace-nowrap overflow-visible", hiddenOnMobile(i), isMobileStart && "sm:invisible")}
+            >
+              {(isNewMonth || isMobileStart) && i < weeks.length - 2
+                ? new Date(`${week[0].date}T12:00:00`).toLocaleDateString(locale, { month: "short" })
+                : ""}
+            </span>
+          );
+        })}
+      </div>
+      <div className={gridClass}>
+        {weeks.map((week, i) => (
+          <div
+            key={week[0].date}
+            className={cn("flex flex-col gap-[3px]", i === 0 && "justify-end", hiddenOnMobile(i))}
+          >
+            {week.map((day) => (
+              <div
+                key={day.date}
+                title={`${day.count} · ${formatDay(day.date, locale)}`}
+                className={cn("aspect-square w-full rounded-[2px]", LEVEL_CLASSES[level(day.count)])}
+              />
+            ))}
+          </div>
+        ))}
       </div>
     </div>
   );

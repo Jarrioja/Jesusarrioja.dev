@@ -1,4 +1,4 @@
-// GitHub contribution calendar, shared by the Pages Function, the snapshot script and the UI.
+// GitHub contribution calendar, shared by the snapshot script and the UI.
 // The calendar only carries daily counts, so private contributions show up without exposing repos.
 
 export const GITHUB_LOGIN = "Jarrioja";

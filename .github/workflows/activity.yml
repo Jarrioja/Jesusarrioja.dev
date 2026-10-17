@@ -1,0 +1,41 @@
+# Refreshes the GitHub activity snapshot once a day. The commit to master triggers
+# the Cloudflare Pages deploy, so the site stays fully static.
+name: Refresh GitHub activity
+
+on:
+  schedule:
+    - cron: "0 9 * * *" # 05:00 in Venezuela
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: activity
+  cancel-in-progress: true
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+
+      # The script has no dependencies: Node runs the TypeScript directly.
+      - name: Fetch contribution calendar
+        working-directory: apps/web
+        env:
+          GITHUB_TOKEN: ${{ secrets.ACTIVITY_TOKEN }}
+        run: node scripts/fetch-activity.ts
+
+      - name: Commit snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add apps/web/src/data/activity.json
+          git diff --cached --quiet && exit 0
+          git commit -m "chore: refresh GitHub activity snapshot"
+          git push

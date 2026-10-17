@@ -2,8 +2,10 @@
   {
     "name": { "en": "Cautos", "es": "Cautos" },
     "slug": "cautos",
+    "role": { "en": "Product Engineer, contractor, Oct 2024 to present", "es": "Product Engineer, contractor, oct 2024 a hoy" },
     "logoUrl": "/images/cautos.svg",
     "url": "https://cautos.app/",
+    "stores": { "appStore": "https://apps.apple.com/app/id6780695062", "googlePlay": "https://play.google.com/store/apps/details?id=com.cautos.app" },
     "features": [
       { "en": "Rider and driver apps", "es": "App de pasajero y app de conductor" },
       { "en": "Payments integrated with Venezuelan banks", "es": "Cobros integrados con la banca venezolana" },
@@ -20,6 +22,7 @@
   {
     "name": { "en": "Goliiive", "es": "Goliiive" },
     "slug": "goliiive",
+    "role": { "en": "Product Engineer, contractor, Jun 2026 to present", "es": "Product Engineer, contractor, jun 2026 a hoy" },
     "logoUrl": "/images/goliiive.svg",
     "url": "https://www.goliiive.com/",
     "features": [
@@ -38,6 +41,8 @@
   {
     "name": { "en": "Unidigital SDK", "es": "Unidigital SDK" },
     "slug": "unidigital-sdk",
+    "type": "product",
+    "stack": ["TypeScript"],
     "logoUrl": "/images/unidigital-sdk.svg",
     "url": "https://www.npmjs.com/package/@devgoliiive/unidigital-sdk",
     "features": [
@@ -49,13 +54,15 @@
     ],
     "gradient": { "from": "#0f172a", "to": "#3b82f6" },
     "isActive": true,
-    "isFeatured": true,
+    "isFeatured": false,
     "order": 3,
     "createdAt": 1791547883976
   },
   {
     "name": { "en": "Braindog", "es": "Braindog" },
     "slug": "braindog",
+    "type": "product",
+    "stack": [],
     "logoUrl": "/images/braindog.svg",
     "features": [
       { "en": "Live video transcription for TV", "es": "Transcripción de video en vivo para TV" },
@@ -73,6 +80,8 @@
   {
     "name": { "en": "PFS Realty", "es": "PFS Realty" },
     "slug": "pfs-realty",
+    "type": "product",
+    "stack": ["WordPress"],
     "logoUrl": "/images/pfs-realty.svg",
     "features": [
       { "en": "Portal with 1.5M+ property listings", "es": "Portal con más de 1.5M de propiedades" },
@@ -107,6 +116,8 @@
   {
     "name": { "en": "Bevione", "es": "Bevione" },
     "slug": "bevione",
+    "type": "community",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/bevione.png",
     "features": [
       { "en": "Community Website", "es": "Sitio Web de Comunidad" },
@@ -123,6 +134,8 @@
   {
     "name": { "en": "Recetas Lily", "es": "Recetas Lily" },
     "slug": "recetaslily",
+    "type": "ecommerce",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/recetaslily.png",
     "url": "https://www.recetaslily.com/",
     "features": [
@@ -140,6 +153,8 @@
   {
     "name": { "en": "The Growth Keys", "es": "The Growth Keys" },
     "slug": "tgk",
+    "type": "community",
+    "stack": ["WordPress"],
     "logoUrl": "/images/tgk.svg",
     "url": "https://thegrowthkeys.com/",
     "features": [
@@ -147,16 +162,17 @@
       { "en": "Learning management system", "es": "Sistema de Gestión de Aprendizaje" },
       { "en": "Booking system", "es": "Sistema de Reservas" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#3f4e51", "to": "#000000" },
     "isActive": true,
-    "isFeatured": true,
+    "isFeatured": false,
     "order": 9,
     "createdAt": 1700000000000
   },
   {
     "name": { "en": "ConBoca Blanco", "es": "ConBoca Blanco" },
     "slug": "conboca-blanco",
+    "type": "ecommerce",
+    "stack": ["WordPress", "WooCommerce", "Elementor"],
     "logoUrl": "/images/conboca-blanco.svg",
     "url": "https://conbocacatering.com/",
     "features": [
@@ -164,7 +180,6 @@
       { "en": "Woocommerce Store", "es": "Tienda Woocommerce" },
       { "en": "Built with Elementor", "es": "Construido con Elementor" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#00644f", "to": "#002138" },
     "isActive": true,
     "isFeatured": false,
@@ -174,12 +189,13 @@
   {
     "name": { "en": "Easy Technology NY", "es": "Easy Technology NY" },
     "slug": "easytechnologyny",
+    "type": "community",
+    "stack": ["WordPress"],
     "logoUrl": "/images/easytechnologyny.png",
     "features": [
       { "en": "Community One Page", "es": "Página de Comunidad" },
       { "en": "Built with Divi", "es": "Construido con Divi" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#667eea", "to": "#764ba2" },
     "isActive": true,
     "isFeatured": false,
@@ -189,12 +205,13 @@
   {
     "name": { "en": "Parenting With Grace", "es": "Parenting With Grace" },
     "slug": "parentingwithgrace",
+    "type": "community",
+    "stack": ["WordPress"],
     "logoUrl": "/images/parentingwithgrace.svg",
     "features": [
       { "en": "Community One Page", "es": "Página de Comunidad" },
       { "en": "Built with Divi", "es": "Construido con Divi" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#f093fb", "to": "#f5576c" },
     "isActive": true,
     "isFeatured": false,
@@ -204,6 +221,8 @@
   {
     "name": { "en": "Foodit", "es": "Foodit" },
     "slug": "foodit",
+    "type": "website",
+    "stack": ["WordPress", "Elementor"],
     "logoUrl": "/images/foodit.svg",
     "features": [
       { "en": "SaaS Landing Page", "es": "Página de SaaS" },
@@ -219,6 +238,8 @@
   {
     "name": { "en": "Cykadas Rewards", "es": "Cykadas Rewards" },
     "slug": "cykadas-rewards",
+    "type": "website",
+    "stack": ["WordPress", "Elementor"],
     "logoUrl": "/images/cykadas_rewards.svg",
     "features": [
       { "en": "Rewards website", "es": "Sitio Web de Recompensas" },
@@ -235,6 +256,8 @@
   {
     "name": { "en": "Una Pieza Maestra Red", "es": "Una Pieza Maestra Red" },
     "slug": "una-pieza-maestra-red",
+    "type": "community",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/una-pieza-maestra-red.svg",
     "url": "https://unapiezamaestra.com/",
     "features": [
@@ -242,7 +265,6 @@
       { "en": "Learning management system", "es": "Sistema de Gestión de Aprendizaje" },
       { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#d6e3f3", "to": "#b8abe1" },
     "isActive": true,
     "isFeatured": false,
@@ -271,10 +293,12 @@
     "logoUrl": "/images/mile.svg",
     "url": "https://mileconde.com/",
     "features": [
-      { "en": "Personal Blog", "es": "Blog Personal" },
-      { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" }
+      { "en": "Brand strategy coaching site", "es": "Sitio de coaching en estrategia de marca" },
+      { "en": "Custom WordPress theme", "es": "Tema WordPress a medida" },
+      { "en": "Editorial blog with categories and series", "es": "Blog editorial con categorías y series" },
+      { "en": "Custom waitlist plugin (REST API)", "es": "Plugin propio de lista de espera (REST API)" },
+      { "en": "WooCommerce store", "es": "Tienda WooCommerce" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#3e3bab", "to": "#5a52d5" },
     "isActive": true,
     "isFeatured": true,
@@ -284,6 +308,8 @@
   {
     "name": { "en": "Xcape", "es": "Xcape" },
     "slug": "xcape",
+    "type": "website",
+    "stack": ["WordPress"],
     "logoUrl": "/images/xcape.png",
     "features": [
       { "en": "Student Travel Agency Website", "es": "Sitio Web de Agencia de Viajes Estudiantil" },
@@ -299,6 +325,8 @@
   {
     "name": { "en": "Clic Negro", "es": "Clic Negro" },
     "slug": "clic-negro",
+    "type": "website",
+    "stack": ["WordPress"],
     "logoUrl": "/images/clic-negro.png",
     "features": [
       { "en": "Student Travel Agency Website", "es": "Sitio Web de Agencia de Viajes Estudiantil" },
@@ -314,6 +342,8 @@
   {
     "name": { "en": "Kabu", "es": "Kabu" },
     "slug": "kabu",
+    "type": "ecommerce",
+    "stack": ["Shopify"],
     "logoUrl": "/images/kabu.png",
     "features": [
       { "en": "Fitness Web Store", "es": "Tienda Web de Fitness" },
@@ -329,6 +359,8 @@
   {
     "name": { "en": "MoneyWise", "es": "MoneyWise" },
     "slug": "moneywise",
+    "type": "infra",
+    "stack": ["WordPress"],
     "logoUrl": "/images/moneywise.png",
     "features": [
       { "en": "Business Coaching Website", "es": "Sitio Web de Coaching Empresarial" },
@@ -344,6 +376,8 @@
   {
     "name": { "en": "SebasMom", "es": "SebasMom" },
     "slug": "sebasmom",
+    "type": "website",
+    "stack": ["Wix"],
     "logoUrl": "/images/sebasmom.png",
     "url": "https://www.sebasmom.com/",
     "features": [
@@ -359,6 +393,8 @@
   {
     "name": { "en": "EVDLT", "es": "EVDLT" },
     "slug": "evdlt",
+    "type": "website",
+    "stack": ["WordPress"],
     "logoUrl": "/images/EVDLT.png",
     "features": [
       { "en": "Podcast Website", "es": "Sitio Web de Podcast" },
@@ -376,6 +412,8 @@
   {
     "name": { "en": "TSDN", "es": "TSDN" },
     "slug": "tsdn",
+    "type": "ecommerce",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/TSDN.png",
     "features": [
       { "en": "Personal Bussines Website", "es": "Sitio Web de Negocio Personal" },
@@ -393,6 +431,8 @@
   {
     "name": { "en": "Kabu Colombia", "es": "Kabu Colombia" },
     "slug": "kabu-colombia",
+    "type": "ecommerce",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/kabu.png",
     "features": [
       { "en": "Fitness Web Store", "es": "Tienda Web de Fitness" },
@@ -408,6 +448,8 @@
   {
     "name": { "en": "Boitas Horizontal", "es": "Boitas Horizontal" },
     "slug": "boitas-horizontal",
+    "type": "ecommerce",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/boitas-horizontal.png",
     "features": [
       { "en": "Wholesale/Marketplace", "es": "Mayorista/Marketplace" },
@@ -423,12 +465,13 @@
   {
     "name": { "en": "Yo Soy Mi Meta", "es": "Yo Soy Mi Meta" },
     "slug": "yo-soy-mi-meta",
+    "type": "website",
+    "stack": [],
     "logoUrl": "/images/yo-soy-mi-meta.png",
     "features": [
       { "en": "Landing Page", "es": "Página de Aterrizaje" },
       { "en": "Eventbrite Integration", "es": "Integración con Eventbrite" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#ffffff", "to": "#a5c7d2" },
     "isActive": true,
     "isFeatured": false,
@@ -438,11 +481,12 @@
   {
     "name": { "en": "Sindy Negro", "es": "Sindy Negro" },
     "slug": "sindy-negro",
+    "type": "website",
+    "stack": [],
     "logoUrl": "/images/Sindy-negro.png",
     "features": [
       { "en": "Personal Website", "es": "Sitio Web Personal" }
     ],
-    "agency": { "name": "The Growth Keys", "logoUrl": "/images/tgk.svg", "url": "https://thegrowthkeys.com" },
     "gradient": { "from": "#ffffff", "to": "#e8dbdc" },
     "isActive": true,
     "isFeatured": false,
@@ -452,6 +496,8 @@
   {
     "name": { "en": "Higado Sano", "es": "Higado Sano" },
     "slug": "higadosano",
+    "type": "ecommerce",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/higadosano.png",
     "features": [
       { "en": "Health blog", "es": "Blog de Salud" },
@@ -467,6 +513,8 @@
   {
     "name": { "en": "Bonnier ZM", "es": "Bonnier ZM" },
     "slug": "bonnierzm",
+    "type": "ecommerce",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/bonnierzm.png",
     "features": [
       { "en": "Photography Blog", "es": "Blog de Fotografía" },
@@ -483,6 +531,8 @@
   {
     "name": { "en": "Flores", "es": "Flores" },
     "slug": "flores",
+    "type": "website",
+    "stack": ["WordPress"],
     "logoUrl": "/images/flores.png",
     "features": [
       { "en": "Dermatology Clinic Website", "es": "Sitio Web de Clínica Dermatológica" },
@@ -499,6 +549,8 @@
   {
     "name": { "en": "Como Salir", "es": "Como Salir" },
     "slug": "como-salir",
+    "type": "community",
+    "stack": ["WordPress", "WooCommerce"],
     "logoUrl": "/images/Como-salir.png",
     "features": [
       { "en": "Community Website", "es": "Sitio Web de Comunidad" },
@@ -516,6 +568,8 @@
   {
     "name": { "en": "Simposio Miami", "es": "Simposio Miami" },
     "slug": "simposiomiami",
+    "type": "website",
+    "stack": ["WordPress"],
     "logoUrl": "/images/simposiomiami.png",
     "features": [
       { "en": "Symposium Website", "es": "Sitio Web de Simposio" },
@@ -532,6 +586,8 @@
   {
     "name": { "en": "PN Logo Launch", "es": "PN Logo Launch" },
     "slug": "pn-logo-launch",
+    "type": "infra",
+    "stack": [],
     "logoUrl": "/images/PN_logo_launch_ACO_002_174x44_V001.png",
     "features": [
       { "en": "Server & DNS configuration", "es": "Configuración de Servidor y DNS" },
@@ -549,6 +605,8 @@
   {
     "name": { "en": "Alrhea", "es": "Alrhea" },
     "slug": "logo-alrhea-ok",
+    "type": "infra",
+    "stack": ["WordPress"],
     "logoUrl": "/images/logo_alrhea_ok.png",
     "features": [
       { "en": "Hosting & DNS Configuration", "es": "Configuración de Hosting y DNS" },
@@ -564,6 +622,8 @@
   {
     "name": { "en": "Althouse", "es": "Althouse" },
     "slug": "althouse-logo2",
+    "type": "infra",
+    "stack": ["WordPress"],
     "logoUrl": "/images/Althouse_logo2.png",
     "features": [
       { "en": "Hosting & DNS Configuration", "es": "Configuración de Hosting y DNS" },
@@ -580,6 +640,8 @@
   {
     "name": { "en": "Cocoa", "es": "Cocoa" },
     "slug": "cocoa",
+    "type": "infra",
+    "stack": ["WordPress"],
     "logoUrl": "/images/cocoa.png",
     "features": [
       { "en": "Recover Hacked Website", "es": "Recuperación de Sitio Hackeado" },
@@ -595,6 +657,8 @@
   {
     "name": { "en": "GSA", "es": "GSA" },
     "slug": "gsa",
+    "type": "website",
+    "stack": ["WordPress"],
     "logoUrl": "/images/GSA.png",
     "features": [
       { "en": "Air Cargo Website", "es": "Sitio Web de Carga Aérea" },
@@ -629,6 +693,8 @@
   {
     "name": { "en": "TwinRanks", "es": "TwinRanks" },
     "slug": "twinranks",
+    "type": "website",
+    "stack": ["WordPress", "Elementor"],
     "logoUrl": "/images/twinranks.svg",
     "url": "https://twinranks.com/",
     "features": [
@@ -641,7 +707,7 @@
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
     "gradient": { "from": "#1b2838", "to": "#66c0f4" },
     "isActive": true,
-    "isFeatured": true,
+    "isFeatured": false,
     "order": 40,
     "createdAt": 1700000000000
   }

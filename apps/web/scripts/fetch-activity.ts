@@ -1,5 +1,5 @@
-// Refreshes src/data/activity.json, the fallback the section shows before (or without) the live API.
-// Usage: GITHUB_TOKEN=... pnpm activity
+// Refreshes src/data/activity.json, the snapshot the activity section renders.
+// Runs daily in .github/workflows/activity.yml; locally: GITHUB_TOKEN=... pnpm activity
 import { writeFile } from "node:fs/promises";
 import { fetchActivity } from "../src/lib/activity.ts";
 

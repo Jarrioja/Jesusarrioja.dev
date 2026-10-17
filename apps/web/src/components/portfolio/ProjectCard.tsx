@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import { ExternalLink } from "lucide-react";
+import type { IconType } from "react-icons";
+import { SiAppstore, SiGoogleplay } from "react-icons/si";
 import { cn } from "@/lib/utils";
 
 interface Project {
@@ -8,6 +10,11 @@ interface Project {
   logoUrl: string;
   features: string[];
   url?: string;
+  /** App store listings; when present they replace the "View Project" button. */
+  stores?: {
+    appStore: string;
+    googlePlay: string;
+  };
   agency?: {
     name: string;
     logoUrl: string;
@@ -26,6 +33,21 @@ interface Project {
 interface ProjectCardProps {
   project: Project;
   locale: "en" | "es";
+}
+
+const footerButton = cn(
+  "inline-flex items-center gap-2 px-4 py-2 rounded-lg",
+  "bg-white/20 hover:bg-white/30 backdrop-blur-sm",
+  "text-white text-sm font-medium transition-colors"
+);
+
+function FooterLink({ href, icon: Icon, label }: { href: string; icon: IconType; label: string }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer" className={footerButton}>
+      <Icon className="w-4 h-4" />
+      <span>{label}</span>
+    </a>
+  );
 }
 
 export function ProjectCard({ project, locale }: ProjectCardProps) {
@@ -76,21 +98,19 @@ export function ProjectCard({ project, locale }: ProjectCardProps) {
           </ul>
 
           {/* Footer */}
-          <div className="flex items-center mt-auto">
-            {project.url && (
-              <a
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className={cn(
-                  "inline-flex items-center gap-2 px-4 py-2 rounded-lg",
-                  "bg-white/20 hover:bg-white/30 backdrop-blur-sm",
-                  "text-white text-sm font-medium transition-colors"
-                )}
-              >
-                <span>{locale === "en" ? "View Project" : "Ver Proyecto"}</span>
-                <ExternalLink className="w-4 h-4" />
-              </a>
+          <div className="flex flex-wrap items-center gap-2 mt-auto">
+            {project.stores ? (
+              <>
+                <FooterLink href={project.stores.appStore} icon={SiAppstore} label="App Store" />
+                <FooterLink href={project.stores.googlePlay} icon={SiGoogleplay} label="Google Play" />
+              </>
+            ) : (
+              project.url && (
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className={footerButton}>
+                  <span>{locale === "en" ? "View Project" : "Ver Proyecto"}</span>
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              )
             )}
           </div>
         </div>
