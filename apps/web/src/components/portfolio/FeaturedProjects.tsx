@@ -83,6 +83,8 @@ function SiteCard({ project, locale }: { project: Project; locale: Locale }) {
       className="group relative grid aspect-[4/3] place-items-center overflow-hidden rounded-xl text-white"
     >
       <span className="absolute inset-0 bg-black/15 transition-colors group-hover:bg-black/30" />
+      {/* Darkens the caption area so white text holds contrast on light gradients */}
+      <span className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/60 to-transparent" />
       <img
         src={project.logoUrl}
         alt=""

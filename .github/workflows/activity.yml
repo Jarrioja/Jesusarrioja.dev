@@ -1,4 +1,4 @@
-# Refreshes the GitHub activity snapshot once a day. The commit to master triggers
+# Refreshes the GitHub activity snapshot once a day. The commit to main triggers
 # the Cloudflare Pages deploy, so the site stays fully static.
 name: Refresh GitHub activity
 

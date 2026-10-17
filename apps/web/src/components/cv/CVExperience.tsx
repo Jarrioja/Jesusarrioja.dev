@@ -56,7 +56,7 @@ export function CVExperience({ experiences, locale }: CVExperienceProps) {
   return (
     <section className="mb-8 print:mb-3">
       <h2 className="text-2xl font-bold mb-4 print:text-base print:font-bold print:mb-2">
-        {locale === "en" ? "Work Experience" : "Experiencia Laboral"}
+        {locale === "en" ? "Work experience" : "Experiencia laboral"}
       </h2>
 
       <div className="space-y-6 print:space-y-2">
@@ -112,7 +112,7 @@ export function CVExperience({ experiences, locale }: CVExperienceProps) {
                     </p>
                     <p className="text-xs text-muted-foreground print:text-foreground">
                       <span className="font-medium">
-                        {locale === "en" ? "Tech Stack:" : "Tecnologías:"}
+                        {locale === "en" ? "Tech stack:" : "Tecnologías:"}
                       </span>{" "}
                       {project.techStack}
                     </p>

@@ -101,7 +101,7 @@ export function ProjectWall({ locale }: { locale: Locale }) {
             )}
           >
             {label}
-            <span className="ml-1 text-xs opacity-60">{count}</span>
+            <span className="ml-1 text-xs">{count}</span>
           </button>
         ))}
       </div>
@@ -115,7 +115,7 @@ export function ProjectWall({ locale }: { locale: Locale }) {
             aria-haspopup="dialog"
             onClick={() => open(i)}
             style={{ backgroundImage: gradientOf(p) }}
-            className="relative aspect-square overflow-hidden rounded-md transition-transform duration-200 hover:scale-[0.96] motion-reduce:transition-none"
+            className="relative aspect-square overflow-hidden rounded-md transition-transform duration-200 active:scale-[0.96] motion-reduce:transition-none"
           >
             <span className="absolute inset-0 bg-black/15" />
             <Logo project={p} className="absolute inset-[18%] h-[64%] w-[64%]" />
@@ -132,7 +132,7 @@ export function ProjectWall({ locale }: { locale: Locale }) {
           if (e.key === "ArrowRight") goTo(index + 1);
           if (e.key === "ArrowLeft") goTo(index - 1);
         }}
-        className="m-0 mt-auto w-full max-w-none overflow-hidden rounded-t-2xl border border-neutral-200 bg-white p-0 text-neutral-900 backdrop:bg-black/60 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-100 backdrop:backdrop-blur-[2px] sm:m-auto sm:max-w-md sm:rounded-2xl"
+        className="m-0 mt-auto w-full max-w-none overflow-y-auto rounded-t-2xl border border-neutral-200 bg-white p-0 text-neutral-900 backdrop:bg-black/60 dark:border-neutral-800 dark:bg-neutral-950 dark:text-neutral-100 backdrop:backdrop-blur-[2px] sm:m-auto sm:max-w-md sm:rounded-2xl"
       >
         <div
           ref={track}

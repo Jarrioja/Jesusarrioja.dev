@@ -11,7 +11,7 @@ interface HeroProps {
 export function Hero({ locale }: HeroProps) {
   return (
     <>
-      <header className="container mx-auto px-4 pt-4 pb-12 md:py-12 max-w-6xl">
+      <section className="container mx-auto px-4 pt-4 pb-12 md:py-12 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Profile Image */}
           <div className="md:col-span-1 flex justify-center md:justify-start">
@@ -34,12 +34,12 @@ export function Hero({ locale }: HeroProps) {
               <p className="text-xl md:text-2xl text-muted-foreground font-medium">
                 {profileData.title[locale]}
               </p>
-              <p className="text-base md:text-lg text-muted-foreground/80 mt-1">
+              <p className="text-base md:text-lg text-muted-foreground mt-1">
                 {profileData.focus}
               </p>
             </div>
 
-            <p className="text-lg text-muted-foreground leading-relaxed">
+            <p className="max-w-[65ch] text-lg text-muted-foreground leading-relaxed">
               {profileData.bio[locale]}
             </p>
 
@@ -53,7 +53,7 @@ export function Hero({ locale }: HeroProps) {
             </div>
           </div>
         </div>
-      </header>
+      </section>
 
       {/* Skills - Full width marquee */}
       {skillsData.length > 0 && (

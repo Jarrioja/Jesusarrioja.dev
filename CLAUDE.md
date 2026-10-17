@@ -47,8 +47,8 @@ Tailwind v4 via `@tailwindcss/vite`. Theme tokens are HSL variables in `src/styl
 
 ## Activity snapshot
 
-`.github/workflows/activity.yml` runs daily, regenerates `activity.json` with the `ACTIVITY_TOKEN` secret (a classic token with `repo` and `read:user`, so private contributions and PRs count), and commits to `master`. That commit triggers the Cloudflare Pages deploy.
+`.github/workflows/activity.yml` runs daily, regenerates `activity.json` with the `ACTIVITY_TOKEN` secret (a classic token with `repo` and `read:user`, so private contributions and PRs count), and commits to `main`. That commit triggers the Cloudflare Pages deploy.
 
 ## Deployment
 
-Cloudflare Pages Git integration: a push to `master` deploys production, other branches get preview URLs. Build command `pnpm install && pnpm build --filter=web`, output `apps/web/dist`. No environment variables are needed.
+Cloudflare Pages Git integration: a push to `main` deploys production, other branches get preview URLs. Build command `pnpm install && pnpm build --filter=web`, output `apps/web/dist`. No environment variables are needed.

@@ -5,9 +5,11 @@ import {
   SiReact, SiAstro, SiJavascript,
   SiDocker, SiKubernetes, SiArgo, SiNginx, SiTerraform, SiHelm, SiRailway, SiGooglecloud, SiCloudflare, SiVercel,
   SiTurborepo, SiGithubactions, SiGit, SiGithub, SiGraphql,
-  SiStripe, SiOpenai, SiVitest, SiJest, SiClaude,
+  SiStripe, SiVitest, SiJest, SiClaude,
   SiWordpress, SiWoocommerce, SiElementor,
 } from "react-icons/si";
+// Simple Icons removed OpenAI; Remix Icon still ships it.
+import { RiOpenaiFill } from "react-icons/ri";
 import { Code2, Cloud } from "lucide-react";
 
 const brandIcons: Record<string, IconType> = {
@@ -43,7 +45,7 @@ const brandIcons: Record<string, IconType> = {
   "Git": SiGit,
   "GitHub": SiGithub,
   "Stripe": SiStripe,
-  "OpenAI": SiOpenai,
+  "OpenAI": RiOpenaiFill,
   "Vitest": SiVitest,
   "Jest": SiJest,
   "Claude": SiClaude,
@@ -67,7 +69,7 @@ export function CVSkills({ skills, locale }: CVSkillsProps) {
   return (
     <section className="mb-8 print:mb-6">
       <h2 className="text-2xl font-bold mb-4 print:text-xl print:mb-3">
-        {locale === "en" ? "Technical Skills" : "Habilidades Técnicas"}
+        {locale === "en" ? "Technical skills" : "Habilidades técnicas"}
       </h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-3 print:grid-cols-2 print:gap-2">

@@ -66,7 +66,7 @@ function Heatmap({ activity, locale }: { activity: Activity; locale: Locale }) {
 
   return (
     <div style={columns}>
-      <div className={cn(gridClass, "text-[10px] text-muted-foreground mb-1")}>
+      <div className={cn(gridClass, "text-xs text-muted-foreground mb-1")}>
         {weeks.map((week, i) => {
           // Label the first week of each month (and of the mobile window), skipping a partial month at the right edge.
           const isNewMonth = i === 0 || monthOf(week[0].date) !== monthOf(weeks[i - 1][0].date);
@@ -146,10 +146,10 @@ export function AgenticSection({ locale }: { locale: Locale }) {
             { value: n(stats.best.count), label: `${s.bestDay} · ${formatDay(stats.best.date, locale)}` },
             { value: n(activity.mergedPrs), label: s.mergedPrs },
           ].map((m) => (
-            <div key={m.label}>
-              <dt className="sr-only">{m.label}</dt>
+            // dt comes first for screen readers; flex-col-reverse keeps the value on top visually.
+            <div key={m.label} className="flex flex-col-reverse">
+              <dt className="text-xs text-muted-foreground">{m.label}</dt>
               <dd className="text-2xl font-semibold tabular-nums">{m.value}</dd>
-              <dd className="text-xs text-muted-foreground">{m.label}</dd>
             </div>
           ))}
         </dl>

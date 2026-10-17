@@ -26,7 +26,7 @@ function MarqueeRow({
   return (
     <div className="flex gap-3">
       <div
-        className={`flex gap-3 ${animClass} shrink-0`}
+        className={`flex gap-3 ${animClass} shrink-0 group-hover:[animation-play-state:paused]`}
         style={{ animationDuration: `${speed}s` }}
       >
         {skills.map((skill) => (
@@ -36,7 +36,7 @@ function MarqueeRow({
         ))}
       </div>
       <div
-        className={`flex gap-3 ${animClass} shrink-0`}
+        className={`flex gap-3 ${animClass} shrink-0 group-hover:[animation-play-state:paused]`}
         style={{ animationDuration: `${speed}s` }}
         aria-hidden="true"
       >
@@ -61,8 +61,9 @@ export function SkillsMarquee({ skills, speed = 30 }: SkillsMarqueeProps) {
   const rows4 = splitInto(skills, 4);
   const rows3 = splitInto(skills, 3);
 
+  // Hovering pauses every row so a badge can be read.
   return (
-    <div className="relative w-full overflow-hidden py-2">
+    <div className="group relative w-full overflow-hidden py-2">
       {/* Gradient overlays */}
       <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />

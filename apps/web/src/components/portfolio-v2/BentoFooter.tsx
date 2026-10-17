@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
-import { Github, Sparkles } from "lucide-react";
+import { Sparkles } from "lucide-react";
+import { FaGithub } from "react-icons/fa6";
 
 interface BentoFooterProps {
   locale: "en" | "es";
@@ -41,7 +42,7 @@ export function BentoFooter({ locale }: BentoFooterProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-border hover:bg-foreground hover:text-background transition-colors text-sm font-medium"
             >
-              <Github className="w-4 h-4" />
+              <FaGithub className="w-4 h-4" />
               {locale === "en" ? "Source" : "Código"}
             </a>
           </div>

@@ -8,7 +8,7 @@ Bilingual portfolio and CV of Jesús Arrioja, built with Astro, React and Tailwi
 - **UI**: Tailwind CSS v4, Lucide and Simple Icons
 - **Content**: JSON files in `apps/web/src/data/`
 - **Monorepo**: Turborepo + pnpm workspaces
-- **Deploy**: Cloudflare Pages (push to `master` deploys)
+- **Deploy**: Cloudflare Pages (push to `main` deploys)
 
 ## Development
 

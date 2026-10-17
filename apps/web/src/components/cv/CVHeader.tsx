@@ -1,4 +1,5 @@
-import { Mail, MapPin, Linkedin, Globe } from "lucide-react";
+import { Mail, MapPin, Globe } from "lucide-react";
+import { FaLinkedin } from "react-icons/fa6";
 
 interface CVHeaderProps {
   profile: {
@@ -48,7 +49,7 @@ export function CVHeader({ profile }: CVHeaderProps) {
           rel="noopener noreferrer"
           className="flex items-center gap-1.5 text-muted-foreground hover:text-primary transition-colors print:text-foreground"
         >
-          <Linkedin className="w-4 h-4 print:w-3 print:h-3" />
+          <FaLinkedin className="w-4 h-4 print:w-3 print:h-3" />
           <span>LinkedIn</span>
         </a>
       </div>
