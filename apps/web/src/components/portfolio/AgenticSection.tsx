@@ -139,13 +139,12 @@ export function AgenticSection({ locale }: { locale: Locale }) {
           </span>
         </div>
 
-        <dl className="mt-6 grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-x-4 gap-y-5 border-t pt-5">
+        <dl className="mt-6 grid grid-cols-2 sm:grid-cols-4 gap-x-4 gap-y-5 border-t pt-5">
           {[
             { value: n(stats.streak), label: s.streak },
             { value: n(stats.activeDays), label: `${s.activeDays} ${n(stats.totalDays)}` },
             { value: n(stats.best.count), label: `${s.bestDay} · ${formatDay(stats.best.date, locale)}` },
             { value: n(activity.mergedPrs), label: s.mergedPrs },
-            ...agentic.metrics.map((m) => ({ value: m.value, label: m.label[locale] })),
           ].map((m) => (
             <div key={m.label}>
               <dt className="sr-only">{m.label}</dt>
