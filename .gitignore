@@ -67,3 +67,5 @@ package-lock.json
 /lib/
 *node_modules*
 .turbo
+# Wrangler local state
+.wrangler/

@@ -1,0 +1,12 @@
+{
+  "title": { "en": "Agentic engineering", "es": "Agentic engineering" },
+  "intro": {
+    "en": "Agents write the code. I design the system, make the decisions and own every change that ships.",
+    "es": "Los agentes escriben el código. Yo diseño el sistema, tomo las decisiones y respondo por cada cambio que sale."
+  },
+  "metrics": [
+    { "value": "1800+", "label": { "en": "PRs merged in the last year", "es": "PRs mergeados en el último año" } },
+    { "value": "4", "label": { "en": "products in parallel", "es": "productos en paralelo" } },
+    { "value": "660+", "label": { "en": "tickets shipped", "es": "tickets trabajados" } }
+  ]
+}

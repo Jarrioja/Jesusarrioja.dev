@@ -6,7 +6,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "activity": "node scripts/fetch-activity.ts"
   },
   "dependencies": {
     "@astrojs/react": "^7.0.1",

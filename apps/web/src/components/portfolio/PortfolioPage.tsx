@@ -1,5 +1,6 @@
 import { ThemeProvider } from "../shared/ThemeProvider";
 import { Hero } from "./Hero";
+import { AgenticSection } from "./AgenticSection";
 import { ProjectGrid } from "./ProjectGrid";
 import { ProjectCarousel } from "./ProjectCarousel";
 import { LanguageSwitcher } from "../shared/LanguageSwitcher";
@@ -38,6 +39,9 @@ export function PortfolioPage({ locale, translations }: PortfolioPageProps) {
 
       {/* Hero Section */}
       <Hero locale={locale} />
+
+      {/* Agentic engineering: live GitHub activity and workflow */}
+      <AgenticSection locale={locale} />
 
       {/* Projects Section */}
       <main className="container mx-auto px-4 py-12 max-w-6xl">

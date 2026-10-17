@@ -1,15 +1,13 @@
 import type { IconType } from "react-icons";
 import {
-  SiHtml5, SiCss, SiSass, SiJavascript,
-  SiWordpress, SiEthereum, SiMailchimp,
-  SiCpanel, SiDigitalocean, SiDocker,
-  SiGoogle, SiSlack, SiLinux,
-  SiExpress, SiKubernetes, SiArgo,
-  SiRedis, SiNginx, SiTerraform, SiHelm, SiVercel,
-  SiBun, SiTrpc, SiStripe, SiOpenai,
-  SiVitest, SiJest, SiGit, SiGithub, SiClaude,
+  SiTypescript, SiNodedotjs, SiReact, SiExpo, SiAstro,
+  SiTailwindcss, SiShadcnui, SiHono, SiBun, SiDrizzle, SiZod,
+  SiPostgresql, SiSupabase, SiRedis, SiDocker, SiKubernetes, SiTerraform,
+  SiCloudflare, SiRailway, SiVercel, SiGithubactions, SiTurborepo,
+  SiPnpm, SiVitest, SiSentry, SiPosthog, SiClaude,
+  SiWordpress, SiWoocommerce,
 } from "react-icons/si";
-import { Cloud, Server } from "lucide-react";
+import { Cloud, Server, type LucideIcon } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 interface Skill {
@@ -21,42 +19,39 @@ interface Skill {
 }
 
 const brandIcons: Record<string, IconType> = {
-  html5: SiHtml5,
-  css3: SiCss,
-  sass: SiSass,
-  javascript: SiJavascript,
-  wordpress: SiWordpress,
-  ethereum: SiEthereum,
-  mailchimp: SiMailchimp,
-  cpanel: SiCpanel,
-  "digital-ocean": SiDigitalocean,
-  docker: SiDocker,
-  google: SiGoogle,
-  slack: SiSlack,
-  linux: SiLinux,
-  express: SiExpress,
-  kubernetes: SiKubernetes,
-  argocd: SiArgo,
-  redis: SiRedis,
-  nginx: SiNginx,
-  terraform: SiTerraform,
-  helm: SiHelm,
-  vercel: SiVercel,
+  typescript: SiTypescript,
+  nodejs: SiNodedotjs,
+  react: SiReact,
+  expo: SiExpo,
+  astro: SiAstro,
+  tailwind: SiTailwindcss,
+  shadcn: SiShadcnui,
+  hono: SiHono,
   bun: SiBun,
-  trpc: SiTrpc,
-  stripe: SiStripe,
-  openai: SiOpenai,
+  drizzle: SiDrizzle,
+  zod: SiZod,
+  postgresql: SiPostgresql,
+  supabase: SiSupabase,
+  redis: SiRedis,
+  docker: SiDocker,
+  kubernetes: SiKubernetes,
+  terraform: SiTerraform,
+  cloudflare: SiCloudflare,
+  railway: SiRailway,
+  vercel: SiVercel,
+  "github-actions": SiGithubactions,
+  turborepo: SiTurborepo,
+  pnpm: SiPnpm,
   vitest: SiVitest,
-  jest: SiJest,
-  git: SiGit,
-  github: SiGithub,
+  sentry: SiSentry,
+  posthog: SiPosthog,
   claude: SiClaude,
+  wordpress: SiWordpress,
+  woocommerce: SiWoocommerce,
 };
 
-const lucideFallbacks: Record<string, any> = {
+const lucideFallbacks: Record<string, LucideIcon> = {
   aws: Cloud,
-  windows: Server,
-  microsoft: Server,
 };
 
 export function SkillBadge({ skill }: { skill: Skill }) {
