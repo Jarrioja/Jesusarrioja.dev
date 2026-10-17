@@ -10,12 +10,14 @@ export interface ActivityDay {
 
 export interface Activity {
   total: number;
+  /** PRs authored and merged in the last 365 days, private repos included when the token can see them. */
+  mergedPrs: number;
   /** Weeks from oldest to newest, each Sunday → Saturday as GitHub returns them. */
   weeks: ActivityDay[][];
   updatedAt: string;
 }
 
-export const ACTIVITY_QUERY = `query ($login: String!) {
+export const ACTIVITY_QUERY = `query ($login: String!, $prs: String!) {
   user(login: $login) {
     contributionsCollection {
       contributionCalendar {
@@ -24,6 +26,7 @@ export const ACTIVITY_QUERY = `query ($login: String!) {
       }
     }
   }
+  search(query: $prs, type: ISSUE, first: 1) { issueCount }
 }`;
 
 interface CalendarResponse {
@@ -36,7 +39,13 @@ interface CalendarResponse {
         };
       };
     };
+    search?: { issueCount: number };
   };
+}
+
+function mergedPrsQuery() {
+  const since = new Date(Date.now() - 365 * 24 * 60 * 60 * 1000).toISOString().slice(0, 10);
+  return `is:pr author:${GITHUB_LOGIN} is:merged merged:>=${since}`;
 }
 
 export async function fetchActivity(token: string): Promise<Activity> {
@@ -47,7 +56,7 @@ export async function fetchActivity(token: string): Promise<Activity> {
       "Content-Type": "application/json",
       "User-Agent": "jesusarrioja.com",
     },
-    body: JSON.stringify({ query: ACTIVITY_QUERY, variables: { login: GITHUB_LOGIN } }),
+    body: JSON.stringify({ query: ACTIVITY_QUERY, variables: { login: GITHUB_LOGIN, prs: mergedPrsQuery() } }),
   });
   if (!res.ok) throw new Error(`GitHub GraphQL ${res.status}`);
 
@@ -57,6 +66,7 @@ export async function fetchActivity(token: string): Promise<Activity> {
 
   return {
     total: calendar.totalContributions,
+    mergedPrs: json.data?.search?.issueCount ?? 0,
     weeks: calendar.weeks.map((w) =>
       w.contributionDays.map((d) => ({ date: d.date, count: d.contributionCount })),
     ),

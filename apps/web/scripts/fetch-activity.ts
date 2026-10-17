@@ -8,4 +8,4 @@ if (!token) throw new Error("Set GITHUB_TOKEN to refresh the activity snapshot")
 
 const activity = await fetchActivity(token);
 await writeFile(new URL("../src/data/activity.json", import.meta.url), JSON.stringify(activity) + "\n");
-console.log(`activity.json: ${activity.total} contributions`);
+console.log(`activity.json: ${activity.total} contributions, ${activity.mergedPrs} merged PRs`);

@@ -20,6 +20,7 @@ const t = {
     streak: "day streak",
     activeDays: "active days of",
     bestDay: "best day",
+    mergedPrs: "PRs merged in the last year",
     updated: "GitHub · updated",
     less: "Less",
     more: "More",
@@ -30,6 +31,7 @@ const t = {
     streak: "días seguidos",
     activeDays: "días activos de",
     bestDay: "mejor día",
+    mergedPrs: "PRs mergeados en el último año",
     updated: "GitHub · actualizado al",
     less: "Menos",
     more: "Más",
@@ -142,6 +144,7 @@ export function AgenticSection({ locale }: { locale: Locale }) {
             { value: n(stats.streak), label: s.streak },
             { value: n(stats.activeDays), label: `${s.activeDays} ${n(stats.totalDays)}` },
             { value: n(stats.best.count), label: `${s.bestDay} · ${formatDay(stats.best.date, locale)}` },
+            { value: n(activity.mergedPrs), label: s.mergedPrs },
             ...agentic.metrics.map((m) => ({ value: m.value, label: m.label[locale] })),
           ].map((m) => (
             <div key={m.label}>
@@ -153,7 +156,6 @@ export function AgenticSection({ locale }: { locale: Locale }) {
         </dl>
       </div>
 
-      {/* Below md: swipeable carousel with snap points; from md up, one row of five. */}
     </section>
   );
 }
