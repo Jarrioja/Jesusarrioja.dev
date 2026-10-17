@@ -15,7 +15,6 @@ interface PortfolioPageProps {
     otherTitle: string;
     otherDescription: string;
     copyright: string;
-    builtWith: string;
   };
 }
 

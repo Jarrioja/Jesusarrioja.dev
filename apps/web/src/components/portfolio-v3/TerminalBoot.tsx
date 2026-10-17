@@ -14,7 +14,7 @@ const BOOT_LINES = [
   { text: "Loading kernel........................ done", delay: 500 },
   { text: "Mounting /dev/portfolio", delay: 800 },
   { text: "Starting network interfaces.......... [OK]", delay: 1000 },
-  { text: "Loading convex-backend............... [OK]", delay: 1200 },
+  { text: "Loading static-data.................. [OK]", delay: 1200 },
   { text: "Initializing i18n subsystem.......... [OK]", delay: 1400 },
   { text: "Starting react-renderer.............. [OK]", delay: 1550 },
   { text: "", delay: 1650 },

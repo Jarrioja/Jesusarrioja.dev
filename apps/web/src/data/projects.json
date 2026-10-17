@@ -288,7 +288,7 @@
     "createdAt": 1700000000000
   },
   {
-    "name": { "en": "Mile", "es": "Mile" },
+    "name": { "en": "Mile Conde", "es": "Mile Conde" },
     "slug": "mile",
     "logoUrl": "/images/mile.svg",
     "url": "https://mileconde.com/",
@@ -297,7 +297,7 @@
       { "en": "Custom WordPress theme", "es": "Tema WordPress a medida" },
       { "en": "Editorial blog with categories and series", "es": "Blog editorial con categorías y series" },
       { "en": "Custom waitlist plugin (REST API)", "es": "Plugin propio de lista de espera (REST API)" },
-      { "en": "WooCommerce store", "es": "Tienda WooCommerce" }
+      { "en": "Workshops and digital products sold with WooCommerce", "es": "Venta de workshops y productos digitales con WooCommerce" }
     ],
     "gradient": { "from": "#3e3bab", "to": "#5a52d5" },
     "isActive": true,
