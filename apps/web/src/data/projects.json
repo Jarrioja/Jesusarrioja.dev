@@ -13,7 +13,7 @@
       { "en": "Operations dashboard with a live map", "es": "Panel de operación con mapa en vivo" },
       { "en": "Push notification broadcasts", "es": "Difusiones por notificaciones push" }
     ],
-    "gradient": { "from": "#4299e1", "to": "#48bb78" },
+    "gradient": { "from": "#011a5a", "to": "#00d8aa" },
     "isActive": true,
     "isFeatured": true,
     "order": 1,
@@ -32,7 +32,7 @@
       { "en": "Backend and infrastructure", "es": "Backend e infraestructura" },
       { "en": "Technical details under NDA", "es": "Detalles técnicos bajo NDA" }
     ],
-    "gradient": { "from": "#1a1a2e", "to": "#e94560" },
+    "gradient": { "from": "#26337a", "to": "#00ade8" },
     "isActive": true,
     "isFeatured": true,
     "order": 2,
@@ -107,7 +107,7 @@
       { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#ffd7d5", "to": "#ba797d" },
+    "gradient": { "from": "#2f2d32", "to": "#ce5e58" },
     "isActive": true,
     "isFeatured": true,
     "order": 6,
@@ -125,7 +125,7 @@
       { "en": "Woocommerce Subscription and Membership", "es": "Suscripciones y Membresías Woocommerce" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#4facfe", "to": "#00f2fe" },
+    "gradient": { "from": "#210047", "to": "#4a1d8a" },
     "isActive": true,
     "isFeatured": false,
     "order": 7,
@@ -180,7 +180,7 @@
       { "en": "Woocommerce Store", "es": "Tienda Woocommerce" },
       { "en": "Built with Elementor", "es": "Construido con Elementor" }
     ],
-    "gradient": { "from": "#00644f", "to": "#002138" },
+    "gradient": { "from": "#002138", "to": "#ae803f" },
     "isActive": true,
     "isFeatured": false,
     "order": 10,
@@ -196,7 +196,7 @@
       { "en": "Community One Page", "es": "Página de Comunidad" },
       { "en": "Built with Divi", "es": "Construido con Divi" }
     ],
-    "gradient": { "from": "#667eea", "to": "#764ba2" },
+    "gradient": { "from": "#77071a", "to": "#ef0f34" },
     "isActive": true,
     "isFeatured": false,
     "order": 11,
@@ -212,7 +212,7 @@
       { "en": "Community One Page", "es": "Página de Comunidad" },
       { "en": "Built with Divi", "es": "Construido con Divi" }
     ],
-    "gradient": { "from": "#f093fb", "to": "#f5576c" },
+    "gradient": { "from": "#6fa59b", "to": "#f7887d" },
     "isActive": true,
     "isFeatured": false,
     "order": 12,
@@ -247,7 +247,7 @@
       { "en": "Built with Elementor", "es": "Construido con Elementor" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#a8edea", "to": "#fed6e3" },
+    "gradient": { "from": "#5e4f37", "to": "#bd9e6e" },
     "isActive": true,
     "isFeatured": false,
     "order": 14,
@@ -265,7 +265,7 @@
       { "en": "Learning management system", "es": "Sistema de Gestión de Aprendizaje" },
       { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
     ],
-    "gradient": { "from": "#d6e3f3", "to": "#b8abe1" },
+    "gradient": { "from": "#693337", "to": "#d3666f" },
     "isActive": true,
     "isFeatured": false,
     "order": 15,
@@ -281,7 +281,7 @@
       { "en": "Woocommerce Store", "es": "Tienda Woocommerce" },
       { "en": "WC Subscription & Memberships", "es": "Suscripciones y Membresías WC" }
     ],
-    "gradient": { "from": "#fa8bff", "to": "#2bd2ff" },
+    "gradient": { "from": "#7f2d12", "to": "#ff5b25" },
     "isActive": true,
     "isFeatured": true,
     "order": 16,
@@ -299,7 +299,7 @@
       { "en": "Custom waitlist plugin (REST API)", "es": "Plugin propio de lista de espera (REST API)" },
       { "en": "Workshops and digital products sold with WooCommerce", "es": "Venta de workshops y productos digitales con WooCommerce" }
     ],
-    "gradient": { "from": "#3e3bab", "to": "#5a52d5" },
+    "gradient": { "from": "#0d2a5e", "to": "#c2a158" },
     "isActive": true,
     "isFeatured": true,
     "order": 17,
@@ -350,7 +350,7 @@
       { "en": "Migrate Wordpress to Shopify", "es": "Migración de Wordpress a Shopify" },
       { "en": "Shopify Configuration", "es": "Configuración de Shopify" }
     ],
-    "gradient": { "from": "#ffffff", "to": "#54d0e8" },
+    "gradient": { "from": "#436773", "to": "#86cfe6" },
     "isActive": true,
     "isFeatured": false,
     "order": 20,
@@ -367,7 +367,7 @@
       { "en": "Wordpress Theme ReBuild", "es": "Reconstrucción de Tema WordPress" },
       { "en": "Recover Hacked Website", "es": "Recuperación de Sitio Hackeado" }
     ],
-    "gradient": { "from": "#ffffff", "to": "#009688" },
+    "gradient": { "from": "#004b44", "to": "#009688" },
     "isActive": true,
     "isFeatured": false,
     "order": 21,
@@ -403,7 +403,7 @@
       { "en": "Advanced Custom Fields", "es": "Campos Personalizados Avanzados" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#a29bfe", "to": "#6c5ce7" },
+    "gradient": { "from": "#7f0f08", "to": "#ff1e10" },
     "isActive": true,
     "isFeatured": false,
     "order": 23,
@@ -439,7 +439,7 @@
       { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
       { "en": "Woocommerce", "es": "Woocommerce" }
     ],
-    "gradient": { "from": "#ff7f50", "to": "#ff6348" },
+    "gradient": { "from": "#436773", "to": "#86cfe6" },
     "isActive": true,
     "isFeatured": false,
     "order": 25,
@@ -456,7 +456,7 @@
       { "en": "Woocommerce Store", "es": "Tienda Woocommerce" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#55efc4", "to": "#00b894" },
+    "gradient": { "from": "#ea3631", "to": "#ff7b29" },
     "isActive": true,
     "isFeatured": false,
     "order": 26,
@@ -472,7 +472,7 @@
       { "en": "Landing Page", "es": "Página de Aterrizaje" },
       { "en": "Eventbrite Integration", "es": "Integración con Eventbrite" }
     ],
-    "gradient": { "from": "#ffffff", "to": "#a5c7d2" },
+    "gradient": { "from": "#3c3c54", "to": "#ffb800" },
     "isActive": true,
     "isFeatured": false,
     "order": 27,
@@ -559,7 +559,7 @@
       { "en": "Advanced Custom Fields", "es": "Campos Personalizados Avanzados" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#fd79a8", "to": "#e84393" },
+    "gradient": { "from": "#7f3600", "to": "#ff6d00" },
     "isActive": true,
     "isFeatured": false,
     "order": 32,
@@ -613,7 +613,7 @@
       { "en": "Wordpress Website", "es": "Sitio Web WordPress" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#81ecec", "to": "#00cec9" },
+    "gradient": { "from": "#001f6e", "to": "#003edc" },
     "isActive": true,
     "isFeatured": false,
     "order": 35,
@@ -631,7 +631,7 @@
       { "en": "Google Maps Customization", "es": "Personalización de Google Maps" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#55efc4", "to": "#00b894" },
+    "gradient": { "from": "#8f4078", "to": "#d3b790" },
     "isActive": true,
     "isFeatured": false,
     "order": 36,
@@ -665,7 +665,7 @@
       { "en": "Wordpress Theme Customization", "es": "Personalización de Tema WordPress" },
       { "en": "Google Maps Customization", "es": "Personalización de Google Maps" }
     ],
-    "gradient": { "from": "#f093fb", "to": "#f5576c" },
+    "gradient": { "from": "#24436b", "to": "#8bb4d9" },
     "isActive": true,
     "isFeatured": false,
     "order": 38,
@@ -684,7 +684,7 @@
       { "en": "WPML Multilingual", "es": "Multidioma con WPML" }
     ],
     "agency": { "name": "Mood Agency", "logoUrl": "/images/mood-oscuro.png", "url": "https://mood-agency.com" },
-    "gradient": { "from": "#b794f6", "to": "#6b46c1" },
+    "gradient": { "from": "#352c60", "to": "#7a6ff0" },
     "isActive": true,
     "isFeatured": true,
     "order": 39,
